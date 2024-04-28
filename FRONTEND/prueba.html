@@ -6,21 +6,41 @@
     <title>Usuarios</title>
 </head>
 <body>
-    <h1>Listado de Usuarios</h1>
-    <ul id="lista-usuarios"></ul>
-
-    <script>
-        fetch('consultas.php')
-            .then(response => response.json())
-            .then(data => {
-                const listaUsuarios = document.getElementById('lista-usuarios');
-                data.forEach(usuario => {
-                    const li = document.createElement('li');
-                    li.textContent = `ID: ${usuario.ID}, Nombre: ${usuario.Nombre}, Apellidos: ${usuario.Apellidos}, Correo Electrónico: ${usuario.CorreoElectronico}, Contraseña: ${usuario.Contraseña}`;
-                    listaUsuarios.appendChild(li);
-                });
-            })
-            .catch(error => console.error('Error:', error));
-    </script>
+    <div class="container">
+        <?php
+        // Configuración de la conexión a la base de datos MySQL
+        $servername = "db";
+        $username = "root";
+        $password = "root";
+        $database = "mediacion_web";
+        
+        // Establecer conexión
+        $conn = new mysqli($servername, $username, $password, $database);
+        
+        // Verificar la conexión
+        if ($conn->connect_error) {
+            die("Error de conexión: " . $conn->connect_error);
+        }
+        
+        // Consulta para seleccionar todos los usuarios
+        $sql = "SELECT Nombre, Apellidos, CorreoElectronico FROM Usuarios";
+        $result = $conn->query($sql);
+        
+        // Mostrar los usuarios en la página web
+        if ($result->num_rows > 0) {
+            echo "<h2>Usuarios:</h2>";
+            echo "<ul>";
+            while ($row = $result->fetch_assoc()) {
+                echo "<li>{$row["Nombre"]} {$row["Apellidos"]} - {$row["CorreoElectronico"]}</li>";
+            }
+            echo "</ul>";
+        } else {
+            echo "No se encontraron usuarios.";
+        }
+        
+        // Cerrar conexión
+        $conn->close();
+        ?>    
+    </div>
 </body>
 </html>
