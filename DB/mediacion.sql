@@ -1,6 +1,7 @@
 -- Tabla de Usuarios/as
 CREATE TABLE Usuarios (
     ID INT PRIMARY KEY AUTO_INCREMENT,
+    UserName VARCHAR(50),
     Nombre VARCHAR(50),
     Apellidos VARCHAR(50),
     CorreoElectronico VARCHAR(100),
@@ -44,9 +45,10 @@ CREATE TABLE Estadisticas (
 );
 
 -- Insertar datos de prueba
-INSERT INTO Usuarios (Nombre, Apellidos, CorreoElectronico, Contraseña) VALUES
-('Juan', 'Pérez', 'juan@example.com', '123456'),
-('María', 'García', 'maria@example.com', 'password'),
-('Luis', 'Martínez', 'luis@example.com', 'secreto'),
-('Ana', 'Rodríguez', 'ana@example.com', 'contraseña'),
-('Pedro', 'Sánchez', 'pedro@example.com', 'clave');
+INSERT INTO Usuarios (UserName, Nombre, Apellidos, CorreoElectronico, Contraseña) VALUES
+('admin', 'Administrador', 'Admin', 'admin@example.com', 'admin123'),
+('user1', 'Juan', 'Pérez', 'juan@example.com', '123456'),
+('user2','María', 'García', 'maria@example.com', 'password'),
+('user3','Luis', 'Martínez', 'luis@example.com', 'secreto'),
+('user4','Ana', 'Rodríguez', 'ana@example.com', 'contraseña'),
+('user5','Pedro', 'Sánchez', 'pedro@example.com', 'clave');
