@@ -11,7 +11,7 @@ const pool = mariadb.createPool({
     port: 3306,
     user: 'root', 
     password: 'root', 
-    database: 'sys',
+    database: 'web_mediacion',
     connectionLimit: 10,
   });
   
@@ -28,7 +28,20 @@ pool.getConnection()
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
-  
+ 
+// Método GET para obtener todos los usuarios
+app.get('/usuarios', async (req, res) => {
+    try {
+        const conn = await pool.getConnection();
+        const usuarios = await conn.query('SELECT * FROM Usuarios');
+        conn.release();
+        res.status(200).json(usuarios);
+    } catch (error) {
+        console.error('Error al obtener usuarios:', error);
+        res.status(500).send('Error al obtener usuarios');
+    }
+});
+
 // Método POST para agregar un nuevo usuario
 app.post('/usuarios', async (req, res) => {
     try {
@@ -42,20 +55,7 @@ app.post('/usuarios', async (req, res) => {
         res.status(500).send('Error al agregar usuario');
     }
 });
-  
-// Método GET para obtener todos los usuarios
-app.get('/usuarios', async (req, res) => {
-    try {
-        const conn = await pool.getConnection();
-        const usuarios = await conn.query('SELECT * FROM Usuarios');
-        conn.release();
-        res.status(200).json(usuarios);
-    } catch (error) {
-        console.error('Error al obtener usuarios:', error);
-        res.status(500).send('Error al obtener usuarios');
-    }
-});
-  
+    
 // Método DELETE para eliminar un usuario por su ID
 app.delete('/usuarios/:id', async (req, res) => {
     try {
