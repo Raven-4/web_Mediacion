@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <ul id="lista-usuarios">
+        <!-- Aquí se mostrarán los usuarios -->
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const listaUsuarios = document.getElementById('lista-usuarios');
+
+            // Realizar solicitud GET al servidor para obtener la lista de usuarios
+            fetch('http://localhost:3000/usuarios')
+                .then(response => response.json())
+                .then(data => {
+                    // Iterar sobre la lista de usuarios y agregar cada uno a la lista en el HTML
+                    data.forEach(usuario => {
+                        const li = document.createElement('li');
+                        li.textContent = `${usuario.Nombre} ${usuario.Apellidos}`;
+                        listaUsuarios.appendChild(li);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar usuarios:', error);
+                });
+        });
+    </script>
+</body>
+</html>
