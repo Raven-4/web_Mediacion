@@ -7,28 +7,58 @@ const port = 3000;
 
 // Configuración de la conexión a la base de datos MySQL
 const pool = mariadb.createPool({
-    host: 'localhost', 
+    host: 'localhost',
     port: 3306,
-    user: 'root', 
-    password: 'root', 
+    user: 'root',
+    password: 'root',
     database: 'web_mediacion',
     connectionLimit: 10,
-  });
-  
+});
+
 // Compueba la conexión a la base de datos
 pool.getConnection()
-  .then(conn => {
-    console.log('Conexión exitosa');
-    conn.end();
-  })
-  .catch(err => {
-    console.error('Error al conectar:', err);
-  });
+    .then(conn => {
+        console.log('Conexión exitosa');
+        conn.end();
+    })
+    .catch(err => {
+        console.error('Error al conectar:', err);
+    });
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
- 
+
+// Método POST para el inicio de sesión de un usuario
+app.post('/login', async (req, res) => {
+    try {
+        const { usuario, contrasena } = req.body;
+
+        const conn = await pool.getConnection();
+        const result = await conn.query('SELECT * FROM Usuarios WHERE UserName = ?', [usuario]);
+        conn.release();
+
+        if (result.length === 0) {
+            // El usuario no existe en la base de datos
+            res.status(404).send('Usuario no encontrado');
+            return;
+        }
+
+        const user = result[0];
+
+        if (user.Contraseña !== contrasena) {
+            // La contraseña no coincide
+            res.status(401).send('Contraseña incorrecta');
+            return;
+        }
+
+        res.status(200).send('Inicio de sesión exitoso');
+    } catch (error) {
+        console.error('Error al iniciar sesión:', error);
+        res.status(500).send('Error al iniciar sesión');
+    }
+});
+
 // Método GET para obtener todos los usuarios
 app.get('/usuarios', async (req, res) => {
     try {
@@ -55,7 +85,7 @@ app.post('/usuarios', async (req, res) => {
         res.status(500).send('Error al agregar usuario');
     }
 });
-    
+
 // Método DELETE para eliminar un usuario por su ID
 app.delete('/usuarios/:id', async (req, res) => {
     try {
