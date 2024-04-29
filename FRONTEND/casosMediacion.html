@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/funcionesComunes.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
+    <script type="text/javascript" src="js/casosMediacion.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Casos de Mediación</title>
+</head>
+
+<body onload="mostrarCasosMediacion();esta_autenticado();">
+    <div id='id_caja_superior'>
+    </div>
+
+    <h1>Casos de Mediación</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Alumnos Involucrados</th>
+                <th>Curso</th>
+                <th>Fecha de Apertura</th>
+                <th>Mediador 1</th>
+                <th>Mediador 2</th>
+                <th>Estado</th>
+                <th>Valoración Final</th>
+            </tr>
+        </thead>
+        <tbody id="casos-mediacion-body">
+            <!-- Aquí se agregarán las filas de casos de mediación -->
+        </tbody>
+    </table>
+</body>
+
+</html>

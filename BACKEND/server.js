@@ -75,9 +75,9 @@ app.get('/usuarios', async (req, res) => {
 // Método POST para agregar un nuevo usuario
 app.post('/usuarios', async (req, res) => {
     try {
-        const { Nombre, Apellidos, CorreoElectronico, Contraseña } = req.body;
+        const { UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol } = req.body;
         const conn = await pool.getConnection();
-        await conn.query('INSERT INTO Usuarios (Nombre, Apellidos, CorreoElectronico, Contraseña) VALUES (?, ?, ?, ?)', [Nombre, Apellidos, CorreoElectronico, Contraseña]);
+        await conn.query('INSERT INTO Usuarios (UserName, Nombre, Apellidos, CorreoElectronico, Contraseña) VALUES (?, ?, ?, ?)', [UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol]);
         conn.release();
         res.status(201).send('Usuario agregado correctamente');
     } catch (error) {
@@ -112,6 +112,35 @@ app.get('/casos-mediacion', async (req, res) => {
         res.status(500).send('Error al obtener casos de mediación');
     }
 });
+
+// Método GET para obtener los casos de mediación de un usuario específico
+app.get('/casos-mediacion/:usuario', async (req, res) => {
+    try {
+        const usuario = req.params.usuario;
+        const conn = await pool.getConnection();
+        console.log('Obteniendo casos de mediación para el usuario', usuario);
+
+        const userId = await conn.query('SELECT ID FROM Usuarios WHERE UserName = ?', [usuario]);
+        //const userId = userInfo[0];
+        console.log('ID de usuario:', userId);
+
+        const casosMediacion = await conn.query(`
+        SELECT cm.*
+        FROM CasosMediacion cm
+        INNER JOIN AsignacionCasos ac ON cm.ID = ac.IDCasoMediacion
+        INNER JOIN Usuarios u ON ac.IDUsuario = u.ID
+        WHERE u.UserName = ?
+    `, [usuario]);
+        console.log('Casos de mediación:', casosMediacion);
+        conn.release();
+        res.status(200).json(casosMediacion);
+    } catch (error) {
+        const usuario = req.params.usuario;
+        console.error('Error al obtener casos de mediación para el usuario', usuario, ':', error);
+        res.status(500).send('Error al obtener casos de mediación');
+    }
+});
+
 
 // Método POST para agregar un nuevo caso de mediación
 app.post('/casos-mediacion', async (req, res) => {

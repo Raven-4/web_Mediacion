@@ -4,35 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Usuarios</title>
+    <script type="text/javascript" src="js/funcionesComunes.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Menú</title>
 </head>
 
-<body>
-    <h1>Lista de Usuarios</h1>
-    <ul id="lista-usuarios">
-        <!-- Aquí se mostrarán los usuarios -->
+<body onload="cargarMenu();esta_autenticado();">
+    <div id='id_caja_superior'>
+    </div>
+    <h1>Menú</h1>
+
+    <ul id="menu">
+        <!-- <a href="casosMediacion.html">Casos de Mediación</a>
+        <a href="estadisticas.html">Estadísticas</a>
+        <a href="crearCaso.html">Crear Caso</a>
+        <a href="crearPerfil.html">Crear Perfil</a> 
+        <a href="modificarPerfil.html">Modificar Perfil</a>-->
     </ul>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const listaUsuarios = document.getElementById('lista-usuarios');
-
-            // Realizar solicitud GET al servidor para obtener la lista de usuarios
-            fetch('http://localhost:3000/usuarios')
-                .then(response => response.json())
-                .then(data => {
-                    // Iterar sobre la lista de usuarios y agregar cada uno a la lista en el HTML
-                    data.forEach(usuario => {
-                        const li = document.createElement('li');
-                        li.textContent = `${usuario.Nombre} ${usuario.Apellidos}`;
-                        listaUsuarios.appendChild(li);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error al cargar usuarios:', error);
-                });
-        });
-    </script>
 </body>
 
 </html>

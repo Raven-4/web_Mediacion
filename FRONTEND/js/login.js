@@ -1,3 +1,17 @@
+encriptar = false;
+
+function comprobar_form_login() {
+	return true;
+	if (comprobar_usuario() && comprobar_password()) {
+		encriptarpassword();
+		encriptar = true;
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
 function login() {
 	const usuario = document.getElementById('id_usuario').value;
 	const contrasena = document.getElementById('id_contrasena').value;
@@ -18,6 +32,14 @@ function login() {
 		.then(response => {
 			// Verificar el estado de la respuesta
 			if (response.ok) {
+				setCookie('token', response.resource);
+				setCookie('usuarioSistema', document.getElementById("id_usuario").value);
+				if (usuario === 'admin') {
+					setCookie('rol', 'admin');
+				} else {
+					setCookie('rol', 'usuario');
+				}
+				console.log(getCookie(document.getElementById("id_usuario").value));
 				window.location.href = 'menu.html';
 			} else {
 				alert('Error al iniciar sesión. Por favor, verifique sus credenciales.');
@@ -29,16 +51,3 @@ function login() {
 		});
 }
 
-
-function comprobar_form_login() {
-	return true;
-	if (comprobar_usuario() && comprobar_password()) {
-		encriptarpassword();
-		encriptar = true;
-		return true;
-	}
-	else {
-		return false;
-	}
-
-}
