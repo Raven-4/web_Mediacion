@@ -141,6 +141,23 @@ app.get('/casos-mediacion/:usuario', async (req, res) => {
     }
 });
 
+// Método PUT para modificar el estado y la valoración final de un caso de mediación
+app.put('/casos-mediacion/:id', async (req, res) => {
+    try {
+        const casoId = req.params.id;
+        const { Estado, ValoracionFinal } = req.body;
+        console.log('Estado:', Estado);
+        console.log('Valoración final:', ValoracionFinal);
+        console.log('Modificando estado y valoración final del caso de mediación', casoId);
+        const conn = await pool.getConnection();
+        await conn.query('UPDATE CasosMediacion SET Estado = ?, ValoracionFinal = ? WHERE ID = ?', [Estado, ValoracionFinal, casoId]);
+        conn.release();
+        res.status(200).send('Estado y valoración final del caso de mediación modificados correctamente');
+    } catch (error) {
+        console.error('Error al modificar estado y valoración final del caso de mediación:', error);
+        res.status(500).send('Error al modificar estado y valoración final del caso de mediación');
+    }
+});
 
 // Método POST para agregar un nuevo caso de mediación
 app.post('/casos-mediacion', async (req, res) => {

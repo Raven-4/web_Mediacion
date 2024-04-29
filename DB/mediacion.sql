@@ -17,8 +17,8 @@ CREATE TABLE CasosMediacion (
     FechaApertura DATE,
     Mediador1 VARCHAR(100),
     Mediador2 VARCHAR(100),
-    Estado ENUM('En curso', 'En seguimiento', 'Finalizado'),
     FormularioOficial BLOB,
+    Estado ENUM('En curso', 'En seguimiento', 'Finalizado'),
     ValoracionFinal ENUM('Acuerdo', 'Sin Acuerdo', 'Derivado a Jefatura de Estudios')
 );
 
@@ -55,10 +55,10 @@ INSERT INTO Usuarios (UserName, Nombre, Apellidos, CorreoElectronico, Contraseñ
 ('user5', 'Pedro', 'Sánchez', 'pedro@example.com', 'clave', 'usuario');
 
 -- Insertar casos de mediación
-INSERT INTO CasosMediacion (AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial, ValoracionFinal)
+INSERT INTO CasosMediacion (AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, FormularioOficial, Estado, ValoracionFinal)
 VALUES
-('Primer malo, Segundo Malo', '3º ESO', '2024-04-28', 'Juan Pérez', 'María García', 'En curso', NULL, 'Sin Acuerdo'),
-('Tercer malo, Cuarto malo', '4º ESO', '2024-04-29', 'Luis Martínez', 'Ana Rodríguez', 'En seguimiento', NULL, 'Acuerdo');
+('Primer malo, Segundo Malo', '3º ESO', '2024-04-28', 'Juan Pérez', 'María García', NULL, 'En curso', NULL),
+('Tercer malo, Cuarto malo', '4º ESO', '2024-04-29', 'Luis Martínez', 'Ana Rodríguez', NULL, 'En seguimiento', NULL);
 
 -- Insertar asignaciones de casos con nombres de mediadores
 INSERT INTO AsignacionCasos (IDUsuario, IDCasoMediacion)
