@@ -72,12 +72,33 @@ app.get('/usuarios', async (req, res) => {
     }
 });
 
+// Método GET para obtener un usuario por su nombre de usuario
+app.get('/usuarios/:username', async (req, res) => {
+    try {
+        const username = req.params.username;
+        const conn = await pool.getConnection();
+        const usuario = await conn.query('SELECT * FROM Usuarios WHERE UserName = ?', [username]);
+        conn.release();
+        
+        if (usuario.length === 0) {
+            // Si no se encuentra ningún usuario con ese nombre de usuario, devolver un 404
+            res.status(404).send('Usuario no encontrado');
+        } else {
+            // Si se encuentra el usuario, devolverlo en formato JSON
+            res.status(200).json(usuario[0]);
+        }
+    } catch (error) {
+        console.error('Error al obtener usuario:', error);
+        res.status(500).send('Error al obtener usuario');
+    }
+});
+
 // Método POST para agregar un nuevo usuario
 app.post('/usuarios', async (req, res) => {
     try {
         const { UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol } = req.body;
         const conn = await pool.getConnection();
-        await conn.query('INSERT INTO Usuarios (UserName, Nombre, Apellidos, CorreoElectronico, Contraseña) VALUES (?, ?, ?, ?)', [UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol]);
+        await conn.query('INSERT INTO Usuarios (UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol) VALUES (?, ?, ?, ?, ?, ?)', [UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol]);
         conn.release();
         res.status(201).send('Usuario agregado correctamente');
     } catch (error) {

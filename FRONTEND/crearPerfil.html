@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/funcionesComunes.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
+    <script type="text/javascript" src="js/crearPerfil.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Crear Perfil</title>
+</head>
+
+<body onload="esta_autenticado();">
+    <div id='id_caja_superior'>
+    </div>
+
+    <h1>Crear Perfil de Usuario</h1>
+    <form id="crearPerfilForm" action='javascript:comprobarPerfil();'>
+        <label for="userName">Nombre de Usuario:</label><br>
+        <input type="text" id="id_usuario" name="userName" required onblur="verificarNombreUsuarioUnico()">
+        <div id="mensaje-error-usuario" style="color: red;"></div>
+
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="id_nombre" name="nombre" required><br>
+
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="id_apellidos" name="apellidos" required><br>
+
+        <label for="correoElectronico">Correo Electrónico:</label><br>
+        <input type="email" id="id_correoElectronico" name="correoElectronico" required><br>
+
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="password" id="id_contrasena" name="contraseña" required><br>
+
+        <label for="rol">Rol:</label><br>
+        <select id="id_rol" name="rol" required>
+            <option value="usuario">Usuario</option>
+            <option value="admin">Administrador</option>
+        </select><br>
+
+        <button type="submit">Crear Perfil</button>
+    </form>
+    <a href='menu.html'>
+        <p>Volver</p>
+    </a>
+</body>
+
+</html>
