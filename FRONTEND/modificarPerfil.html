@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modificarPerfil.css">
+    <script type="text/javascript" src="js/funcionesComunes.js"></script>
+    <script type="text/javascript" src="js/modificarPerfil.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Perfiles de Usuario</title>
+</head>
+
+<body onload="cargarPerfiles();esta_autenticado();">
+    <div id='id_caja_superior'>
+    </div>
+
+    <h1>Perfiles de Usuario</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre de Usuario</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Correo Electrónico</th>
+                <th>Contraseña</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+        </tbody>
+    </table>
+    <a href='menu.html'>
+        <p>Volver</p>
+    </a>
+
+
+    <!-- Modal para la edición de perfil -->
+    <div id="modalEditarPerfil" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModalEditarPerfil()">&times;</span>
+            <h2>Editar Perfil de Usuario</h2>
+            <form id="editarPerfilForm" onsubmit="guardarPerfil(event)" action="">
+                <label for="id">ID:</label><br>
+                <input type="text" id="edit_id" name="id" readonly><br>
+
+                <label for="userName">Nombre de Usuario:</label><br>
+                <input type="text" id="edit_userName" name="userName" required><br>
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="edit_nombre" name="nombre" required><br>
+
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" id="edit_apellidos" name="apellidos" required><br>
+
+                <label for="correoElectronico">Correo Electrónico:</label><br>
+                <input type="email" id="edit_correoElectronico" name="correoElectronico" required><br>
+
+                <label for="contraseña">Contraseña:</label><br>
+                <input type="password" id="edit_contrasena" name="contraseña" required><br>
+
+                <label for="rol">Rol:</label><br>
+                <select id="edit_rol" name="rol" required>
+                    <option value="usuario">Usuario</option>
+                    <option value="admin">Administrador</option>
+                </select><br>
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

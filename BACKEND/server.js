@@ -93,6 +93,21 @@ app.get('/usuarios/:username', async (req, res) => {
     }
 });
 
+// Método PUT para modificar un usuario por su ID
+app.put('/usuarios/:id', async (req, res) => {
+    try {
+        const userId = req.params.id;
+        const { UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol } = req.body;
+        const conn = await pool.getConnection();
+        await conn.query('UPDATE Usuarios SET UserName = ?, Nombre = ?, Apellidos = ?, CorreoElectronico = ?, Contraseña = ?, Rol = ? WHERE ID = ?', [UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol, userId]);
+        conn.release();
+        res.status(200).send('Usuario modificado correctamente');
+    } catch (error) {
+        console.error('Error al modificar usuario:', error);
+        res.status(500).send('Error al modificar usuario');
+    }
+});
+
 // Método POST para agregar un nuevo usuario
 app.post('/usuarios', async (req, res) => {
     try {
