@@ -198,9 +198,13 @@ app.put('/casos-mediacion/:id', async (req, res) => {
 // Método POST para agregar un nuevo caso de mediación
 app.post('/casos-mediacion', async (req, res) => {
     try {
-        const { AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial } = req.body;
+        const { AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial, IDUsuario1, IDUsuario2 } = req.body;
         const conn = await pool.getConnection();
         await conn.query('INSERT INTO CasosMediacion (AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial) VALUES (?, ?, ?, ?, ?, ?, ?)', [AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial]);
+        const queryID = await conn.query('SELECT ID FROM CasosMediacion ORDER BY ID DESC LIMIT 1');
+        const casoID = queryID[0].ID;
+        await conn.query('INSERT INTO AsignacionCasos (IDUsuario, IDCasoMediacion) VALUES (?, ?)', [IDUsuario1, casoID]);
+        await conn.query('INSERT INTO AsignacionCasos (IDUsuario, IDCasoMediacion) VALUES (?, ?)', [IDUsuario2, casoID]);
         conn.release();
         res.status(201).send('Caso de mediación agregado correctamente');
     } catch (error) {
@@ -237,18 +241,18 @@ app.get('/asignacion-casos', async (req, res) => {
 });
 
 // Método POST para asignar un caso a un usuario
-app.post('/asignacion-casos', async (req, res) => {
-    try {
-        const { IDUsuario, IDCasoMediacion } = req.body;
-        const conn = await pool.getConnection();
-        await conn.query('INSERT INTO AsignacionCasos (IDUsuario, IDCasoMediacion) VALUES (?, ?)', [IDUsuario, IDCasoMediacion]);
-        conn.release();
-        res.status(201).send('Asignación de caso agregada correctamente');
-    } catch (error) {
-        console.error('Error al agregar asignación de caso:', error);
-        res.status(500).send('Error al agregar asignación de caso');
-    }
-});
+// app.post('/asignacion-casos', async (req, res) => {
+//     try {
+//         const { IDUsuario, IDCasoMediacion } = req.body;
+//         const conn = await pool.getConnection();
+//         await conn.query('INSERT INTO AsignacionCasos (IDUsuario, IDCasoMediacion) VALUES (?, ?)', [IDUsuario, IDCasoMediacion]);
+//         conn.release();
+//         res.status(201).send('Asignación de caso agregada correctamente');
+//     } catch (error) {
+//         console.error('Error al agregar asignación de caso:', error);
+//         res.status(500).send('Error al agregar asignación de caso');
+//     }
+// });
 
 // Método DELETE para eliminar una asignación de caso por su ID
 app.delete('/asignacion-casos/:id', async (req, res) => {

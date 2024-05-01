@@ -45,14 +45,6 @@
             <option value="Finalizado">Finalizado</option>
         </select><br>
 
-        <!--<label for="valoracionFinal">Valoración Final:</label><br>
-        <select id="valoracionFinal" name="valoracionFinal">
-            <option value=""></option>
-            <option value="Acuerdo">Acuerdo</option>
-            <option value="Sin Acuerdo">Sin Acuerdo</option>
-            <option value="Derivado a Jefatura de Estudios">Derivado a Jefatura de Estudios</option>
-        </select><br>-->
-
         <!-- Popup Modal para seleccionar usuarios -->
         <div id="modalSeleccionarUsuarios" class="modal">
             <div class="modal-content">
@@ -61,7 +53,7 @@
                 <input type="text" id="busquedaUsuario" placeholder="Buscar usuario...">
                 <ul id="listaUsuarios">
                 </ul>
-                <button onclick="confirmarSeleccionUsuarios()">Confirmar</button>
+                <button type="button" onclick="confirmarSeleccionUsuarios(event)">Confirmar</button>
             </div>
         </div>
         <!-- Botón para enviar el formulario -->

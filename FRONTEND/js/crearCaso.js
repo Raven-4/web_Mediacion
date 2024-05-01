@@ -51,6 +51,7 @@ function cerrarModalSeleccionarUsuarios() {
 
 // Función para confirmar la selección de usuarios y mostrarlo en el formulario
 function confirmarSeleccionUsuarios() {
+    
     const selectedUser = document.querySelector('.selected');
     const mediador = document.getElementById('modalSeleccionarUsuarios').getAttribute('data-mediador');
 
@@ -95,10 +96,9 @@ async function solicitudCrearCaso() {
         Mediador2: document.getElementById('mediador2').textContent,
         Estado: document.getElementById('estado').value,
         FormularioOficial: document.getElementById('formularioOficial').value,
-        //ValoracionFinal: document.getElementById('valoracionFinal').value,
+        IDUsuario1: document.getElementById('mediador1').getAttribute('data-id'),
+        IDUsuario2: document.getElementById('mediador2').getAttribute('data-id'),
     }
-
-    let casoID;
 
     try {
         const response = await fetch('http://localhost:3000/casos-mediacion', {
@@ -114,60 +114,11 @@ async function solicitudCrearCaso() {
 
             // Obtener el ID del caso desde la respuesta
             const responseData = await response.json();
-            casoID = responseData.casoID;
+            const casoID = responseData.casoID;
 
             // Guardar el ID del caso en una variable
             console.log('ID del caso:', casoID);
             // Aquí puedes realizar cualquier otra acción con el ID del caso
-
-            // Realizar la asignación de los casos una vez que se haya creado el caso
-            const datosAsignacion1 = {
-                IDUsuario: document.getElementById('mediador1').getAttribute('data-id'),
-                IDCasoMediacion: casoID
-            };
-
-            console.log(datosAsignacion1);
-            
-            // Realizar la solicitud POST para agregar la asignación del caso para el primer mediador
-            const responseAsignacion1 = await fetch('http://localhost:3000/asignacion-casos', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(datosAsignacion1)
-            });
-
-            if (responseAsignacion1.ok) {
-                console.log('Asignación de caso para el primer mediador agregada exitosamente.');
-                // Aquí puedes agregar cualquier otra acción que desees realizar después de asignar el caso
-            } else {
-                console.error('Error al asignar el caso para el primer mediador.');
-                // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
-            }
-
-            const datosAsignacion2 = {
-                IDUsuario: document.getElementById('mediador2').getAttribute('data-id'),
-                IDCasoMediacion: casoID
-            };
-
-            console.log(datosAsignacion2);
-
-            // Realizar la solicitud POST para agregar la asignación del caso para el segundo mediador
-            const responseAsignacion2 = await fetch('http://localhost:3000/asignacion-casos', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(datosAsignacion2)
-            });
-
-            if (responseAsignacion2.ok) {
-                console.log('Asignación de caso para el segundo mediador agregada exitosamente.');
-                // Aquí puedes agregar cualquier otra acción que desees realizar después de asignar el caso
-            } else {
-                console.error('Error al asignar el caso para el segundo mediador.');
-                // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
-            }
         } else {
             console.error('Error al crear el caso.');
             // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
