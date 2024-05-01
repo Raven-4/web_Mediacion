@@ -18,6 +18,7 @@ async function cargarPerfiles() {
             <td>${usuario.Rol}</td>
             <td>
             <button onclick="abrirModalEditarPerfil(${usuario.ID}, '${usuario.UserName}', '${usuario.Nombre}', '${usuario.Apellidos}', '${usuario.CorreoElectronico}', '${usuario.Contraseña}', '${usuario.Rol}')">Editar</button>
+            <button onclick="confirmarEliminarPerfil(${usuario.ID})">Eliminar</button>
             </td>
         `;
         tabla.appendChild(row);
@@ -84,6 +85,33 @@ async function guardarPerfil(event) {
             // Aquí puedes agregar cualquier otra acción que desees realizar después de actualizar el perfil
         } else {
             console.error('Error al actualizar el perfil.');
+            // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
+        }
+    } catch (error) {
+        console.error('Error al enviar la petición:', error);
+        // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
+    }
+}
+
+function confirmarEliminarPerfil(userID) {
+    if (confirm('¿Estás seguro de que deseas eliminar este perfil?')) {
+        eliminarPerfil(userID);
+    }
+}
+
+async function eliminarPerfil(userID) {
+    try {
+        const response = await fetch(`http://localhost:3000/usuarios/${userID}`, {
+            method: 'DELETE'
+        });
+
+        if (response.ok) {
+            console.log('Perfil eliminado exitosamente.');
+            // Aquí puedes agregar cualquier otra acción que desees realizar después de eliminar el perfil
+            // Por ejemplo, volver a cargar la lista de perfiles
+            cargarPerfiles();
+        } else {
+            console.error('Error al eliminar el perfil.');
             // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
         }
     } catch (error) {

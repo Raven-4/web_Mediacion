@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/crearCaso.css">
+    <script type="text/javascript" src="js/funcionesComunes.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
+    <script type="text/javascript" src="js/crearCaso.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Crear Caso</title>
+</head>
+
+<body onload="esta_autenticado();establecerFechaActual();">
+    <div id='id_caja_superior'>
+    </div>
+
+    <h1>Crear Caso de Mediación</h1>
+    <form id="crearCasoForm" action="javascript:crearCaso(event)">
+        <label for="alumnosInvolucrados">Alumnos Involucrados:</label><br>
+        <input type="text" id="alumnosInvolucrados" name="alumnosInvolucrados" required><br>
+
+        <label for="curso">Curso:</label><br>
+        <input type="text" id="curso" name="curso" required><br>
+
+        <label for="fechaApertura">Fecha de Apertura:</label><br>
+        <input type="date" id="fechaApertura" name="fechaApertura" required><br>
+
+        <label for="mediador1">Mediador 1:</label><br>
+        <span id="mediador1" name="mediador1" required></span>
+        <button type="button" onclick="abrirModalSeleccionarUsuarios('mediador1')">Seleccionar Mediador</button><br>
+        
+        <label for="mediador2">Mediador 2:</label><br>
+        <span id="mediador2" name="mediador2" required></span>
+        <button type="button" onclick="abrirModalSeleccionarUsuarios('mediador2')">Seleccionar Mediador</button><br>
+        
+        <label for="formularioOficial">Formulario Oficial:</label><br>
+        <input type="file" id="formularioOficial" name="formularioOficial"><br>
+
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="estado" required>
+            <option value="En curso">En curso</option>
+            <option value="En seguimiento">En seguimiento</option>
+            <option value="Finalizado">Finalizado</option>
+        </select><br>
+
+        <!--<label for="valoracionFinal">Valoración Final:</label><br>
+        <select id="valoracionFinal" name="valoracionFinal">
+            <option value=""></option>
+            <option value="Acuerdo">Acuerdo</option>
+            <option value="Sin Acuerdo">Sin Acuerdo</option>
+            <option value="Derivado a Jefatura de Estudios">Derivado a Jefatura de Estudios</option>
+        </select><br>-->
+
+        <!-- Popup Modal para seleccionar usuarios -->
+        <div id="modalSeleccionarUsuarios" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModalSeleccionarUsuarios()">&times;</span>
+                <h2>Seleccionar Usuarios</h2>
+                <input type="text" id="busquedaUsuario" placeholder="Buscar usuario...">
+                <ul id="listaUsuarios">
+                </ul>
+                <button onclick="confirmarSeleccionUsuarios()">Confirmar</button>
+            </div>
+        </div>
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Crear Caso</button>
+    </form>
+
+        <a href='menu.html'>
+            <p>Volver</p>
+        </a>
+</body>
+
+</html>

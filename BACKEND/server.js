@@ -79,7 +79,7 @@ app.get('/usuarios/:username', async (req, res) => {
         const conn = await pool.getConnection();
         const usuario = await conn.query('SELECT * FROM Usuarios WHERE UserName = ?', [username]);
         conn.release();
-        
+
         if (usuario.length === 0) {
             // Si no se encuentra ningún usuario con ese nombre de usuario, devolver un 404
             res.status(404).send('Usuario no encontrado');
@@ -198,9 +198,9 @@ app.put('/casos-mediacion/:id', async (req, res) => {
 // Método POST para agregar un nuevo caso de mediación
 app.post('/casos-mediacion', async (req, res) => {
     try {
-        const { AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial, ValoracionFinal } = req.body;
+        const { AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial } = req.body;
         const conn = await pool.getConnection();
-        await conn.query('INSERT INTO CasosMediacion (AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial, ValoracionFinal) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial, ValoracionFinal]);
+        await conn.query('INSERT INTO CasosMediacion (AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial) VALUES (?, ?, ?, ?, ?, ?, ?)', [AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial]);
         conn.release();
         res.status(201).send('Caso de mediación agregado correctamente');
     } catch (error) {
