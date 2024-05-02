@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mariadb = require('mariadb');
 const multer = require('multer');
+const fs = require('fs');
 
 const app = express();
 const port = 3000;
@@ -155,6 +156,16 @@ app.get('/casos-mediacion', async (req, res) => {
         const conn = await pool.getConnection();
         const casosMediacion = await conn.query('SELECT * FROM CasosMediacion');
         conn.release();
+
+        casosMediacion.forEach(caso => {
+            if (caso.FormularioOficial !== null) {
+                caso.FormularioOficial = caso.FormularioOficial.toString('utf-8');
+            } else {
+                // Si el campo FormularioOficial es null, asignar un valor por defecto
+                caso.FormularioOficial = "Archivo no adjuntado";
+            }
+        });
+
         res.status(200).json(casosMediacion);
     } catch (error) {
         console.error('Error al obtener casos de mediación:', error);
@@ -187,6 +198,28 @@ app.get('/casos-mediacion/:usuario', async (req, res) => {
         const usuario = req.params.usuario;
         console.error('Error al obtener casos de mediación para el usuario', usuario, ':', error);
         res.status(500).send('Error al obtener casos de mediación');
+    }
+});
+
+// Método GET para obtener un PDF específico por su nombre de archivo
+app.get('/casos-mediacion/pdf/:nombreArchivo', async (req, res) => {
+    try {
+        const nombreArchivo = req.params.nombreArchivo;
+        const path = require('path');
+        const fs = require('fs');
+        const archivoPDF = path.join('C:/Users/guija/Desktop/web_Mediacion/DB/archivos', nombreArchivo);
+        console.log('Obteniendo PDF:', archivoPDF);
+        // Verificar si el archivo existe
+        if (fs.existsSync(archivoPDF)) {
+            // Si el archivo existe, enviar el archivo como respuesta
+            res.status(200).download(archivoPDF);
+        } else {
+            // Si el archivo no existe, enviar una respuesta de error
+            res.status(404).send('Archivo no encontrado');
+        }
+    } catch (error) {
+        console.error('Error al obtener PDF:', error);
+        res.status(500).send('Error al obtener PDF');
     }
 });
 

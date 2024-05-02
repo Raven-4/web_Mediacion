@@ -55,16 +55,12 @@ function mostrarCasosMediacion() {
                 // Agregar evento de clic para descargar el PDF
                 pdfIcon.addEventListener('click', () => {
                     descargarPDF(FormularioOficial);
+                    console.log('Descargando PDF:', FormularioOficial);
                 });
 
                 // Agregar el nombre del archivo PDF
                 const pdfFileName = document.createElement('span');
                 pdfFileName.textContent = FormularioOficial;
-
-                // Agregar evento de clic para descargar el PDF
-                pdfIcon.addEventListener('click', () => {
-                    descargarPDF(FormularioOficial, `Caso_${ID}.pdf`);
-                });
 
                 // Agregar el campo al row
                 row.appendChild(formularioOficialCell);
@@ -150,19 +146,22 @@ function guardarCambios(idCaso, nuevoEstado, nuevaValoracion) {
         .catch(error => console.error('Error al enviar la solicitud:', error));
 }
 
-function descargarPDF(pdfData, nombreArchivo) {
-    // Crear un objeto Blob a partir de los datos binarios del PDF
-    const blob = new Blob([pdfData], { type: 'application/pdf' });
-
-    // Crear un objeto URL a partir del Blob
-    const url = URL.createObjectURL(blob);
-
-    // Crear un elemento <a> para simular el enlace de descarga
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = nombreArchivo; // Establecer el nombre de archivo para la descarga
-    a.click(); // Simular el clic en el enlace de descarga
-
-    // Liberar el objeto URL
-    URL.revokeObjectURL(url);
+async function descargarPDF(nombreArchivo) {
+    console.log('Descargando PDF:', nombreArchivo);
+    try {
+        const response = await fetch(`http://localhost:3000/casos-mediacion/pdf/${nombreArchivo}`);
+        if (response.ok) {
+            const blob = await response.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = nombreArchivo;
+            a.click();
+            URL.revokeObjectURL(url);
+        } else {
+            console.error('Error al descargar el PDF:', response.statusText);
+        }
+    } catch (error) {
+        console.error('Error al descargar el PDF:', error);
+    }
 }
