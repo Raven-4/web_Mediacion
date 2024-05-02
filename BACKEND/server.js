@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mariadb = require('mariadb');
+const multer = require('multer');
 
 const app = express();
 const port = 3000;
@@ -28,6 +29,18 @@ pool.getConnection()
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
+
+// Configurar multer para almacenar los archivos adjuntos en el directorio 'uploads'
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'C:/Users/guija/Desktop/web_Mediacion/DB/archivos') // Ruta donde se guardarán los archivos
+    },
+    filename: function (req, file, cb) {
+        cb(null, Date.now() + '-' + file.originalname) // Nombre del archivo adjunto
+    }
+});
+
+const upload = multer({ storage: storage });
 
 // Método POST para el inicio de sesión de un usuario
 app.post('/login', async (req, res) => {
@@ -196,9 +209,11 @@ app.put('/casos-mediacion/:id', async (req, res) => {
 });
 
 // Método POST para agregar un nuevo caso de mediación
-app.post('/casos-mediacion', async (req, res) => {
+app.post('/casos-mediacion', upload.single('FormularioOficial'), async (req, res) => {
     try {
-        const { AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial, IDUsuario1, IDUsuario2 } = req.body;
+        const { AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, IDUsuario1, IDUsuario2 } = req.body;
+        const FormularioOficial = req.file.filename; // Nombre del archivo adjunto
+
         const conn = await pool.getConnection();
         await conn.query('INSERT INTO CasosMediacion (AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial) VALUES (?, ?, ?, ?, ?, ?, ?)', [AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, Estado, FormularioOficial]);
         const queryID = await conn.query('SELECT ID FROM CasosMediacion ORDER BY ID DESC LIMIT 1');

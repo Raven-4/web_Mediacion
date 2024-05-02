@@ -51,7 +51,7 @@ function cerrarModalSeleccionarUsuarios() {
 
 // Función para confirmar la selección de usuarios y mostrarlo en el formulario
 function confirmarSeleccionUsuarios() {
-    
+
     const selectedUser = document.querySelector('.selected');
     const mediador = document.getElementById('modalSeleccionarUsuarios').getAttribute('data-mediador');
 
@@ -81,6 +81,8 @@ function crearCaso() {
         return;
     }
 
+    file = document.getElementById('formularioOficial').files[0];
+    console.log(file);
     // Llamar a la función para enviar la solicitud de creación del caso
     solicitudCrearCaso();
 
@@ -88,25 +90,39 @@ function crearCaso() {
 
 async function solicitudCrearCaso() {
 
-    const datosCaso = {
-        AlumnosInvolucrados: document.getElementById('alumnosInvolucrados').value,
-        Curso: document.getElementById('curso').value,
-        FechaApertura: document.getElementById('fechaApertura').value,
-        Mediador1: document.getElementById('mediador1').textContent,
-        Mediador2: document.getElementById('mediador2').textContent,
-        Estado: document.getElementById('estado').value,
-        FormularioOficial: document.getElementById('formularioOficial').value,
-        IDUsuario1: document.getElementById('mediador1').getAttribute('data-id'),
-        IDUsuario2: document.getElementById('mediador2').getAttribute('data-id'),
-    }
+    // const datosCaso = {
+    //     AlumnosInvolucrados: document.getElementById('alumnosInvolucrados').value,
+    //     Curso: document.getElementById('curso').value,
+    //     FechaApertura: document.getElementById('fechaApertura').value,
+    //     Mediador1: document.getElementById('mediador1').textContent,
+    //     Mediador2: document.getElementById('mediador2').textContent,
+    //     Estado: document.getElementById('estado').value,
+    //     FormularioOficial: document.getElementById('formularioOficial').files[0],
+    //     IDUsuario1: document.getElementById('mediador1').getAttribute('data-id'),
+    //     IDUsuario2: document.getElementById('mediador2').getAttribute('data-id'),
+    // }
+
+    const datosCaso = new FormData();
+
+    datosCaso.append('AlumnosInvolucrados', document.getElementById('alumnosInvolucrados').value);
+    datosCaso.append('Curso', document.getElementById('curso').value);
+    datosCaso.append('FechaApertura', document.getElementById('fechaApertura').value);
+    datosCaso.append('Mediador1', document.getElementById('mediador1').textContent);
+    datosCaso.append('Mediador2', document.getElementById('mediador2').textContent);
+    datosCaso.append('Estado', document.getElementById('estado').value);
+    datosCaso.append('FormularioOficial', document.getElementById('formularioOficial').files[0]);
+    datosCaso.append('IDUsuario1', document.getElementById('mediador1').getAttribute('data-id'));
+    datosCaso.append('IDUsuario2', document.getElementById('mediador2').getAttribute('data-id'));
+
 
     try {
         const response = await fetch('http://localhost:3000/casos-mediacion', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(datosCaso)
+            body: datosCaso
+            // headers: {
+            //     'Content-Type': 'application/json'
+            // },
+            // body: JSON.stringify(datosCaso)
         });
 
         if (response.ok) {
@@ -119,12 +135,15 @@ async function solicitudCrearCaso() {
             // Guardar el ID del caso en una variable
             console.log('ID del caso:', casoID);
             // Aquí puedes realizar cualquier otra acción con el ID del caso
+
         } else {
-            console.error('Error al crear el caso.');
-            // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
+            setTimeout(() => {
+                console.error('Error al crear el caso:', response.statusText);
+            }, 100000); // Mostrar el mensaje durante 1 segundo (1000 milisegundos)
         }
     } catch (error) {
-        console.error('Error al enviar la solicitud:', error);
-        // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
+        setTimeout(() => {
+            console.error('Error al enviar la solicitud:', error);
+        }, 100000); // Mostrar el mensaje durante 1 segundo (1000 milisegundos)
     }
 }

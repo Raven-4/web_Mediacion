@@ -29,7 +29,5 @@ function cargarMenu() {
         const modificarPerfilLink = document.createElement('li');
         modificarPerfilLink.innerHTML = '<a href="modificarPerfil.html">Modificar Perfil</a>';
         menu.appendChild(modificarPerfilLink);
-
-        // Agrega aquí más enlaces específicos para el rol de administrador si es necesario
     }
 }

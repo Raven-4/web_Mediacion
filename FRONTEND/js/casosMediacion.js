@@ -40,8 +40,33 @@ function mostrarCasosMediacion() {
                 mediador2Cell.textContent = Mediador2;
                 row.appendChild(mediador2Cell);
 
+                // Celda para el formulario oficial
                 const formularioOficialCell = document.createElement('td');
-                formularioOficialCell.textContent = FormularioOficial;
+                const pdfIcon = document.createElement('i');
+                pdfIcon.classList.add('fa', 'fa-file-pdf-o'); // Clases de Font Awesome para el icono PDF
+                pdfIcon.setAttribute('aria-hidden', 'true');
+                formularioOficialCell.appendChild(pdfIcon);
+
+                // Input tipo file para seleccionar nuevo archivo PDF
+                const nuevoPDFInput = document.createElement('input');
+                nuevoPDFInput.setAttribute('type', 'file');
+                formularioOficialCell.appendChild(nuevoPDFInput);
+
+                // Agregar evento de clic para descargar el PDF
+                pdfIcon.addEventListener('click', () => {
+                    descargarPDF(FormularioOficial);
+                });
+
+                // Agregar el nombre del archivo PDF
+                const pdfFileName = document.createElement('span');
+                pdfFileName.textContent = FormularioOficial;
+
+                // Agregar evento de clic para descargar el PDF
+                pdfIcon.addEventListener('click', () => {
+                    descargarPDF(FormularioOficial, `Caso_${ID}.pdf`);
+                });
+
+                // Agregar el campo al row
                 row.appendChild(formularioOficialCell);
 
                 const estadoCell = document.createElement('td');
@@ -114,7 +139,7 @@ function guardarCambios(idCaso, nuevoEstado, nuevaValoracion) {
         },
         body: JSON.stringify(casoModificado)
     })
-            .then(response => {
+        .then(response => {
             if (response.ok) {
                 console.log('Cambios guardados exitosamente.');
                 // Actualizar la vista si es necesario
@@ -123,4 +148,21 @@ function guardarCambios(idCaso, nuevoEstado, nuevaValoracion) {
             }
         })
         .catch(error => console.error('Error al enviar la solicitud:', error));
+}
+
+function descargarPDF(pdfData, nombreArchivo) {
+    // Crear un objeto Blob a partir de los datos binarios del PDF
+    const blob = new Blob([pdfData], { type: 'application/pdf' });
+
+    // Crear un objeto URL a partir del Blob
+    const url = URL.createObjectURL(blob);
+
+    // Crear un elemento <a> para simular el enlace de descarga
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = nombreArchivo; // Establecer el nombre de archivo para la descarga
+    a.click(); // Simular el clic en el enlace de descarga
+
+    // Liberar el objeto URL
+    URL.revokeObjectURL(url);
 }

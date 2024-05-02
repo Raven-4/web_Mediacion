@@ -37,11 +37,11 @@ CREATE TABLE Estadisticas (
     IDUsuario INT,
     NumeroTotalCasosMediados INT,
     CasosConAcuerdo INT,
-    PorcentajeCasosConAcuerdo DECIMAL(5,2),
+    -- PorcentajeCasosConAcuerdo DECIMAL(5,2),
     CasosSinAcuerdo INT,
-    PorcentajeCasosSinAcuerdo DECIMAL(5,2),
+    -- PorcentajeCasosSinAcuerdo DECIMAL(5,2),
     CasosDerivadosJefatura INT,
-    PorcentajeCasosDerivadosJefatura DECIMAL(5,2),
+    -- PorcentajeCasosDerivadosJefatura DECIMAL(5,2),
     FOREIGN KEY (IDUsuario) REFERENCES Usuarios(ID)
 );
 

@@ -17,7 +17,7 @@
     </div>
 
     <h1>Crear Caso de Mediación</h1>
-    <form id="crearCasoForm" action="javascript:crearCaso(event)">
+    <form id="crearCasoForm" action="javascript:crearCaso()">
         <label for="alumnosInvolucrados">Alumnos Involucrados:</label><br>
         <input type="text" id="alumnosInvolucrados" name="alumnosInvolucrados" required><br>
 
@@ -36,7 +36,7 @@
         <button type="button" onclick="abrirModalSeleccionarUsuarios('mediador2')">Seleccionar Mediador</button><br>
         
         <label for="formularioOficial">Formulario Oficial:</label><br>
-        <input type="file" id="formularioOficial" name="formularioOficial"><br>
+        <input type="file" id="formularioOficial" name="formularioOficial" accept=".pdf"><br>
 
         <label for="estado">Estado:</label><br>
         <select id="estado" name="estado" required>
