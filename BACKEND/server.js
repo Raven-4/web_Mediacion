@@ -224,7 +224,7 @@ app.get('/casos-mediacion/pdf/:nombreArchivo', async (req, res) => {
 });
 
 // Método PUT para modificar el estado y la valoración final de un caso de mediación
-app.put('/casos-mediacion/:id', async (req, res) => {
+app.put('/casos-mediacion/:id', upload.single('FormularioOficial'), async (req, res) => {
     try {
         const casoId = req.params.id;
         const { Estado, ValoracionFinal } = req.body;
@@ -233,6 +233,14 @@ app.put('/casos-mediacion/:id', async (req, res) => {
         console.log('Modificando estado y valoración final del caso de mediación', casoId);
         const conn = await pool.getConnection();
         await conn.query('UPDATE CasosMediacion SET Estado = ?, ValoracionFinal = ? WHERE ID = ?', [Estado, ValoracionFinal, casoId]);
+        if (req.file) {
+            const nuevoFormularioOficial = req.file.filename;
+
+            await conn.query('UPDATE CasosMediacion SET FormularioOficial = ? WHERE ID = ?', [nuevoFormularioOficial, casoId]);
+
+            console.log('Nuevo archivo adjunto:', nuevoFormularioOficial);
+        }
+
         conn.release();
         res.status(200).send('Estado y valoración final del caso de mediación modificados correctamente');
     } catch (error) {

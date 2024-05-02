@@ -99,7 +99,8 @@ function mostrarCasosMediacion() {
                     guardarButton.onclick = function () {
                         const nuevoEstado = estadoSelect.value;
                         const nuevaValoracion = valoracionSelect.value;
-                        guardarCambios(ID, nuevoEstado, nuevaValoracion);
+                        console.log('Guardando cambios:', ID, nuevoEstado, nuevaValoracion, nuevoPDFInput.files[0]);
+                        guardarCambios(ID, nuevoEstado, nuevaValoracion, nuevoPDFInput.files[0]);
                     };
                     guardarCell.appendChild(guardarButton);
                     row.appendChild(guardarCell);
@@ -119,21 +120,19 @@ function mostrarCasosMediacion() {
         })
         .catch(error => console.error('Error al obtener casos de mediación:', error));
 }
+function guardarCambios(idCaso, nuevoEstado, nuevaValoracion, nuevoArchivoPDF) {
+    // Crear un objeto FormData para enviar los datos del formulario y el archivo
+    const formData = new FormData();
+    formData.append('id', idCaso);
+    formData.append('Estado', nuevoEstado);
+    formData.append('ValoracionFinal', nuevaValoracion);
+    formData.append('FormularioOficial', nuevoArchivoPDF);
 
-function guardarCambios(idCaso, nuevoEstado, nuevaValoracion) {
-    const casoModificado = {
-        id: idCaso,
-        Estado: nuevoEstado,
-        ValoracionFinal: nuevaValoracion
-    };
-    console.log('Guardando cambios:', casoModificado);
+    console.log('Guardando cambios:', formData);
 
     fetch(`http://localhost:3000/casos-mediacion/${idCaso}`, {
         method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(casoModificado)
+        body: formData // Enviar FormData en lugar de JSON.stringify
     })
         .then(response => {
             if (response.ok) {
@@ -145,6 +144,32 @@ function guardarCambios(idCaso, nuevoEstado, nuevaValoracion) {
         })
         .catch(error => console.error('Error al enviar la solicitud:', error));
 }
+
+// function guardarCambios(idCaso, nuevoEstado, nuevaValoracion, nuevoArchivoPDF) {
+//     const casoModificado = {
+//         id: idCaso,
+//         Estado: nuevoEstado,
+//         ValoracionFinal: nuevaValoracion
+//     };
+//     console.log('Guardando cambios:', casoModificado);
+
+//     fetch(`http://localhost:3000/casos-mediacion/${idCaso}`, {
+//         method: 'PUT',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify(casoModificado)
+//     })
+//         .then(response => {
+//             if (response.ok) {
+//                 console.log('Cambios guardados exitosamente.');
+//                 // Actualizar la vista si es necesario
+//             } else {
+//                 console.error('Error al guardar los cambios:', response.statusText);
+//             }
+//         })
+//         .catch(error => console.error('Error al enviar la solicitud:', error));
+// }
 
 async function descargarPDF(nombreArchivo) {
     console.log('Descargando PDF:', nombreArchivo);
