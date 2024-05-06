@@ -66,7 +66,7 @@ app.post('/login', async (req, res) => {
             return;
         }
 
-        res.status(200).send('Inicio de sesión exitoso');
+        res.status(200).json({ token: 'tu_token', nombreCompleto: user.Nombre + ' ' + user.Apellidos });
     } catch (error) {
         console.error('Error al iniciar sesión:', error);
         res.status(500).send('Error al iniciar sesión');

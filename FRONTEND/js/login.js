@@ -32,15 +32,19 @@ function login() {
 		.then(response => {
 			// Verificar el estado de la respuesta
 			if (response.ok) {
-				setCookie('token', response.resource);
-				setCookie('usuarioSistema', document.getElementById("id_usuario").value);
-				if (usuario === 'admin') {
-					setCookie('rol', 'admin');
-				} else {
-					setCookie('rol', 'usuario');
-				}
-				console.log(getCookie(document.getElementById("id_usuario").value));
-				window.location.href = 'menu.html';
+				response.json().then(data => {
+					setCookie('token', data.token);
+					setCookie('usuarioSistema', usuario);
+					setCookie('nombreUsuario', data.nombreCompleto);
+					
+					if (usuario === 'admin') {
+						setCookie('rol', 'admin');
+					} else {
+						setCookie('rol', 'usuario');
+					}
+					console.log(getCookie(usuario));
+					window.location.href = 'menu.html';
+				});
 			} else {
 				alert('Error al iniciar sesión. Por favor, verifique sus credenciales.');
 			}
