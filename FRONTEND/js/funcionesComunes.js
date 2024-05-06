@@ -27,8 +27,8 @@ function esta_autenticado() {
         window.location.href = "login.html";
     }
     else {
-        let temp = "Usuario :" + getCookie('usuarioSistema');
-        temp += "<br><a href='javascript:desconectar();'>Desconectar</a>";
+        let temp = "Usuario: " + getCookie('usuarioSistema');
+        temp += "<a href='javascript:desconectar();'><i id='logout-icon' class='fa fa-sign-out' aria-hidden='true'></i></a>";
         $("#id_caja_superior").append(temp);
     }
 }

@@ -1,0 +1,24 @@
+#id_caja_superior {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea el contenido hacia la derecha */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    background-color: #f0f0f0;
+    /* Color de fondo */
+    padding: 10px;
+    /* Espaciado interno */
+    border-bottom: 1px solid #ccc;
+    /* Borde inferior */
+}
+
+#id_caja_superior h1 {
+    margin-right: auto;
+    /* Empuja el título hacia la izquierda */
+}
+
+/* Estilos para el icono de salida */
+#logout-icon {
+    margin-left: 5px;
+    /* Agrega espacio entre el nombre de usuario y el icono de salida */
+}
