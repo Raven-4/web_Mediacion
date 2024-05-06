@@ -1,4 +1,3 @@
-// Función para cargar y mostrar los perfiles de usuario
 async function cargarPerfiles() {
     const response = await fetch('http://localhost:3000/usuarios');
     const usuarios = await response.json();
@@ -26,7 +25,6 @@ async function cargarPerfiles() {
 }
 
 
-// Función para abrir el modal de edición de perfil
 function abrirModalEditarPerfil(ID, userName, nombre, apellidos, correoElectronico, contraseña, rol) {
     document.getElementById('edit_id').value = ID;
     document.getElementById('edit_userName').value = userName;
@@ -36,13 +34,10 @@ function abrirModalEditarPerfil(ID, userName, nombre, apellidos, correoElectroni
     document.getElementById('edit_contrasena').value = contraseña;
     document.getElementById('edit_rol').value = rol;
 
-    // Mostrar el modal
     document.getElementById('modalEditarPerfil').style.display = 'block';
 }
 
-// Función para cerrar el modal de edición de perfil
 function cerrarModalEditarPerfil() {
-    // Ocultar el modal
     document.getElementById('modalEditarPerfil').style.display = 'none';
 }
 
@@ -50,7 +45,6 @@ async function guardarPerfil(event) {
 
     event.preventDefault(); 
 
-    // Obtener los valores del formulario
     const userID = document.getElementById('edit_id').value;
     const userName = document.getElementById('edit_userName').value;
     const nombre = document.getElementById('edit_nombre').value;
@@ -59,7 +53,6 @@ async function guardarPerfil(event) {
     const contraseña = document.getElementById('edit_contrasena').value;
     const rol = document.getElementById('edit_rol').value;
 
-    // Crear el objeto con los datos del perfil a actualizar
     const perfilActualizado = {
         UserName: userName,
         Nombre: nombre,
@@ -82,14 +75,11 @@ async function guardarPerfil(event) {
         if (response.ok) {
             console.log('Perfil actualizado exitosamente.');
             cerrarModalEditarPerfil(); 
-            // Aquí puedes agregar cualquier otra acción que desees realizar después de actualizar el perfil
         } else {
             console.error('Error al actualizar el perfil.');
-            // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
         }
     } catch (error) {
         console.error('Error al enviar la petición:', error);
-        // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
     }
 }
 
@@ -107,15 +97,11 @@ async function eliminarPerfil(userID) {
 
         if (response.ok) {
             console.log('Perfil eliminado exitosamente.');
-            // Aquí puedes agregar cualquier otra acción que desees realizar después de eliminar el perfil
-            // Por ejemplo, volver a cargar la lista de perfiles
             cargarPerfiles();
         } else {
             console.error('Error al eliminar el perfil.');
-            // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
         }
     } catch (error) {
         console.error('Error al enviar la petición:', error);
-        // Aquí puedes manejar el caso de error, como mostrar un mensaje al usuario
     }
 }

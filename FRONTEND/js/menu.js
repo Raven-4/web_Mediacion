@@ -1,5 +1,5 @@
 function cargarMenu() {
-    const rolUsuario = getRol(); // Obtener el rol del usuario
+    const rolUsuario = getRol();
     console.log('Rol del usuario:', rolUsuario);
 
     const menu = document.getElementById('menu');

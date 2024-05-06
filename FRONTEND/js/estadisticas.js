@@ -1,8 +1,7 @@
 function mostrarEstadisticas() {
     const rolUsuario = getRol(); // Obtener el rol del usuario
-    const usuario = getCookie('usuarioSistema');
     const nombre = getCookie('nombreUsuario');
-    console.log('usuario', nombre);
+
     let url = `http://localhost:3000/casos-mediacion`;
 
     // if (rolUsuario != 'admin') {
@@ -12,10 +11,7 @@ function mostrarEstadisticas() {
     fetch(url)
         .then(response => response.json())
         .then(casos => {
-            // Filtrar casos según el rol del usuario
             const casosFiltrados = rolUsuario === 'admin' ? casos.filter(caso => caso.Estado === 'Finalizado') : casos.filter(caso => (caso.Mediador1 === nombre || caso.Mediador2 === nombre) && caso.Estado === 'Finalizado');
-            //const casosFiltrados = rolUsuario === 'admin' ? casos : casos.filter(caso => caso.Mediador1 === usuario || caso.Mediador2 === usuario);
-            //const casosFiltrados = casos.filter(caso => caso.Estado === 'Finalizado' && (caso.Mediador1 === nombre || caso.Mediador2 === nombre));
 
             // Calcular estadísticas globales
             const totalCasos = casosFiltrados.length;
@@ -31,7 +27,6 @@ function mostrarEstadisticas() {
                 'Derivado a Jefatura de Estudios': 0,
             };
 
-            // Calcular estadísticas por usuario si el usuario es admin
             const estadisticasPorUsuario = {};
 
             if (rolUsuario === 'admin') {

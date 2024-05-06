@@ -21,7 +21,6 @@ function login() {
 		contrasena: contrasena
 	};
 
-	// Realizar la solicitud POST al servidor
 	fetch('http://localhost:3000/login', {
 		method: 'POST',
 		headers: {
@@ -30,7 +29,6 @@ function login() {
 		body: JSON.stringify(datosUsuario)
 	})
 		.then(response => {
-			// Verificar el estado de la respuesta
 			if (response.ok) {
 				response.json().then(data => {
 					setCookie('token', data.token);

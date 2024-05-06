@@ -7,17 +7,13 @@ function mostrarCasosMediacion() {
         url = `http://localhost:3000/casos-mediacion/${usuario}`;
     }
 
-
-    console.log('Obteniendo casos de mediación desde:', url);
     fetch(url)
         .then(response => response.json())
         .then(casos => {
-            console.log('Casos de mediación:', casos);
             const tableBody = document.getElementById('casos-mediacion-body');
 
             casos.forEach(caso => {
                 const { ID, AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, FormularioOficial, Estado, ValoracionFinal } = caso;
-                console.log('Caso:', ID, AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, FormularioOficial, Estado, ValoracionFinal);
                 const row = document.createElement('tr');
 
                 const alumnosCell = document.createElement('td');
@@ -129,7 +125,6 @@ function mostrarCasosMediacion() {
         .catch(error => console.error('Error al obtener casos de mediación:', error));
 }
 function guardarCambios(idCaso, nuevoEstado, nuevaValoracion, nuevoArchivoPDF) {
-    // Crear un objeto FormData para enviar los datos del formulario y el archivo
     const formData = new FormData();
     formData.append('id', idCaso);
     formData.append('Estado', nuevoEstado);
@@ -140,12 +135,11 @@ function guardarCambios(idCaso, nuevoEstado, nuevaValoracion, nuevoArchivoPDF) {
 
     fetch(`http://localhost:3000/casos-mediacion/${idCaso}`, {
         method: 'PUT',
-        body: formData // Enviar FormData en lugar de JSON.stringify
+        body: formData 
     })
         .then(response => {
             if (response.ok) {
                 console.log('Cambios guardados exitosamente.');
-                // Actualizar la vista si es necesario
             } else {
                 console.error('Error al guardar los cambios:', response.statusText);
             }

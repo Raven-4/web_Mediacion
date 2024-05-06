@@ -32,7 +32,6 @@ function crearPerfil() {
 
     console.log(datosPerfil);
 
-    // Realizar la solicitud POST al servidor
     fetch('http://localhost:3000/usuarios', {
         method: 'POST',
         headers: {
@@ -43,7 +42,6 @@ function crearPerfil() {
         .then(response => {
             if (response.ok) {
                 console.log('Perfil creado exitosamente.');
-                //window.location.href = 'login.html';
             } else {
                 alert('Error al crear perfil. Por favor, verifique los datos ingresados.');
             }
