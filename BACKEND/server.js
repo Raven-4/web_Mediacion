@@ -193,6 +193,16 @@ app.get('/casos-mediacion/:usuario', async (req, res) => {
     `, [usuario]);
         console.log('Casos de mediación:', casosMediacion);
         conn.release();
+
+        casosMediacion.forEach(caso => {
+            if (caso.FormularioOficial !== null) {
+                caso.FormularioOficial = caso.FormularioOficial.toString('utf-8');
+            } else {
+                // Si el campo FormularioOficial es null, asignar un valor por defecto
+                caso.FormularioOficial = "Archivo no adjuntado";
+            }
+        });
+
         res.status(200).json(casosMediacion);
     } catch (error) {
         const usuario = req.params.usuario;
