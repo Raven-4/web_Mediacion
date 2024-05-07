@@ -1,3 +1,17 @@
+# Manual de usuario:
+
+Programas a descargar:
+
+https://nodejs.org/en
+
+https://www.docker.com/products/docker-desktop/
+
+
+
+
+
+
+
 # web_Mediacion
 
 descargar contenedores docker:
