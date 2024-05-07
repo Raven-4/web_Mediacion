@@ -14,7 +14,7 @@ Ejecutar "instalacion.exe" ubicado en la carpeta raíz del proyecto
 
  - Iniciar servidor:
 
-Ejecutar "abrir_servidor.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la base de datos.
+ -- Ejecutar "abrir_servidor.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la base de datos.
 
 Iniciar página web:
 
