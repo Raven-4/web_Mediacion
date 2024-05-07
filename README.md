@@ -6,7 +6,9 @@ https://nodejs.org/en
 
 https://www.docker.com/products/docker-desktop/
 
+## scripts a ejecutar:
 
+Ejecutar instalacion.exe ubicado en la carpeta raíz del proyecto
 
 
 
