@@ -8,10 +8,17 @@ https://www.docker.com/products/docker-desktop/
 
 ## scripts a ejecutar:
 
-Ejecutar instalacion.exe ubicado en la carpeta raíz del proyecto
+Ejecutar "instalacion.exe" ubicado en la carpeta raíz del proyecto
 
-Ejecutar abrir_servidor.exe ubicado en la carpeta raíz del proyecto para iniciar la base de datos y el servidor backend.
+# Manual de uso:
 
+Iniciar servidor:
+
+Ejecutar "abrir_servidor.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la base de datos.
+
+Iniciar página web:
+
+Ejecutar "iniciar_web.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la página web.
 
 
 
