@@ -1,8 +1,8 @@
 # Manual de instalación:
 
-## Programas a descargar:
+## Programas a descargar a mano:
 
-https://nodejs.org/en
+https://nodejs.org/en/download
 
 https://www.docker.com/products/docker-desktop/
 
@@ -10,6 +10,7 @@ https://www.docker.com/products/docker-desktop/
 
 Ejecutar instalacion.exe ubicado en la carpeta raíz del proyecto
 
+Ejecutar abrir_servidor.exe ubicado en la carpeta raíz del proyecto para iniciar la base de datos y el servidor backend.
 
 
 
