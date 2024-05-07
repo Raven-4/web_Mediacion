@@ -1,6 +1,6 @@
-## Manual de instalación:
+# Manual de instalación:
 
-#Programas a descargar:
+## Programas a descargar:
 
 https://nodejs.org/en
 
