@@ -14,6 +14,9 @@ def find_relative_path():
     return None
 
 def install_dependencies():
+    # Cambiar al directorio BACKEND
+    os.chdir("BACKEND")
+
     # Instalar dependencias npm
     npm_install_command = "npm install cors@^2.8.5 express@^4.19.2 mariadb@^3.3.0 multer@^1.4.5-lts.1"
     os.system(npm_install_command)
