@@ -16,19 +16,19 @@ Ejecutar "instalacion.exe" ubicado en la carpeta raíz del proyecto
 
    - Ejecutar "abrir_servidor.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la base de datos.
 
-Iniciar página web:
+ - Iniciar página web:
 
-Ejecutar "iniciar_web.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la página web.
+   - Ejecutar "iniciar_web.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la página web.
 
-Acceder a la base de datos MariaDB:
+ - Acceder a la base de datos MariaDB:
 
-Ejecutar script "acceder_bd.exe"
+   - Ejecutar script "acceder_bd.exe"
 
-Usuario: root
+     - Usuario: root
 
-Contraseña: root
+     - Contraseña: root
 
-Al acceder se encontrará con distintas bases de datos, la usada para la web se llama web_mediacion
+     - Al acceder se encontrará con distintas bases de datos, la usada para la web se llama web_mediacion
 
 # web_Mediacion
 
