@@ -1,24 +1,71 @@
-#id_caja_superior {
+/* Fondo desenfocado */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
-    justify-content: flex-end;
-    /* Alinea el contenido hacia la derecha */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /* Centra verticalmente el contenido */
-    background-color: #f0f0f0;
-    /* Color de fondo */
-    padding: 10px;
-    /* Espaciado interno */
-    border-bottom: 1px solid #ccc;
-    /* Borde inferior */
+    background-color: #f0f2f5;
+    position: relative;
 }
 
-#id_caja_superior h1 {
-    margin-right: auto;
-    /* Empuja el título hacia la izquierda */
+.background {
+    background-image: url('./imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
 }
 
-/* Estilos para el icono de salida */
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header img {
+    height: 50px;
+    margin-left: 10px;
+    position: absolute;
+    left: 20px;
+}
+
+.header h1 {
+    margin: 10px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+#id_caja_superior {
+    position: fixed;
+    right: 20px;
+    margin: 10px 0;
+    font-size: 20px;
+
+}
+
 #logout-icon {
     margin-left: 5px;
-    /* Agrega espacio entre el nombre de usuario y el icono de salida */
 }
