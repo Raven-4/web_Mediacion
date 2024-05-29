@@ -64,66 +64,66 @@ function mostrarCasosMediacion() {
                 const estadoCell = document.createElement('td');
                 const valoracionCell = document.createElement('td');
 
-                if (rolUsuario === 'admin') {
-                    const estadoSelect = document.createElement('select');
-                    const estadoOptions = ['En curso', 'En seguimiento', 'Finalizado'];
-                    estadoOptions.forEach(option => {
-                        const estadoOption = document.createElement('option');
-                        estadoOption.value = option;
-                        estadoOption.textContent = option;
-                        estadoSelect.appendChild(estadoOption);
-                    });
-                    estadoSelect.value = Estado;
-                    estadoCell.appendChild(estadoSelect);
-                    row.appendChild(estadoCell);
+                const estadoSelect = document.createElement('select');
+                const estadoOptions = ['En curso', 'En seguimiento', 'Finalizado'];
+                estadoOptions.forEach(option => {
+                    const estadoOption = document.createElement('option');
+                    estadoOption.value = option;
+                    estadoOption.textContent = option;
+                    estadoSelect.appendChild(estadoOption);
+                });
+                estadoSelect.value = Estado;
+                estadoCell.appendChild(estadoSelect);
+                row.appendChild(estadoCell);
 
-                    const valoracionSelect = document.createElement('select');
-                    const valoracionOptions = ['Acuerdo', 'Sin Acuerdo', 'Derivado a Jefatura de Estudios'];
-                    valoracionOptions.forEach(option => {
-                        const valoracionOption = document.createElement('option');
-                        valoracionOption.value = option;
-                        valoracionOption.textContent = option;
-                        valoracionSelect.appendChild(valoracionOption);
-                    });
-                    valoracionSelect.value = ValoracionFinal;
-                    valoracionCell.appendChild(valoracionSelect);
-                    row.appendChild(valoracionCell);
+                const valoracionSelect = document.createElement('select');
+                const valoracionOptions = ['Acuerdo', 'Sin Acuerdo', 'Derivado a Jefatura de Estudios'];
+                valoracionOptions.forEach(option => {
+                    const valoracionOption = document.createElement('option');
+                    valoracionOption.value = option;
+                    valoracionOption.textContent = option;
+                    valoracionSelect.appendChild(valoracionOption);
+                });
+                valoracionSelect.value = ValoracionFinal;
+                valoracionCell.appendChild(valoracionSelect);
+                row.appendChild(valoracionCell);
 
-                    const guardarCell = document.createElement('td');
-                    const guardarButton = document.createElement('button');
-                    guardarButton.textContent = 'Guardar Cambios';
-                    guardarButton.onclick = function () {
-                        const nuevoEstado = estadoSelect.value;
-                        const nuevaValoracion = valoracionSelect.value;
-                        guardarCambios(ID, nuevoEstado, nuevaValoracion, nuevoPDFInput.files[0]);
-                    };
-                    guardarCell.appendChild(guardarButton);
-                    row.appendChild(guardarCell);
+                const guardarCell = document.createElement('td');
+                const guardarButton = document.createElement('button');
+                guardarButton.textContent = 'Guardar Cambios';
+                guardarButton.onclick = function () {
+                    const nuevoEstado = estadoSelect.value;
+                    const nuevaValoracion = valoracionSelect.value;
+                    guardarCambios(ID, nuevoEstado, nuevaValoracion, nuevoPDFInput.files[0]);
+                };
+                guardarCell.appendChild(guardarButton);
+                row.appendChild(guardarCell);
 
 
-                } else {
-                    estadoCell.textContent = Estado;
-                    row.appendChild(estadoCell);
+                // } else {
+                //     estadoCell.textContent = Estado;
+                //     row.appendChild(estadoCell);
 
-                    valoracionCell.textContent = ValoracionFinal;
-                    row.appendChild(valoracionCell);
+                //     valoracionCell.textContent = ValoracionFinal;
+                //     row.appendChild(valoracionCell);
 
-                    const guardarCell = document.createElement('td');
-                    const guardarButton = document.createElement('button');
-                    guardarButton.textContent = 'Guardar Cambios';
-                    guardarButton.onclick = function () {
-                        guardarCambios(ID, Estado, ValoracionFinal, nuevoPDFInput.files[0]);
-                    };
-                    guardarCell.appendChild(guardarButton);
-                    row.appendChild(guardarCell);
+                //     const guardarCell = document.createElement('td');
+                //     const guardarButton = document.createElement('button');
+                //     guardarButton.textContent = 'Guardar Cambios';
+                //     guardarButton.onclick = function () {
+                //         guardarCambios(ID, Estado, ValoracionFinal, nuevoPDFInput.files[0]);
+                //     };
+                //     guardarCell.appendChild(guardarButton);
+                //     row.appendChild(guardarCell);
 
-                }
+                // }
 
                 tableBody.appendChild(row);
             });
         })
         .catch(error => console.error('Error al obtener casos de mediación:', error));
 }
+
 function guardarCambios(idCaso, nuevoEstado, nuevaValoracion, nuevoArchivoPDF) {
     const formData = new FormData();
     formData.append('id', idCaso);
@@ -135,7 +135,7 @@ function guardarCambios(idCaso, nuevoEstado, nuevaValoracion, nuevoArchivoPDF) {
 
     fetch(`http://localhost:3000/casos-mediacion/${idCaso}`, {
         method: 'PUT',
-        body: formData 
+        body: formData
     })
         .then(response => {
             if (response.ok) {
@@ -146,7 +146,6 @@ function guardarCambios(idCaso, nuevoEstado, nuevaValoracion, nuevoArchivoPDF) {
         })
         .catch(error => console.error('Error al enviar la solicitud:', error));
 }
-
 
 async function descargarPDF(nombreArchivo) {
     console.log('Descargando PDF:', nombreArchivo);
