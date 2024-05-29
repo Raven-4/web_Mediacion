@@ -99,25 +99,6 @@ function mostrarCasosMediacion() {
                 guardarCell.appendChild(guardarButton);
                 row.appendChild(guardarCell);
 
-
-                // } else {
-                //     estadoCell.textContent = Estado;
-                //     row.appendChild(estadoCell);
-
-                //     valoracionCell.textContent = ValoracionFinal;
-                //     row.appendChild(valoracionCell);
-
-                //     const guardarCell = document.createElement('td');
-                //     const guardarButton = document.createElement('button');
-                //     guardarButton.textContent = 'Guardar Cambios';
-                //     guardarButton.onclick = function () {
-                //         guardarCambios(ID, Estado, ValoracionFinal, nuevoPDFInput.files[0]);
-                //     };
-                //     guardarCell.appendChild(guardarButton);
-                //     row.appendChild(guardarCell);
-
-                // }
-
                 tableBody.appendChild(row);
             });
         })

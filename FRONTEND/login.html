@@ -11,22 +11,25 @@
 </head>
 
 <body>
+    <div class="background"></div>
     <div class="header">
+        <img src="css/imagenes/esei.png" alt="ESEI Logo">
         <h1>Proyecto de Mediación</h1>
     </div>
-    <div class="login-container">
-        <h2>Iniciar Sesión</h2>
-        <form id="id_form_login" name="form_login" action='javascript:login();'
-            onsubmit='return comprobar_form_login();' method='post'>
-            <label for="usuario">Nombre de Usuario:</label><br>
-            <input type="text" id="id_usuario" name="usuario" required></input><br>
+    <div class="content">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="id_form_login" name="form_login" action='javascript:login();'
+                onsubmit='return comprobar_form_login();' method='post'>
+                <label for="usuario">Nombre de Usuario:</label><br>
+                <input type="text" id="id_usuario" name="usuario" required></input><br>
 
-            <label for="contrasena">Contraseña:</label><br>
-            <input type="password" id="id_contrasena" name="contrasena" required></input><br>
+                <label for="contrasena">Contraseña:</label><br>
+                <input type="password" id="id_contrasena" name="contrasena" required></input><br>
 
-            <button type="submit">Iniciar Sesión</button>
-        </form>
-    </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
 </body>
 
 </html>
