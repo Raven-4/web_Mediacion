@@ -11,6 +11,13 @@ body {
     position: relative;
 }
 
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+
 /* Contenedor de login */
 .login-container {
     background-color: #fff;
