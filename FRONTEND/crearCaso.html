@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/comun.css">
     <link rel="stylesheet" href="css/crearCaso.css">
     <script type="text/javascript" src="js/funcionesComunes.js"></script>
     <script type="text/javascript" src="js/cookies.js"></script>
@@ -16,58 +18,66 @@
     <div class="background"></div>
     <div class="header">
         <img src="css/imagenes/esei.png" alt="ESEI Logo">
-        <h1>Proyecto de Mediación</h1>
+        <h1>Crear Caso de Mediación</h1>
         <span id='id_caja_superior'>
         </span>
     </div>
 
-    <h1>Crear Caso de Mediación</h1>
-    <form id="crearCasoForm" action="javascript:crearCaso()">
-        <label for="alumnosInvolucrados">Alumnos Involucrados:</label><br>
-        <input type="text" id="alumnosInvolucrados" name="alumnosInvolucrados" required><br>
+    <div class="content">
+        <div class="crearCaso-container">
 
-        <label for="curso">Curso:</label><br>
-        <input type="text" id="curso" name="curso" required><br>
+            <!-- <h1>Crear Caso de Mediación</h1> -->
+            <form id="crearCasoForm" action="javascript:crearCaso()">
+                <label for="alumnosInvolucrados">Alumnos Involucrados:</label><br>
+                <input type="text" id="alumnosInvolucrados" name="alumnosInvolucrados" required><br>
 
-        <label for="fechaApertura">Fecha de Apertura:</label><br>
-        <input type="date" id="fechaApertura" name="fechaApertura" required><br>
+                <label for="curso">Curso:</label><br>
+                <input type="text" id="curso" name="curso" required><br>
 
-        <label for="mediador1">Mediador 1:</label><br>
-        <span id="mediador1" name="mediador1" required></span>
-        <button type="button" onclick="abrirModalSeleccionarUsuarios('mediador1')">Seleccionar Mediador</button><br>
-        
-        <label for="mediador2">Mediador 2:</label><br>
-        <span id="mediador2" name="mediador2" required></span>
-        <button type="button" onclick="abrirModalSeleccionarUsuarios('mediador2')">Seleccionar Mediador</button><br>
-        
-        <label for="formularioOficial">Formulario Oficial:</label><br>
-        <input type="file" id="formularioOficial" name="formularioOficial" accept=".pdf"><br>
+                <label for="fechaApertura">Fecha de Apertura:</label><br>
+                <input type="date" id="fechaApertura" name="fechaApertura" required><br>
 
-        <label for="estado">Estado:</label><br>
-        <select id="estado" name="estado" required>
-            <option value="En curso">En curso</option>
-            <option value="En seguimiento">En seguimiento</option>
-            <option value="Finalizado">Finalizado</option>
-        </select><br>
+                <label for="mediador1">Mediador 1:</label><br>
+                <span id="mediador1" name="mediador1" required></span>
+                <button type="button" onclick="abrirModalSeleccionarUsuarios('mediador1')">Seleccionar
+                    Mediador</button><br>
 
-        <!-- Popup Modal para seleccionar usuarios -->
-        <div id="modalSeleccionarUsuarios" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="cerrarModalSeleccionarUsuarios()">&times;</span>
-                <h2>Seleccionar Usuarios</h2>
-                <input type="text" id="busquedaUsuario" placeholder="Buscar usuario...">
-                <ul id="listaUsuarios">
-                </ul>
-                <button type="button" onclick="confirmarSeleccionUsuarios(event)">Confirmar</button>
-            </div>
+                <label for="mediador2">Mediador 2:</label><br>
+                <span id="mediador2" name="mediador2" required></span>
+                <button type="button" onclick="abrirModalSeleccionarUsuarios('mediador2')">Seleccionar
+                    Mediador</button><br>
+
+                <label for="formularioOficial">Formulario Oficial:</label><br>
+                <input type="file" id="formularioOficial" name="formularioOficial" accept=".pdf"><br>
+
+                <label for="estado">Estado:</label><br>
+                <select id="estado" name="estado" required>
+                    <option value="En curso">En curso</option>
+                    <option value="En seguimiento">En seguimiento</option>
+                    <option value="Finalizado">Finalizado</option>
+                </select><br>
+
+                <!-- Popup Modal para seleccionar usuarios -->
+                <div id="modalSeleccionarUsuarios" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="cerrarModalSeleccionarUsuarios()">&times;</span>
+                        <h2>Seleccionar Usuarios</h2>
+                        <input type="text" id="busquedaUsuario" placeholder="Buscar usuario...">
+                        <ul id="listaUsuarios">
+                        </ul>
+                        <button type="button" onclick="confirmarSeleccionUsuarios(event)">Confirmar</button>
+                    </div>
+                </div>
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Crear Caso</button>
+            </form>
+
+            <a href='menu.html'>
+                <p>Volver</p>
+            </a>
         </div>
-        <!-- Botón para enviar el formulario -->
-        <button type="submit">Crear Caso</button>
-    </form>
+    </div>
 
-        <a href='menu.html'>
-            <p>Volver</p>
-        </a>
 </body>
 
 </html>
