@@ -44,28 +44,31 @@ ul#menu {
 
 .menu-item {
     margin: 80px;
+    flex: 1;
+    max-width: 300px;
+    list-style: none;
+}
+
+.menu-item a {
+    display: block;
     background-color: #007bff;
     color: white;
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-    flex: 1;
-    max-width: 250px;
-    transition: background-color 0.3s ease;
-}
-
-.menu-item a {
-    color: white;
     text-decoration: none;
-    font-size: 24px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-.menu-item i {
+.menu-item a i {
     display: block;
     margin-bottom: 20px;
     font-size: 24px;
 }
 
-.menu-item:hover {
+.menu-item a:hover {
     background-color: #0056b3;
 }
