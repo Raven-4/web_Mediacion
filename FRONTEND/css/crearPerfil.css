@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +16,6 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
-    /* padding-top: 70px; */
-    /* width: 100%; */
 }
 
 /* Contenedor de crear perfil */
@@ -29,7 +27,8 @@ body {
     width: 400px;
     max-width: 90%;
     margin: 20px auto;
-    
+    position: relative;
+    margin-top: 50px;
 }
 
 h1 {
