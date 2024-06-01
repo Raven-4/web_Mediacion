@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/crearPerfil.css">
     <script type="text/javascript" src="js/funcionesComunes.js"></script>
     <script type="text/javascript" src="js/cookies.js"></script>
     <script type="text/javascript" src="js/crearPerfil.js"></script>
@@ -15,40 +18,44 @@
     <div class="background"></div>
     <div class="header">
         <img src="css/imagenes/esei.png" alt="ESEI Logo">
-        <h1>Proyecto de Mediación</h1>
+        <h1>Crear Perfil de Usuario</h1>
         <span id='id_caja_superior'>
         </span>
     </div>
 
-    <h1>Crear Perfil de Usuario</h1>
-    <form id="crearPerfilForm" action='javascript:comprobarPerfil();'>
-        <label for="userName">Nombre de Usuario:</label><br>
-        <input type="text" id="id_usuario" name="userName" required onblur="verificarNombreUsuarioUnico()">
-        <div id="mensaje-error-usuario" style="color: red;"></div>
+    <div class="content">
+        <div class="crearPerfil-container">
+            <!-- <h1>Crear Perfil de Usuario</h1> -->
+            <form id="crearPerfilForm" action='javascript:comprobarPerfil();'>
+                <label for="userName">Nombre de Usuario:</label><br>
+                <input type="text" id="id_usuario" name="userName" required onblur="verificarNombreUsuarioUnico()">
+                <div id="mensaje-error-usuario" style="color: red;"></div>
 
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="id_nombre" name="nombre" required><br>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="id_nombre" name="nombre" required><br>
 
-        <label for="apellidos">Apellidos:</label><br>
-        <input type="text" id="id_apellidos" name="apellidos" required><br>
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" id="id_apellidos" name="apellidos" required><br>
 
-        <label for="correoElectronico">Correo Electrónico:</label><br>
-        <input type="email" id="id_correoElectronico" name="correoElectronico" required><br>
+                <label for="correoElectronico">Correo Electrónico:</label><br>
+                <input type="email" id="id_correoElectronico" name="correoElectronico" required><br>
 
-        <label for="contraseña">Contraseña:</label><br>
-        <input type="password" id="id_contrasena" name="contraseña" required><br>
+                <label for="contraseña">Contraseña:</label><br>
+                <input type="password" id="id_contrasena" name="contraseña" required><br>
 
-        <label for="rol">Rol:</label><br>
-        <select id="id_rol" name="rol" required>
-            <option value="usuario">Usuario</option>
-            <option value="admin">Administrador</option>
-        </select><br><br>
+                <label for="rol">Rol:</label><br>
+                <select id="id_rol" name="rol" required>
+                    <option value="usuario">Usuario</option>
+                    <option value="admin">Administrador</option>
+                </select><br><br>
 
-        <button type="submit">Crear Perfil</button>
-    </form>
-    <a href='menu.html'>
-        <p>Volver</p>
-    </a>
+                <button type="submit">Crear Perfil</button>
+            </form>
+            <a href='menu.html'>
+                <p>Volver</p>
+            </a>
+        </div>
+    </div>
 </body>
 
 </html>
