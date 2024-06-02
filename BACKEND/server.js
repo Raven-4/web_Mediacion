@@ -141,6 +141,7 @@ app.delete('/usuarios/:id', async (req, res) => {
     try {
         const userId = req.params.id;
         const conn = await pool.getConnection();
+        await conn.query('UPDATE AsignacionCasos SET IDUsuario = NULL WHERE IDUsuario = ?', [userId]);
         await conn.query('DELETE FROM Usuarios WHERE ID = ?', [userId]);
         conn.release();
         res.status(200).send('Usuario eliminado correctamente');

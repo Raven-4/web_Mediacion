@@ -25,7 +25,7 @@ CREATE TABLE CasosMediacion (
 -- Tabla de Asignación de Casos a Usuarios/as
 CREATE TABLE AsignacionCasos (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    IDUsuario INT,
+    IDUsuario INT NULL,
     IDCasoMediacion INT,
     FOREIGN KEY (IDUsuario) REFERENCES Usuarios(ID),
     FOREIGN KEY (IDCasoMediacion) REFERENCES CasosMediacion(ID)
