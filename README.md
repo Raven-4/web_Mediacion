@@ -71,6 +71,44 @@ indicarase a solución aportada para o problema presentado. Deberase incluír aq
 deberase incluír algunha evidencia que amose tanto a planificación do traballo, coa súa distribución de fases e tarefas, e a súa comparación cos datos reais obtidos tras o desenvolvemento do traballo.
 
 # Arquitectura:
- explicarase a arquitectura empregada para alcanzar os obxectivos propostos.
+explicarase a arquitectura empregada para alcanzar os obxectivos propostos.
 
- # 
+# Tecnoloxías e integración de produtos de terceiros:
+describiranse adecuadamente as tecnoloxías utilizadas para o desenvolvemento do traballo, así coma os diversos produtos que non son da autoría do/da estudante, xustificando a súa utilización. 
+
+# Especificación e análise de requisitos:
+describiranse os requisitos necesarios, tanto funcionais como non funcionais. Incluiranse os aspectos máis relevantes correspondentes á análise do traballo realizado. 
+
+# Deseño do software (estático e dinámico):
+indicaranse os aspectos máis relevantes correspondentes ao deseño do traballo realizado
+
+# Xestión de datos e información:
+describiranse os métodos ou técnicas empregadas para xestionar tanto os datos coma o resto de información relevante.
+
+# Probas levadas a cabo: 
+describiranse as probas realizadas aos distintos niveis para garantir o correcto funcionamento do software ou do hardware.
+
+# Manual de usuario:
+debe incluír requisitos mínimos, manual de instalación e de utilización
+
+# Principais aportacións:
+deberanse destacar as aportacións importantes do traballo realizado, tendo en conta os obxectivos fixados
+
+# Conclusións:
+ incluiranse todas as conclusións de tipo técnico e persoal.
+
+# Vías de traballo futuro:
+presentaranse posible ampliacións e traballos relacionados por facer.
+
+# Referencias:
+deberanse citar todas as fontes de información empregadas para a realización do traballo. Deberase empregar un estilo uniforme para todas elas e aportarase, en cada caso:
+1. Autor/a/es/as.
+2. Título do artigo, libro, monografía,...
+3. Editorial ou nome da revista.
+4. Número da revista, volume e páxinas (só para revistas).
+5. Ano de publicación.
+6. Dirección e data de consulta (só para URL).
+Recoméndase empregar para referencias de artigos, revistas, e outras fontes de referencia, o formato APA, ISO 690, IEEE ou similares, e uniformes ao longo de toda a sección
+
+# Anexos (opcionais): 
+incluiranse outros elementos de interese no TFG que se consideren necesarios para a mellor comprensión do mesmo.
