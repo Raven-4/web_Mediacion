@@ -43,3 +43,34 @@ activar servidor:
 cd C:\Users\guija\Desktop\web_Mediacion\BACKEND
 
 node server.js
+
+# DOCUMENTACIÓN
+
+# Portada segundo modelo oficial, cos datos de identificación do traballo
+
+# Dedicatoria (opcional).
+
+# Agradecementos (opcional).
+
+# Índice de contidos.
+
+# Índice de ilustracións (se procede).
+
+#  Índice de táboas (se procede).
+
+# Introdución:
+haberá que incluír unha introdución ao problema e xustificación do traballo realizado. En caso de que o TFG integre ou desenvolva traballos feitos na actividade doutras materias da titulación, o/a estudante deberá especificar os devanditos traballos e materias  esta sección.
+
+# Obxectivos: 
+presentar o problema que se vai tratar, incluír o obxectivo principal e os específicos, de ser o caso, do traballo presentado, indicando o alcance para cada un deles.
+
+# Resumo da solución proposta: 
+indicarase a solución aportada para o problema presentado. Deberase incluír aquí a metodoloxía empregada.
+
+# Planificación e seguimento:
+deberase incluír algunha evidencia que amose tanto a planificación do traballo, coa súa distribución de fases e tarefas, e a súa comparación cos datos reais obtidos tras o desenvolvemento do traballo.
+
+# Arquitectura:
+ explicarase a arquitectura empregada para alcanzar os obxectivos propostos.
+
+ # 
