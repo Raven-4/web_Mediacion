@@ -59,7 +59,6 @@ node server.js
 #  Índice de táboas (se procede).
 
 # Introdución:
-haberá que incluír unha introdución ao problema e xustificación do traballo realizado. En caso de que o TFG integre ou desenvolva traballos feitos na actividade doutras materias da titulación, o/a estudante deberá especificar os devanditos traballos e materias  esta sección.
 
 Este documento detalla el trabajo efectuado en el proyecto final de carrera en Ingeniería Informática. El proyecto trata de diseñar una herramienta web intuitiva para gestionar los procesos de mediación en un instituto de secundaria.
 
@@ -71,8 +70,29 @@ La mediación es una forma de lograr la paz negociada en un conflicto. Esta se b
 
 Este proyecto propone realizar una aplicación web para ayudar al equipo de mediación a automatizar sus tareas y datos, y que así se puedan hacer las mediaciones de una forma más efectiva y eficaz.
 
-# Obxectivos: 
-presentar o problema que se vai tratar, incluír o obxectivo principal e os específicos, de ser o caso, do traballo presentado, indicando o alcance para cada un deles.
+# Objetivos: 
+
+## Presentación del problema:
+
+Actualmente, la gestión de los casos de mediación en el entorno educativo se hace de forma manual. Esto puede llevar a pérdidas de información, retrasos en el seguimiento de los casos y dificultades para mantener el registro de los casos accesibles al equipo de mediación, también puede dificultar al coordinador la supervisión y evaluación eficaz de los casos.
+
+## Objetivo principal:
+
+Este proyecto tiene la intención de desarrollar una herramienta centralizada de gestión de casos de mediación que permita al equipo de mediación a realizar su trabajo de forma más efectiva. Esta herramienta, accesible via web, asegurará el almacenamiento seguro y organizado de la información, así como proporcionar herramientas para facilitar el seguimiento de los casos.
+
+## Objetivos específicos:
+
+ - Desarrollo de una Base de Datos Centralizada:
+  - Alcance: esta base de datos almacenará información tanto del equipo de mediación, como de los casos que se les presenten.
+
+ - Desarrollo de un servidor para acceder a la base de datos:
+   - Alcance: permitir que la página web pueda acceder a la base de datos para poder sacar e insertar información.
+
+ - Implementación de funcionalidades de Seguimiento de Casos:
+  - Alcance: Desarrollar funcionalidades que permitan al equipo de mediadores registrar y actualizar los casos de mediación, así como realizar su valoración final y guardar informes del caso.
+
+ - Desarrollo de la Interfaz de Usuario:
+  - Alcance: Diseñar una interfaz de usuario que sea intuitiva y accesible para el equipo de mediación. 
 
 # Resumo da solución proposta: 
 indicarase a solución aportada para o problema presentado. Deberase incluír aquí a metodoloxía empregada.
