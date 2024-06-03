@@ -67,7 +67,9 @@ Este documento detalla el trabajo efectuado en el proyecto final de carrera en I
 
 Los conflictos han sido un problema continuo en todos los ámbitos de la vida, sobretodo en momentos de cambio e inseguridad como puede ser la adolescencia. A este problema se le ha dado una solución, la mediación de conflictos. 
 
-La mediación es una forma de lograr la paz negociada en un conflicto. Esta se basa en agregar una tercera persona que debe ser neutral al problema que ayudará a las partes en conflicto a llegar a un acuerdo común. [1]
+La mediación es una forma de lograr la paz negociada en un conflicto. Esta se basa en agregar una tercera persona que debe ser neutral al problema que ayudará a las partes en conflicto a llegar a un acuerdo común. [1] En las aulas, cuando existe un sistema de mediación, este suele ser un equipo conformado por un coordinador (un profesor) y mediadores (alumnos voluntarios a participar en el equipo de mediación). Cuando surge un conflicto, es el coordinador el que enviará a 2 mediadores a hablar con la parte perjudicada y si esta acepta la mediación, comenzará el proceso en donde los mediadores estudiarán el conflicto, y posteriormente se reunirán con las partes en conflicto para llegar a un acuerdo.[2]
+
+Este proyecto propone realizar una aplicación web para ayudar al equipo de mediación.
 
 # Obxectivos: 
 presentar o problema que se vai tratar, incluír o obxectivo principal e os específicos, de ser o caso, do traballo presentado, indicando o alcance para cada un deles.
@@ -121,6 +123,7 @@ Recoméndase empregar para referencias de artigos, revistas, e outras fontes de 
 
 [1] Valencia Agudelo, Germán Darío; Alderid Gutiérrez Loaiza y Sandra Johansson. (2012). Negociar la paz: una síntesis de los estudios sobre la resolución negociada de conflictos armados internos. Estudios Políticos, 40, Instituto de Estudios Políticos, Universidad de Antioquia, (pp. 149–174).
 
+[2] https://mediacionescolar.org/como-mediar-conflictos-institutos/
 
 # Anexos (opcionais): 
 incluiranse outros elementos de interese no TFG que se consideren necesarios para a mellor comprensión do mesmo.
