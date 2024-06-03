@@ -83,16 +83,16 @@ Este proyecto tiene la intención de desarrollar una herramienta centralizada de
 ## Objetivos específicos:
 
  - Desarrollo de una Base de Datos Centralizada:
-  - Alcance: esta base de datos almacenará información tanto del equipo de mediación, como de los casos que se les presenten.
+   - Alcance: esta base de datos almacenará información tanto del equipo de mediación, como de los casos que se les presenten.
 
  - Desarrollo de un servidor para acceder a la base de datos:
    - Alcance: permitir que la página web pueda acceder a la base de datos para poder sacar e insertar información.
 
  - Implementación de funcionalidades de Seguimiento de Casos:
-  - Alcance: Desarrollar funcionalidades que permitan al equipo de mediadores registrar y actualizar los casos de mediación, así como realizar su valoración final y guardar informes del caso.
+   - Alcance: Desarrollar funcionalidades que permitan al equipo de mediadores registrar y actualizar los casos de mediación, así como realizar su valoración final y guardar informes del caso.
 
  - Desarrollo de la Interfaz de Usuario:
-  - Alcance: Diseñar una interfaz de usuario que sea intuitiva y accesible para el equipo de mediación. 
+   - Alcance: Diseñar una interfaz de usuario que sea intuitiva y accesible para el equipo de mediación. 
 
 # Resumo da solución proposta: 
 indicarase a solución aportada para o problema presentado. Deberase incluír aquí a metodoloxía empregada.
