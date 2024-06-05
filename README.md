@@ -99,10 +99,13 @@ indicarase a solución aportada para o problema presentado. Deberase incluír aq
 
 ## Solución aportada:
 
+La solución propuesta para el problema presentado anteriormente es la creación de un sistema gestión de los casos de mediación centralizado y digitalizado. Esta aplicación se ha elegido hacer via web para ayudar al su acceso por parte de los usuarios sin que estos mismos tengan la necesidad de descargar ningún tipo de programa. El sistema permite una gestión eficiente y organizada de los casos, proporcionando herramientas para el seguimiento y evaluación continua de estos.
 
+El sistema tiene una base de datos centralizada que almacena al equipo de mediación, y los casos de mediación, incluyendo los detalles de los alumnos involucrados, los mediadores asignados y la documentación y estado del caso. Además, contiene una interfaz de usuario intuitiva que permitirá al usuario interactuar con el sistema de manera eficiente, independientemente de su nivel técnico.
 
 ## Metodología:
 
+Para el desarrollo del sistema se ha utilizado una metodología ágil, en concreto .
 
 # Planificación e seguimento:
 deberase incluír algunha evidencia que amose tanto a planificación do traballo, coa súa distribución de fases e tarefas, e a súa comparación cos datos reais obtidos tras o desenvolvemento do traballo.
