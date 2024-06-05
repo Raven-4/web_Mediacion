@@ -105,7 +105,11 @@ El sistema tiene una base de datos centralizada que almacena al equipo de mediac
 
 ## Metodología:
 
-Para el desarrollo del sistema se ha utilizado una metodología ágil, en concreto .
+Para el desarrollo del sistema se ha utilizado una metodología ágil, en concreto se ha utilizado Scrum adaptado a las necesidades del proyecto.
+
+### Metodologías ágiles:
+
+### Scrum
 
 # Planificación e seguimento:
 deberase incluír algunha evidencia que amose tanto a planificación do traballo, coa súa distribución de fases e tarefas, e a súa comparación cos datos reais obtidos tras o desenvolvemento do traballo.
