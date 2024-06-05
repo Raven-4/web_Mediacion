@@ -78,7 +78,7 @@ Actualmente, la gestión de los casos de mediación en el entorno educativo se h
 
 ## Objetivo principal:
 
-Este proyecto tiene la intención de desarrollar una herramienta centralizada de gestión de casos de mediación que permita al equipo de mediación a realizar su trabajo de forma más efectiva. Esta herramienta, accesible via web, asegurará el almacenamiento seguro y organizado de la información, así como proporcionar herramientas para facilitar el seguimiento de los casos.
+Este proyecto tiene la intención de desarrollar una herramienta centralizada de gestión de casos de mediación que permita al equipo de mediación realizar su trabajo de forma más efectiva. Esta herramienta, accesible via web, asegurará el almacenamiento seguro y organizado de la información, así como proporcionar herramientas para facilitar el seguimiento de los casos.
 
 ## Objetivos específicos:
 
@@ -86,7 +86,7 @@ Este proyecto tiene la intención de desarrollar una herramienta centralizada de
    - Alcance: esta base de datos almacenará información tanto del equipo de mediación, como de los casos que se les presenten.
 
  - Desarrollo de un servidor para acceder a la base de datos:
-   - Alcance: permitir que la página web pueda acceder a la base de datos para poder sacar e insertar información.
+   - Alcance: permitir que la página web pueda acceder a la base de datos para poder extraer e insertar información.
 
  - Implementación de funcionalidades de Seguimiento de Casos:
    - Alcance: Desarrollar funcionalidades que permitan al equipo de mediadores registrar y actualizar los casos de mediación, así como realizar su valoración final y guardar informes del caso.
@@ -99,9 +99,9 @@ indicarase a solución aportada para o problema presentado. Deberase incluír aq
 
 ## Solución aportada:
 
-La solución propuesta para el problema presentado anteriormente es la creación de un sistema gestión de los casos de mediación centralizado y digitalizado. Esta aplicación se ha elegido hacer via web para ayudar al su acceso por parte de los usuarios sin que estos mismos tengan la necesidad de descargar ningún tipo de programa. El sistema permite una gestión eficiente y organizada de los casos, proporcionando herramientas para el seguimiento y evaluación continua de estos.
+La solución propuesta para el problema presentado anteriormente es la creación de un sistema de gestión de los casos de mediación centralizado y digitalizado. Esta aplicación se ha elegido hacer via web para ayudar al acceso por parte de los usuarios sin que estos mismos tengan la necesidad de descargar ningún tipo de programa. El sistema permite una gestión eficiente y organizada de los casos, proporcionando herramientas para el seguimiento y evaluación continua de estos.
 
-El sistema tiene una base de datos centralizada que almacena al equipo de mediación, y los casos de mediación, incluyendo los detalles de los alumnos involucrados, los mediadores asignados y la documentación y estado del caso. Además, contiene una interfaz de usuario intuitiva que permitirá al usuario interactuar con el sistema de manera eficiente, independientemente de su nivel técnico.
+El sistema tiene una base de datos centralizada que almacena al equipo de mediación y los casos de mediación, incluyendo los detalles de los alumnos involucrados, los mediadores asignados y la documentación y estado del caso. Además, contiene una interfaz de usuario intuitiva que permitirá al usuario interactuar con el sistema de manera eficiente, independientemente de su nivel técnico.
 
 ## Metodología:
 
@@ -112,6 +112,8 @@ Para el desarrollo del sistema se ha utilizado una metodología ágil, en concre
 
 
 ### Scrum
+
+
 
 # Planificación e seguimento:
 deberase incluír algunha evidencia que amose tanto a planificación do traballo, coa súa distribución de fases e tarefas, e a súa comparación cos datos reais obtidos tras o desenvolvemento do traballo.
