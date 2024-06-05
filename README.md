@@ -94,8 +94,15 @@ Este proyecto tiene la intención de desarrollar una herramienta centralizada de
  - Desarrollo de la Interfaz de Usuario:
    - Alcance: Diseñar una interfaz de usuario que sea intuitiva y accesible para el equipo de mediación. 
 
-# Resumo da solución proposta: 
+# Resumen de la solución propuesta: 
 indicarase a solución aportada para o problema presentado. Deberase incluír aquí a metodoloxía empregada.
+
+## Solución aportada:
+
+
+
+## Metodología:
+
 
 # Planificación e seguimento:
 deberase incluír algunha evidencia que amose tanto a planificación do traballo, coa súa distribución de fases e tarefas, e a súa comparación cos datos reais obtidos tras o desenvolvemento do traballo.
