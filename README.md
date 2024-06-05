@@ -109,6 +109,8 @@ Para el desarrollo del sistema se ha utilizado una metodología ágil, en concre
 
 ### Metodologías ágiles:
 
+
+
 ### Scrum
 
 # Planificación e seguimento:
