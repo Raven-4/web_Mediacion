@@ -151,7 +151,7 @@ Los 12 principios del manifiesto ágil:
 
 12. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.
 
-[3]
+[3] 
 
 ## Scrum
 
