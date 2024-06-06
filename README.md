@@ -95,7 +95,6 @@ Este proyecto tiene la intención de desarrollar una herramienta centralizada de
    - Alcance: Diseñar una interfaz de usuario que sea intuitiva y accesible para el equipo de mediación. 
 
 # Resumen de la solución propuesta: 
-indicarase a solución aportada para o problema presentado. Deberase incluír aquí a metodoloxía empregada.
 
 ## Solución aportada:
 
