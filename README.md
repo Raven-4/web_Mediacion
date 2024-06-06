@@ -103,15 +103,57 @@ La solución propuesta para el problema presentado anteriormente es la creación
 
 El sistema tiene una base de datos centralizada que almacena al equipo de mediación y los casos de mediación, incluyendo los detalles de los alumnos involucrados, los mediadores asignados y la documentación y estado del caso. Además, contiene una interfaz de usuario intuitiva que permitirá al usuario interactuar con el sistema de manera eficiente, independientemente de su nivel técnico.
 
-## Metodología:
+# Metodología:
 
 Para el desarrollo del sistema se ha utilizado una metodología ágil, en concreto se ha utilizado Scrum adaptado a las necesidades del proyecto.
 
-### Metodologías ágiles:
+## Metodologías ágiles:
 
+Las metodologías ágiles son un un método alternativo de desarrollo de software. Esta metodología surge por la necesidad de cambiar los métodos convencionales, modelos de desarrollo líneal como puede ser el módelo en cascada, que resultaban poco efectivos para los equipos que desarrollaban software, pues este tipo de desarrollo está expuesto a constantes cambios y modificaciones porque las necesidades de los clientes también están en constante cambio.
 
+Por la necesidad de este cambio, en febrero de 2001, se reunieron 17 personas para buscar un terreno común en el desarrollo de software. A esta reunión acudieron los representantes de varias metodologías ágiles ya existentes como "Extreme Programing" o Scrum. La reunión daría resultado a la redacción y firma del "Agile Manifesto" o Manifiesto por el desarrollo Ágil. El manifiesto enfatiza la organización basada en la colaboración y el respeto, promoviendo un entorno que considera a las personas como fundamentales para el éxito.
 
-### Scrum
+El "Agile Manifesto" consta de 4 valores principales para la gestión ágil de proyectos y, a partir de estos valores, se desarrollaron 12 principios.
+
+Los valores del Manifiesto ágil:
+
+1. Individuos e interacciones sobre procesos y herramientas
+
+2. Software funcionando sobre documentación extensiva
+
+3. Colaboración con el cliente sobre negociación contractual
+
+4. Respuesta ante el cambio sobre seguir un plan
+
+Los 12 principios del manifiesto ágil:
+
+1. Nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor.
+
+2. Aceptamos que los requisitos cambien, incluso en etapas tardías del desarrollo. Los procesos Ágiles aprovechan el cambio para proporcionar ventaja competitiva al cliente.
+
+3. Entregamos software funcional frecuentemente, entre dos semanas y dos meses, con preferencia al periodo de tiempo más corto posible.
+
+4. Los responsables de negocio y los desarrolladores trabajamos juntos de forma cotidiana durante todo el proyecto.
+
+5. Los proyectos se desarrollan en torno a individuos motivados. Hay que darles el entorno y el apoyo que necesitan, y confiarles la ejecución del trabajo.
+
+6. El método más eficiente y efectivo de comunicar información al equipo de desarrollo y entre sus miembros es la conversación cara a cara.
+
+7. El software funcionando es la medida principal de progreso.
+
+8. Los procesos Ágiles promueven el desarrollo sostenible. Los promotores, desarrolladores y usuarios debemos ser capaces de mantener un ritmo constante de forma indefinida.
+
+9. La atención continua a la excelencia técnica y al buen diseño mejora la Agilidad.
+
+10. La simplicidad, o el arte de maximizar la cantidad de trabajo no realizado, es esencial.
+
+11. Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.
+
+12. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.
+
+[3]
+
+## Scrum
 
 
 
