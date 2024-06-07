@@ -154,7 +154,21 @@ Los 12 principios del manifiesto ágil:
 
 ## Scrum
 
+Scrum fué desarrollado a principios de los años 90, y se redactó una guía, que se ha hido actualizando constantemente, en 2010, con el objetivo de ayudar a las personas a entender Scrum.
 
+Según la "Scrum guide" o guía de scrum: "Scrum es un marco ligero que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptables para problemas complejos." Es decir, requiere de un jefe de equipo denominado "Scrum Master", que facilitará un entorno en el que el propietario del producto, denominado "Product Owner", ornganizará el trabajo, y el equipo, o "Scrum Team", entregará el trabajo de forma incremental durante eventos de longitud fija, llamados "Sprints".
+
+Scrum está basado en el empirismo (conocimiento a partir de la experiencia y toma de decisiones basada en la observación) y el pensamiento Lean (reducción de los desperdicios centrandose en lo esencial). Utiliza un enfoque iterativo e incremental y combina cuatro eventos formales que convergen en un evento principal, el Sprint. Esto es posible porque se aplican los pilares empíricos de Scrum: la transparencia, la inspección y la adaptación. Además, las personas que conformen el equipo deben seguir cinco valores: el compromiso, el enfoque, la apertura, el respeto y el coraje.
+
+Scrum contiene un evento fundamental, el Sprint, el "latido del corazón de Scrum". Estos eventos son de longitud fija, durarán como máximo un mes y es donde se produce todo el trabajo del proyecto. Es importante mencionar que durante los sprints no se pueden hacer cambios de requisitos u objetivos porque pondría en peligro la continuidad del proyecto. Los sprints están divididos en 4 subeventos: La planificación o "Sprint Planning", se consituirá el trabajo a hacer durante el sprint; el Scrum diario o "Daily Scrum", son reuniones diarías en donde se insepcciona el progreso y, en caso de ser necesario, se ajustará el trabajo planeado; revisión del Sprint o "Sprint Review", al final del sprint se revisan los resultados proporcionados por el equipo;  y la retrospectiva del Sprint o "Sprint Retrospective", donde se junta el equipo para insepccionar los puntos fuertes y débiles del equipo, analizando tanto los problemas y soluciones que aparecieron durante el sprint, como las situaciones que fueron bien.
+
+## Aplicando Scrum a un proyecto individual
+
+Al estar Scrum diseñado para equipos colaborativos, hay que hacer algunas modificaciones a sus principios y prácticas para poder aplicarlas a un proyecto individual. En cuanto a los roles (Product Owner, Scrum Master y Scrum Team) todos serán asumidos por la misma persona.
+
+A la hora de realizar un sprint, este no cambiará mucho. El sprint seguirá siendo de longitud fija y ya no se harán los cuatro subeventos, sino tres de ellos, y los que se realicen tendrán ciertas modificaciones. A la hora de la planificación, esta no cambiará. El "Daily Scrum" si recibirá algún cambio, pues ya no hay equipo al que comunicar el progreso realizado, pero sí se podrá realizar una planificación de las tareas que se realizarán diariamente. A la hora de hacer un "Sprint Review", no se realizarán cambios. La retrospectiva del sprint, al estar orientada al trabajo en equipo, no se realizará.
+
+Aplicando estos pequeños cambios, es posible la adaptación de la metodología ágil Scrum a un proyecto individual. Es este Scrum modificado, el que se usará a la hora de desarrollar el proyecto de gestión de casos de mediación. 
 
 # Planificación e seguimento:
 deberase incluír algunha evidencia que amose tanto a planificación do traballo, coa súa distribución de fases e tarefas, e a súa comparación cos datos reais obtidos tras o desenvolvemento do traballo.
@@ -206,6 +220,7 @@ Recoméndase empregar para referencias de artigos, revistas, e outras fontes de 
 
 [3] https://agilemanifesto.org
 
+[4] https://scrumguides.org/scrum-guide.html
 
 # Anexos (opcionais): 
 incluiranse outros elementos de interese no TFG que se consideren necesarios para a mellor comprensión do mesmo.
