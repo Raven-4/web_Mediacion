@@ -148,9 +148,7 @@ Los 12 principios del manifiesto ágil:
 
 11. Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.
 
-12. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.
-
-[3] 
+12. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.[3] 
 
 ## Scrum
 
