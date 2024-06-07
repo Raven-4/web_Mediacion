@@ -169,7 +169,56 @@ A la hora de realizar un sprint, este no cambiará mucho. El sprint seguirá sie
 Aplicando estos pequeños cambios, es posible la adaptación de la metodología ágil Scrum a un proyecto individual. Es este Scrum modificado, el que se usará a la hora de desarrollar el proyecto de gestión de casos de mediación. 
 
 # Planificación e seguimento:
-deberase incluír algunha evidencia que amose tanto a planificación do traballo, coa súa distribución de fases e tarefas, e a súa comparación cos datos reais obtidos tras o desenvolvemento do traballo.
+
+## Sprint 0 - Preparación inicial:
+
+Duración planificada: 1 semana
+
+El objetivo del sprint 0 fué configurar el entorno de desarrollo. Realizar la instalación de las herramientas necesarias para la realización del proyecto y la recopilación inicial de las historias de usuario (funcionalidades de la aplicación).
+
+Duración real: 1 semana
+
+## Sprint 1 - Análisis de requisitos:
+
+Duración planificada: 1 semana
+
+En el primer sprint, se analizó las necesidades concretas de la aplicación, así como sus expectativas. Se identificaron y documentaron los requisitos del sistema creando historias de usuario más detalladas.
+
+Duración real: 1 semana
+
+## Sprint 2 - Diseño de la arquitectura y la base de datos:
+
+Duración planificada: 1 semana
+
+En el segundo sprint, se diseñó la arquitectura del sistema creando el diagrama de arquitectura que incluye el Front-end, Back-end y la base de datos. También se hizo el modelo entidad-relación de la base de datos.
+
+Duración real: 1 semana
+
+## Sprint 3 - Desarrollo del backend y la base de datos:
+
+Duración planificada: 2 semanas
+
+El objetivo propuesto para este sprint, fué realizar el desarrollo de la base de datos en SQLite y el backend en PHP.
+
+Durante este sprint surgieron distintos problemas. Empezando por la base de datos, se decidió cambiar SQLite por MySQL. Estos son distintos sistemas usados para la gestión de bases de datos. El motivo del cambio fué la dificultad encontrada a la hora de acceder desde el servidor backend, a la base de datos; pues SQLite es un sistema de gestión sin servidor, esto lo convierte en un sistema ineficiente para realizar una página web. Posteriormente se encontró otro problema al que no se le halló solución: al ejecutar el servidor MySQL, este no podía ser accedido de ninguna forma para acceder a sus datos, a pesar de que el servidor se ejecutaba correctamente; para solucionarlo se tomó la decisión de volver a cambiar el gestor de base de datos, utilizando finalmente MariaDB. También se decidió cambiar el lenguaje del backend, pasando de PHP a Node.js, que permite realizar el servidor de una forma más sencilla. Debido a estos problemas encontrados el sprint duró más de lo planificado.
+
+Duración real: 3 semanas
+
+## Sprint 4 - Desarrollo del frontend:
+
+Duración planificada: 2 semanas
+
+El cuarto sprint es el último del desarrollo de la aplicación. Durante este sprint se desarrolló todo el frontend de la aplicación, creando todas las páginas necesarias para su uso usando HTML. Se finalizó el sprint con la implementación de la interfaz de usuario. En ciertos momentos se necesitó cambiar ciertas partes del servidor backend, pero eso no demoró la duración del sprint.
+
+Duración real: 2 semanas
+
+## Sprint 5 - Pruebas finales y documentación:
+
+Duración planificada: 2 semanas
+
+En el quinto y último sprint se realizaron las últimas pruebas, encargándose de que la aplicación funcione correctamente y corrigiendo los errores restantes. También se redactó la documentación del proyecto
+
+Duración real: 
 
 # Arquitectura:
 explicarase a arquitectura empregada para alcanzar os obxectivos propostos.
