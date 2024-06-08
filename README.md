@@ -222,8 +222,14 @@ Duración real:
 
 # Arquitectura:
 
+La arquitectura del sistema está diseñada de forma modular, para que sea fácil de mantener. Está compuesta de varios componentes interconectados que se pueden actualizar de manera independiente, sin que estos cambios influyan a las otras capas..
+
 ![Application architecture example](https://github.com/Raven-4/web_Mediacion/assets/121634522/cc126678-d3c4-4596-b2c1-07269160ed19) 
 Ilustración 1. Diagrama de arquitectura
+
+## Capa de Presentación:
+
+## Capa de 
 
 # Tecnoloxías e integración de produtos de terceiros:
 describiranse adecuadamente as tecnoloxías utilizadas para o desenvolvemento do traballo, así coma os diversos produtos que non son da autoría do/da estudante, xustificando a súa utilización. 
