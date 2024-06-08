@@ -223,7 +223,7 @@ Duración real:
 # Arquitectura:
 explicarase a arquitectura empregada para alcanzar os obxectivos propostos.
 
-![Application architecture example](https://github.com/Raven-4/web_Mediacion/assets/121634522/cc126678-d3c4-4596-b2c1-07269160ed19)
+![Application architecture example](https://github.com/Raven-4/web_Mediacion/assets/121634522/cc126678-d3c4-4596-b2c1-07269160ed19) ilustración 1. Diagrama de arquitectura
 
 # Tecnoloxías e integración de produtos de terceiros:
 describiranse adecuadamente as tecnoloxías utilizadas para o desenvolvemento do traballo, así coma os diversos produtos que non son da autoría do/da estudante, xustificando a súa utilización. 
