@@ -222,14 +222,22 @@ Duración real:
 
 # Arquitectura:
 
-La arquitectura del sistema está diseñada de forma modular, para que sea fácil de mantener. Está compuesta de varios componentes interconectados que se pueden actualizar de manera independiente, sin que estos cambios influyan a las otras capas..
+La arquitectura del sistema está diseñada de forma modular, para que sea fácil de mantener. Está compuesta de varios componentes interconectados que se pueden actualizar de manera independiente, sin que estos cambios influyan a las otras capas. El sistema sigue una arquitectura de capas, dividida en tres capas principales: la capa de presentación, la capa de negocio, y la de datos.
 
 ![Application architecture example](https://github.com/Raven-4/web_Mediacion/assets/121634522/cc126678-d3c4-4596-b2c1-07269160ed19) 
 Ilustración 1. Diagrama de arquitectura
 
-## Capa de Presentación:
+## Capa de Presentación (Frontend):
 
-## Capa de 
+La capa de presentación se encarga de la interacción con el usuario. Incluye todas las interfaces gráficas, como formularios y tablas, que permiten a los usuarios gestionar los casos de mediación. Esta capa está diseñada en HTML y Javascript, para la lógica de los formularios y tablas; y CSS, para asegurar una apariencia consistente y profesional a la aplicación. Esta capa se comunica con el Backend mediante solicitudes HTTP (GET, POST, PUT, DELETE), que se usan para extraer o insertar información del servidor.
+
+## Capa de Lógica de la aplicación (Backend):
+
+La capa de lógica se encarga de interconectar a la capa de Presentación con la Base de datos. El Backend procesa las solicitudes HTTP provenientes del Frontend, aplica las reglas de negocio necesarias y se comunica con la base de datos. En esta capa es donde se realiza la autenticación de usuarios, la gestión de los casos de mediación, y la asignación de mediadores; así como las modificaciones de los usuarios o la eliminación de estos mismos. Para la realización de esta capa se ha utilizado Node.js y el framework Express.js.
+
+## Capa de Datos:
+
+La capa de datos se encarga del almacenamiento y la gestión de los datos. Para el almacenamiento de los datos se ha usado el Sistema Gestor de Bases de Datos (SGBD) MariaDB; y para acceder e interactuar con la misma, de forma independiente al Backend, se ha usado phpMyAdmin. Se han utilizado consultas SQL para gestionar y recuperar datos de forma eficiente.
 
 # Tecnoloxías e integración de produtos de terceiros:
 describiranse adecuadamente as tecnoloxías utilizadas para o desenvolvemento do traballo, así coma os diversos produtos que non son da autoría do/da estudante, xustificando a súa utilización. 
