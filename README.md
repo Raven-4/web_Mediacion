@@ -240,7 +240,32 @@ La capa de lógica se encarga de interconectar a la capa de Presentación con la
 La capa de datos se encarga del almacenamiento y la gestión de los datos. Para el almacenamiento de los datos se ha usado el Sistema Gestor de Bases de Datos (SGBD) MariaDB; y para acceder e interactuar con la misma, de forma independiente al Backend, se ha usado phpMyAdmin. Se han utilizado consultas SQL para gestionar y recuperar datos de forma eficiente.
 
 # Tecnoloxías e integración de produtos de terceiros:
-describiranse adecuadamente as tecnoloxías utilizadas para o desenvolvemento do traballo, así coma os diversos produtos que non son da autoría do/da estudante, xustificando a súa utilización. 
+
+## Tecnologías usadas
+
+### HTML
+
+### CSS
+
+### JavaScript
+
+### Node.js
+
+### MariaDB
+
+### SQL
+
+### Python
+
+## Productos de terceros
+
+### Express
+
+### Docker
+
+### Font Awesome
+
+### PHPMyAdmin
 
 # Especificación e análise de requisitos:
 describiranse os requisitos necesarios, tanto funcionais como non funcionais. Incluiranse os aspectos máis relevantes correspondentes á análise do traballo realizado. 
