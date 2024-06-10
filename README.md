@@ -249,7 +249,7 @@ HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y
 
 ### CSS3
 
-CSS (Cascading Style Sheets) es un lenguaje creado por el W3C en 1996 para estilizar elementos escritos en HTML, separando el contenido de la presentación visual. Antes de CSS, todo el estilo debía incluirse en el marcado HTML, lo que complicaba y hacía costoso el diseño de sitios web. CSS permite definir estilos en un archivo separado, lo que simplifica el mantenimiento y la personalización del diseño.
+CSS (Cascading Style Sheets) es un lenguaje creado por el W3C en 1996 para estilizar elementos escritos en HTML, separando el contenido de la presentación visual. Permite definir estilos en un archivo separado, lo que simplifica el mantenimiento y la personalización del diseño.
 
 CSS utiliza una sintaxis simple con selectores y bloques de declaración para aplicar estilos a elementos HTML. Existen tres métodos para aplicar CSS: interno (dentro del archivo HTML), externo (en un archivo separado) e "inline" (directamente en el elemento HTML). El método externo es el más eficiente, permitiendo aplicar estilos a múltiples páginas y mejorar los tiempos de carga. [6]
 
