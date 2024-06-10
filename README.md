@@ -243,9 +243,15 @@ La capa de datos se encarga del almacenamiento y la gestión de los datos. Para 
 
 ## Tecnologías usadas
 
-### HTML
+### HTML5
 
-### CSS
+HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y estructurar páginas web y aplicaciones en la web. Define el contenido de las páginas web mediante el uso de etiquetas para estructurar texto y otros elementos como imágenes, listas y vídeos. HTML es fácil de aprender, permitiendo a cualquier persona crear una página web básica. Aunque HTML define el contenido y algunos estilos básicos, el diseño profesional se logra con habilidades de diseño y lenguajes adicionales como CSS. [5]
+
+### CSS3
+
+CSS (Cascading Style Sheets) es un lenguaje creado por el W3C en 1996 para estilizar elementos escritos en HTML, separando el contenido de la presentación visual. Antes de CSS, todo el estilo debía incluirse en el marcado HTML, lo que complicaba y hacía costoso el diseño de sitios web. CSS permite definir estilos en un archivo separado, lo que simplifica el mantenimiento y la personalización del diseño.
+
+CSS utiliza una sintaxis simple con selectores y bloques de declaración para aplicar estilos a elementos HTML. Existen tres métodos para aplicar CSS: interno (dentro del archivo HTML), externo (en un archivo separado) e "inline" (directamente en el elemento HTML). El método externo es el más eficiente, permitiendo aplicar estilos a múltiples páginas y mejorar los tiempos de carga.
 
 ### JavaScript
 
@@ -309,6 +315,10 @@ Recoméndase empregar para referencias de artigos, revistas, e outras fontes de 
 [3] https://agilemanifesto.org
 
 [4] https://scrumguides.org/scrum-guide.html
+
+[5] https://desarrolloweb.com/articulos/que-es-html.html
+
+[6] https://www.hostinger.es/tutoriales/que-es-css
 
 # Anexos (opcionais): 
 incluiranse outros elementos de interese no TFG que se consideren necesarios para a mellor comprensión do mesmo.
