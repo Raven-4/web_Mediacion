@@ -369,6 +369,8 @@ Los requisitos no funcionales definen los criterios que pueden usarse a la hora 
 
 El diseño estático está enfocado en la estructura del sistema.
 
+![Diagrama en blanco](https://github.com/Raven-4/web_Mediacion/assets/121634522/00f9cede-df5a-438c-b663-dbe038c2669c)
+
 ## Diseño dinámico
 
 El diseño dinámico muestra el comportamiento del sistema a través del tiempo.
