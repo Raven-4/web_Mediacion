@@ -307,35 +307,35 @@ Los requisitos funcionales son aquellos que definen las funciones específicas d
 
 1. Gestión de Usuarios:
 
- - El administrador debe poder crear, modificar y eliminar nuevos usuarios.
+   - El administrador debe poder crear, modificar y eliminar nuevos usuarios.
 
 2. Autenticación
 
- - El sistema debe requerir autenticación para acceder a sus funcionalidades
+   - El sistema debe requerir autenticación para acceder a sus funcionalidades
 
 3. Autorización
 
- - El sistema debe proporcionar diferentes niveles de acceso dependiendo del rol asignado al usuario
+   - El sistema debe proporcionar diferentes niveles de acceso dependiendo del rol asignado al usuario
 
 4. Gestión de Casos de Mediación
 
- - El sistema debe permitir al administrador registrar nuevos casos de mediación.
+   - El sistema debe permitir al administrador registrar nuevos casos de mediación.
 
- - Los casos deben estar asignados a dos usuarios distintos
+   - Los casos deben estar asignados a dos usuarios distintos
 
- - El sistema debe permitir acutalizar los detalles de los casos
+   - El sistema debe permitir acutalizar los detalles de los casos
 
- - El sistema debe permitir descargar y adjuntar un archivo PDF que servirá como Formulario del caso
+   - El sistema debe permitir descargar y adjuntar un archivo PDF que servirá como Formulario del caso
 
 4. Seguimiento de Casos
 
- - El sistema debe proporcionar una lista de todos los casos de mediación asignados al usuario
+   - El sistema debe proporcionar una lista de todos los casos de mediación asignados al usuario
 
- - El sistema debe proporcionar una lista de todos los casos de mediación existentes al administrador
+   - El sistema debe proporcionar una lista de todos los casos de mediación existentes al administrador
 
- - El sistema debe proporcionar todos los detalles de cada caso
+   - El sistema debe proporcionar todos los detalles de cada caso
 
- - El sistema debe proporcionar las estadísticas de los casos de cada usuario.
+   - El sistema debe proporcionar las estadísticas de los casos de cada usuario.
 
 ## Requisitos no funcionales
 
@@ -343,25 +343,25 @@ Los requisitos no funcionales definen los criterios que pueden usarse a la hora 
 
 1. Rendimiento
 
- - El sistema debe ser capaz de manejar múltiples solicitudes simultáneamente
+   - El sistema debe ser capaz de manejar múltiples solicitudes simultáneamente
 
 2. Escalabilidad
 
- - El sistema debe ser capaz de soportar un aumento significativo en el número de usuarios sin la necesidad de reestructurar la aplicación.
+   - El sistema debe ser capaz de soportar un aumento significativo en el número de usuarios sin la necesidad de reestructurar la aplicación.
 
 3. Seguridad
 
- - El sistema debe asegurar la protección de los datos referentes a los casos de mediación frente a accesos no autorizados.
+   - El sistema debe asegurar la protección de los datos referentes a los casos de mediación frente a accesos no autorizados.
 
 4. Usabilidad
 
- - La interfaz de usuario debe ser intuitiva y fácil de usar para que usuarios de cualquier nivel técnico puedan utilizar la aplicación.
+   - La interfaz de usuario debe ser intuitiva y fácil de usar para que usuarios de cualquier nivel técnico puedan utilizar la aplicación.
 
- - El manual de usuario debe ser comprensible para cualquier tipo de usuario.
+   - El manual de usuario debe ser comprensible para cualquier tipo de usuario.
 
 5. Compatibilidad
 
- - El sistema debe ser compatible con los principales navegadores web.
+   - El sistema debe ser compatible con los principales navegadores web.
 
 # Deseño do software (estático e dinámico):
 indicaranse os aspectos máis relevantes correspondentes ao deseño do traballo realizado
