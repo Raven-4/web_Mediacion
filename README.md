@@ -245,33 +245,59 @@ La capa de datos se encarga del almacenamiento y la gestión de los datos. Para 
 
 ### HTML5
 
-HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y estructurar páginas web y aplicaciones en la web. Define el contenido de las páginas web mediante el uso de etiquetas para estructurar texto y otros elementos como imágenes, listas y vídeos. HTML es fácil de aprender, permitiendo a cualquier persona crear una página web básica. Aunque HTML define el contenido y algunos estilos básicos, el diseño profesional se logra con habilidades de diseño y lenguajes adicionales como CSS. [5]
+HTML (HyperText Markup Language) es el lenguaje de programación estándar utilizado para crear y estructurar páginas web y aplicaciones en la web. Define el contenido de las páginas web mediante el uso de etiquetas para estructurar texto y otros elementos como imágenes, listas y vídeos. HTML es fácil de aprender, permitiendo a cualquier persona crear una página web básica. Aunque HTML define el contenido y algunos estilos básicos, el diseño profesional se logra con habilidades de diseño y lenguajes adicionales como CSS. [5]
 
 ### CSS3
 
-CSS (Cascading Style Sheets) es un lenguaje creado por el W3C en 1996 para estilizar elementos escritos en HTML, separando el contenido de la presentación visual. Permite definir estilos en un archivo separado, lo que simplifica el mantenimiento y la personalización del diseño.
+CSS (Cascading Style Sheets) es un lenguaje de programación creado por el W3C en 1996 para estilizar elementos escritos en HTML, separando el contenido de la presentación visual. Permite definir estilos en un archivo separado, lo que simplifica el mantenimiento y la personalización del diseño.
 
-CSS utiliza una sintaxis simple con selectores y bloques de declaración para aplicar estilos a elementos HTML. Existen tres métodos para aplicar CSS: interno (dentro del archivo HTML), externo (en un archivo separado) e "inline" (directamente en el elemento HTML). El método externo es el más eficiente, permitiendo aplicar estilos a múltiples páginas y mejorar los tiempos de carga. [6]
+CSS utiliza una sintaxis simple con selectores y bloques de declaración para aplicar estilos a elementos HTML. Existen tres métodos para aplicar CSS: interno (dentro del archivo HTML), externo (en un archivo separado con extensión ".css") e "inline" (directamente en el elemento HTML). El método externo es el más eficiente, permitiendo aplicar estilos a múltiples páginas y mejorar los tiempos de carga. [6]
 
 ### JavaScript
 
+JavaScript es un lenguaje de secuencias de comandos que permite implementar funciones complejas en páginas web. Añade interactividad y dinamismo a la interfaz de usuario permitiendo crear contenido de actualización dinámica o controlar contenido multimedia entre otros. Es la tercera capa necesaria para hacer cualquier página web (siendo las otras 2 HTML y CSS). [7] Para aplicar JavaScript a una página web se puede hacer tanto dentro del archivo HTML como en un archivo separado (que tendrá la extensión ".js"). Para aumentar la legibilidad del código es recomendable tener los scripts en un archivo separado.
+
 ### Node.js
+
+Node.js es un entorno de ejecución para Javascript utilizado para realizar aplicaciones de red (servidores). Está orientado a eventos asíncronos diseñado de forma que pueda manejar muchas conexiones de forma concurrente. Este entorno tiene el protocolo HTTP de forma nativa, lo que hace que sea un entorno adecuado a la hora de realizar frameworks web. [8]
+
+### NPM
+
+NPM (Node Package Manager) es el gestor de paquetes predeterminado para Node.js, que facilita la gestión y distribución de paquetes de software.
 
 ### MariaDB
 
+MariaDB es un Sistema Gestor de Bases de Datos (SGDB) relacionales de código abierto. Este sistema se puede utilizar para "datos de transacciones de alta disponibilidad, análisis de datos, como servidor integrado, y una amplia gama de herramientas y aplicaciones soportan MariaDB Server." [9]
+
 ### SQL
+
+SQL (Structured Query Language) es un lenguaje de consulta que permite manipular y extraer datos de una base de datos. Es el principal lenguaje de programación utilizado a la hora de usar bases de datos relacionales.
 
 ### Python
 
+Python es uno de los lenguajes de programación más populares del mundo, utilizado en aplicaciones web, desarrollo de software e inteligencia artificial, entre otros.
+
 ## Productos de terceros
+
+### Visual Studio Code
+
+Visual Studio Code (o VSCode) es un editor de código disponible para Windows, MacOS y Linux, el cual tiene soporte para la mayoría de lenguajes de programación. Fué utilizado para como entorno de protgramación del proyecto
 
 ### Express
 
+Express.js o Express es un framework hecho para Node.js que facilita la creación de aplicaciones web y APIs. Se ha utilizado en el proyecto para realizar la lógica del servidor, definiendo las rutas del mismo.
+
 ### Docker
+
+Docker permite empaquetar tanto las aplicaciones como sus dependencias en contenedores ligeros y portátiles. Se ha usado en el proyecto para la gestión de la base de datos, utilizando MariaDB y PHPMyAdmin como contenedores.
 
 ### Font Awesome
 
+Font Awesome es una biblioteca de iconos usados para mejorar la interfaz de usuario del sistema.
+
 ### PHPMyAdmin
+
+PHPMyAdmin es una herramienta de administración de bases de datos que proporciona una interfaz gráfica para interactuar con las mismas. Fué usada para acceder a MariaDB de forma externa a la aplicación y así poder realizar las pruebas necesarias sin modificar la aplicación.
 
 # Especificación e análise de requisitos:
 describiranse os requisitos necesarios, tanto funcionais como non funcionais. Incluiranse os aspectos máis relevantes correspondentes á análise do traballo realizado. 
@@ -319,6 +345,12 @@ Recoméndase empregar para referencias de artigos, revistas, e outras fontes de 
 [5] https://desarrolloweb.com/articulos/que-es-html.html
 
 [6] https://www.hostinger.es/tutoriales/que-es-css
+
+[7] https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript#una_definición_de_alto_nivel
+
+[8] https://nodejs.org/en/about#about-nodejs
+
+[9] https://mariadb.org/es/
 
 # Anexos (opcionais): 
 incluiranse outros elementos de interese no TFG que se consideren necesarios para a mellor comprensión do mesmo.
