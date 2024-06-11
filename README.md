@@ -335,6 +335,8 @@ Los requisitos funcionales son aquellos que definen las funciones específicas d
 
  - El sistema debe proporcionar todos los detalles de cada caso
 
+ - El sistema debe proporcionar las estadísticas de los casos de cada usuario.
+
 ## Requisitos no funcionales
 
 Los requisitos no funcionales definen los criterios que pueden usarse a la hora de determinar el funcionamiento de un sistema.
