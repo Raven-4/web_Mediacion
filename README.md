@@ -168,7 +168,7 @@ A la hora de realizar un sprint, este no cambiará mucho. El sprint seguirá sie
 
 Aplicando estos pequeños cambios, es posible la adaptación de la metodología ágil Scrum a un proyecto individual. Es este Scrum modificado, el que se usará a la hora de desarrollar el proyecto de gestión de casos de mediación. 
 
-# Planificación e seguimento:
+# Planificación y seguimento:
 
 ## Sprint 0 - Preparación inicial:
 
@@ -239,7 +239,7 @@ La capa de lógica se encarga de interconectar a la capa de Presentación con la
 
 La capa de datos se encarga del almacenamiento y la gestión de los datos. Para el almacenamiento de los datos se ha usado el Sistema Gestor de Bases de Datos (SGBD) MariaDB; y para acceder e interactuar con la misma, de forma independiente al Backend, se ha usado phpMyAdmin. Se han utilizado consultas SQL para gestionar y recuperar datos de forma eficiente.
 
-# Tecnoloxías e integración de produtos de terceiros:
+# Tecnologías e integración de productos de terceros:
 
 ## Tecnologías usadas
 
@@ -299,7 +299,7 @@ Font Awesome es una biblioteca de iconos usados para mejorar la interfaz de usua
 
 PHPMyAdmin es una herramienta de administración de bases de datos que proporciona una interfaz gráfica para interactuar con las mismas. Fué usada para acceder a MariaDB de forma externa a la aplicación y así poder realizar las pruebas necesarias sin modificar la aplicación.
 
-# Especificación e análise de requisitos:
+# Especificación y analisis de requisitos:
 
 ## Requisitos funcionales
 
@@ -363,25 +363,28 @@ Los requisitos no funcionales definen los criterios que pueden usarse a la hora 
 
    - El sistema debe ser compatible con los principales navegadores web.
 
-# Deseño do software (estático e dinámico):
-indicaranse os aspectos máis relevantes correspondentes ao deseño do traballo realizado
+# Diseño do software (estático y dinámico):
 
-# Xestión de datos e información:
+## Diseño estático
+
+## Diseño dinámico
+
+# Gestión de datos e información:
 describiranse os métodos ou técnicas empregadas para xestionar tanto os datos coma o resto de información relevante.
 
-# Probas levadas a cabo: 
+# Pruebas llevadas a cabo: 
 describiranse as probas realizadas aos distintos niveis para garantir o correcto funcionamento do software ou do hardware.
 
 # Manual de usuario:
 debe incluír requisitos mínimos, manual de instalación e de utilización
 
-# Principais aportacións:
+# Aportaciones principales:
 deberanse destacar as aportacións importantes do traballo realizado, tendo en conta os obxectivos fixados
 
-# Conclusións:
+# Conclusiones:
  incluiranse todas as conclusións de tipo técnico e persoal.
 
-# Vías de traballo futuro:
+# Vías de trabajo futuro:
 presentaranse posible ampliacións e traballos relacionados por facer.
 
 # Referencias:
@@ -404,5 +407,5 @@ presentaranse posible ampliacións e traballos relacionados por facer.
 
 [9] https://mariadb.org/es/
 
-# Anexos (opcionais): 
+# Anexos (opcional): 
 incluiranse outros elementos de interese no TFG que se consideren necesarios para a mellor comprensión do mesmo.
