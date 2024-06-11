@@ -367,7 +367,11 @@ Los requisitos no funcionales definen los criterios que pueden usarse a la hora 
 
 ## Diseño estático
 
+El diseño estático está enfocado en la estructura del sistema.
+
 ## Diseño dinámico
+
+El diseño dinámico muestra el comportamiento del sistema a través del tiempo.
 
 # Gestión de datos e información:
 describiranse os métodos ou técnicas empregadas para xestionar tanto os datos coma o resto de información relevante.
