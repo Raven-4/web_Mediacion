@@ -370,6 +370,31 @@ Los requisitos no funcionales definen los criterios que pueden usarse a la hora 
 El diseño estático está enfocado en la estructura del sistema.
 
 ![Diagrama en blanco](https://github.com/Raven-4/web_Mediacion/assets/121634522/00f9cede-df5a-438c-b663-dbe038c2669c)
+Diagrama de despliegue del sistema
+
+1. PC Usuario:
+
+   - El usuario se conectará a la aplicación a través del navegador web.
+
+2. Servidor web
+
+   - Cuando el usuario esté conectado al servidor interactuará con la interfaz de usuario
+  
+   - El servidor de la aplicación web está implementada usando Node.js y Express.js.
+
+3. Docker Engine
+
+   - La Base de datos MariaDB se encuentra en un contenedor de Docker.
+  
+   - El servidor se conecta a la base de datos MariaDB
+  
+   - PHPMyAdmin está implementado como un contenedor de Docker.
+  
+   - PHPMyAdmin se conecta a la base de datos MariaDB.
+
+4. PC Administrador
+
+   - El administrador podrá conectarse a la base de datos MariaDB, utilizando PHPMyAdmin. Accederá a través del navegador
 
 ## Diseño dinámico
 
