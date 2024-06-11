@@ -363,7 +363,7 @@ Los requisitos no funcionales definen los criterios que pueden usarse a la hora 
 
    - El sistema debe ser compatible con los principales navegadores web.
 
-# Diseño do software (estático y dinámico):
+# Diseño do software:
 
 ## Diseño estático
 
