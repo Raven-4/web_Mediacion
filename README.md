@@ -324,15 +324,6 @@ deberanse destacar as aportacións importantes do traballo realizado, tendo en c
 presentaranse posible ampliacións e traballos relacionados por facer.
 
 # Referencias:
-deberanse citar todas as fontes de información empregadas para a realización do traballo. Deberase empregar un estilo uniforme para todas elas e aportarase, en cada caso:
-1. Autor/a/es/as.
-2. Título do artigo, libro, monografía,...
-3. Editorial ou nome da revista.
-4. Número da revista, volume e páxinas (só para revistas).
-5. Ano de publicación.
-6. Dirección e data de consulta (só para URL).
-Recoméndase empregar para referencias de artigos, revistas, e outras fontes de referencia, o formato APA, ISO 690, IEEE ou similares, e uniformes ao longo de toda a sección
-
 
 [1] Valencia Agudelo, Germán Darío; Alderid Gutiérrez Loaiza y Sandra Johansson. (2012). Negociar la paz: una síntesis de los estudios sobre la resolución negociada de conflictos armados internos. Estudios Políticos, 40, Instituto de Estudios Políticos, Universidad de Antioquia, (pp. 149–174).
 
