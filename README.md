@@ -400,6 +400,11 @@ Diagrama de despliegue del sistema
 
 El diseño dinámico muestra el comportamiento del sistema a través del tiempo.
 
+![Diagrama de pantallas](https://github.com/Raven-4/web_Mediacion/assets/121634522/a6807a03-bc99-4142-99d6-d4503e578dbb)
+Diagrama de Flujo de Pantallas
+
+El diagrama de flujo de pantallas muestra la navegación que puede hacer el cliente. En este caso se distinguen usuarios Administradores y No administradores. Las cajas rectangulares representan las distintas pantallas accesibles, y los rombos representan las acciones que pueden realizar los usuarios. Las acciones podrán ser positivas (marcadas con "Si"), o negativas (marcadas con "No"). En caso de que no se marque la respuesta, significará que la acción siempre se realiza.
+
 # Gestión de datos e información:
 describiranse os métodos ou técnicas empregadas para xestionar tanto os datos coma o resto de información relevante.
 
