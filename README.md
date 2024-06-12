@@ -408,6 +408,8 @@ El diagrama de flujo de pantallas muestra la navegación que puede hacer el clie
 # Gestión de datos e información:
 describiranse os métodos ou técnicas empregadas para xestionar tanto os datos coma o resto de información relevante.
 
+![Untitled](https://github.com/Raven-4/web_Mediacion/assets/121634522/ee935990-1aa6-481e-9de4-9049f8306481)
+
 # Pruebas llevadas a cabo: 
 describiranse as probas realizadas aos distintos niveis para garantir o correcto funcionamento do software ou do hardware.
 
