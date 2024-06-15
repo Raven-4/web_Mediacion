@@ -1,26 +1,5 @@
 [Manual de instalación](#manual)
 
-## scripts a ejecutar:
-
-Ejecutar "instalacion.exe" ubicado en la carpeta raíz del proyecto
-
-# Manual de uso:
-
-
-# web_Mediacion
-
-descargar contenedores docker:
-
-docker run -d --name mariadb-tfg -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -v C:\Users\guija\Desktop\web_Mediacion\DB\mariadb_data:/var/lib/mysql mariadb
-
-docker run --name tfg-phpmyadmin -d --link mariadb-tfg:db -p 8080:80 phpmyadmin
-
-activar servidor:
-
-cd C:\Users\guija\Desktop\web_Mediacion\BACKEND
-
-node server.js
-
 # DOCUMENTACIÓN
 
 # Portada segundo modelo oficial, cos datos de identificación do traballo
@@ -558,13 +537,15 @@ Paso 7 (opcional): Acceder a la base de datos MariaDB:
 
 Una vez completado los pasos de instalación e inicio de los servidores, se abrirá automáticamente la aplicación en el navegador web (el navegador web será el predeterminado del sistema).
 
-Inicio de sesión:
+### Inicio de sesión:
 
 Primero se abrirá la página de inicio de sesión, en donde el usuario deberá de introducir su nombre de usuario y contraseña para acceder a la web.
 
-Menú:
+### Menú:
 
-Una vez iniciado sesión se mostrará un menú con las acciones que puede realizar el usuario. Este menú, si el usuario tiene el rol "usuario", sólo mostrará las opciones 
+Una vez iniciado sesión se mostrará un menú con las acciones que puede realizar el usuario. Este menú, si el usuario tiene el rol "usuario", sólo mostrará las opciones Casos de mediación y Estadísticas. Si el usuario tiene el rol Administrados, a parte de las opciones que se le muestran a los demás usuarios, se le mostrarán las opciones Crear Perfil, Crear Caso y Modificar Perfil.
+
+
 
 # Aportaciones principales:
 deberanse destacar as aportacións importantes do traballo realizado, tendo en conta os obxectivos fixados
