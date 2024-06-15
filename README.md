@@ -1,4 +1,4 @@
-# Manual de instalación:
+[Manual de instalación](#manual)
 
 ## Programas a descargar a mano:
 
@@ -461,7 +461,7 @@ Entidades:
 # Pruebas llevadas a cabo: 
 describiranse as probas realizadas aos distintos niveis para garantir o correcto funcionamento do software ou do hardware.
 
-# Manual de usuario:
+# Manual de usuario: <a name="manual"></a>
 debe incluír requisitos mínimos, manual de instalación e de utilización
 
 # Aportaciones principales:
