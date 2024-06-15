@@ -545,6 +545,20 @@ Primero se abrirá la página de inicio de sesión, en donde el usuario deberá 
 
 Una vez iniciado sesión se mostrará un menú con las acciones que puede realizar el usuario. Este menú, si el usuario tiene el rol "usuario", sólo mostrará las opciones Casos de mediación y Estadísticas. Si el usuario tiene el rol Administrados, a parte de las opciones que se le muestran a los demás usuarios, se le mostrarán las opciones Crear Perfil, Crear Caso y Modificar Perfil.
 
+
+### Casos de mediación
+
+### Estadísticas
+
+### Crear Perfil
+
+### Crear Caso
+
+### Modificar Perfil
+
+### Cerrar sesión
+
+
 # Aportaciones principales:
 deberanse destacar as aportacións importantes do traballo realizado, tendo en conta os obxectivos fixados
 
