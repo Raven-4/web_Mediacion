@@ -406,9 +406,57 @@ Diagrama de Flujo de Pantallas
 El diagrama de flujo de pantallas muestra la navegación que puede hacer el cliente. En este caso se distinguen usuarios Administradores y No administradores. Las cajas rectangulares representan las distintas pantallas accesibles, y los rombos representan las acciones que pueden realizar los usuarios. Las acciones podrán ser positivas (marcadas con "Si"), o negativas (marcadas con "No"). En caso de que no se marque la respuesta, significará que la acción siempre se realiza.
 
 # Gestión de datos e información:
-describiranse os métodos ou técnicas empregadas para xestionar tanto os datos coma o resto de información relevante.
+
+Para el almacenamiento de datos, se ha utilizado MariaDB, una base de datos relacional basada en MySQL. La base de datos se despliega en un contenedor Docker, así como PHPMyAdmin, que permite modificar la base de datos.
 
 ![Untitled](https://github.com/Raven-4/web_Mediacion/assets/121634522/ee935990-1aa6-481e-9de4-9049f8306481)
+Modelo Entidad-relacion
+
+Entidades:
+
+ - Usuarios: almacena la información de todos los usuarios del sistema.
+
+   - ID: identificador único que permite distinguir los usuarios.
+  
+   - UserName: nombre de usuario.
+  
+   - Nombre: nombre real del usuario.
+  
+   - Apellidos: apellidos del usuario.
+  
+   - CorreoElectronico: correo electrónico del usuario.
+  
+   - Contraseña: contraseña del usuario.
+  
+   - Rol: rol del usuario, puede ser o "admin" o "usuario".
+  
+ - CasosMediacion: almacena la información de todos los casos de mediación del sistema.
+   
+   - ID: identificador único que permite distinguir el caso de mediación.
+  
+   - AlumnosInvolucrados: alumnos en conflicto, necesitados del programa de mediación.
+  
+   - Curso: curso académico de los alumnos involucrados.
+  
+   - FechaApertura: fecha en la que se inicia el proceso de mediación.
+  
+   - Mediador1: primer mediador asignado al caso.
+  
+   - Mediador2: segundo mediador asignado al caso.
+  
+   - FormularioOficial: formulario cubierto por los mediadores. Contendrá la información necesaria para realizar el proceso de mediación del caso.
+  
+   - Estado: estado en el que se encuentra el caso de mediación. Puede ser: en curso, en seguimiento, o finalizado.
+  
+   - ValoraciónFinal: valoración hecha una vez acabado el proceso de mediación. Puede ser: acuerdo, sin acuerdo, o derivado a jefatura de estudios.
+
+ - AsignacionCasos: Tabla para gestionar la relación entre los usuarios y los casos de mediación. Gracias a esta tabla se permite saber qué usuarios están relacionados a los distintos casos.
+
+   - ID: identificador único que permite distinguir la asignación.
+  
+   - IDusuario: identificador único, sacado de la tabla Usuarios, que representa el usuario asignado al caso de mediación.
+  
+   - IDCasoMediacion: identificador único, sacado de la tabla CasosMediacion, que representa el caso de mediación al que se le asigna el usuario.
 
 # Pruebas llevadas a cabo: 
 describiranse as probas realizadas aos distintos niveis para garantir o correcto funcionamento do software ou do hardware.
