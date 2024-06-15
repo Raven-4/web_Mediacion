@@ -1,34 +1,11 @@
 [Manual de instalación](#manual)
 
-## Programas a descargar a mano:
-
-https://nodejs.org/en/download
-
-https://www.docker.com/products/docker-desktop/
-
 ## scripts a ejecutar:
 
 Ejecutar "instalacion.exe" ubicado en la carpeta raíz del proyecto
 
 # Manual de uso:
 
- - Iniciar servidor:
-
-   - Ejecutar "abrir_servidor.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la base de datos.
-
- - Iniciar página web:
-
-   - Ejecutar "iniciar_web.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la página web.
-
- - Acceder a la base de datos MariaDB:
-
-   - Ejecutar script "acceder_bd.exe"
-
-     - Usuario: root
-
-     - Contraseña: root
-
-     - Al acceder se encontrará con distintas bases de datos, la usada para la web se llama web_mediacion
 
 # web_Mediacion
 
@@ -462,7 +439,132 @@ Entidades:
 describiranse as probas realizadas aos distintos niveis para garantir o correcto funcionamento do software ou do hardware.
 
 # Manual de usuario: <a name="manual"></a>
-debe incluír requisitos mínimos, manual de instalación e de utilización
+
+## Requisitos mínimos
+
+Para hayar las especificaciones mínimas necesarias para ejecutar el proyecto, se han utilizado las especificaciones de Docker Desktop. [10]
+
+ - Sistema Operativo: Windows 10 o superior, macOS 13(ventura) o superior, Linux (cualquier distribución)
+
+ - Memoria RAM: mínimo 4GB.
+
+ - Espacio en Disco: 1.5GB para instalación de software y dependencias.
+
+ - CPU: procesador de 64 bits
+
+ - Sistema con virtualización activada.
+
+## Manual de instalación
+
+Para instalar el proyecto se han realizado scripts para que la instalación sea más sencilla, aunque también se puede instalar de forma manual.
+
+### Instalación Manual.
+
+Paso 1: Instalar Docker Desktop:
+
+ - Descargar la última versión de Docker Desktop para desde: https://www.docker.com/products/docker-desktop/
+
+Paso 2: Instalar Node.js y npm:
+
+ - Descargar la última versión de Node.js, npm se instalará automáticamente junto a Node.js. Se descarga desde: https://nodejs.org/en/download
+
+Paso 3: Descargar el proyecto.
+
+Paso 4: instalar contenedores docker:
+
+ - Desde la consola de comandos, ubicarse en la carpeta raíz del proyecto.
+
+ - Ejecutar "cd DB"
+
+ - Ejecutar "cd mariadb_data"
+
+ - Ejecutar "docker run -d --name mariadb -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -v {path}:/var/lib/mysql mariadb". En {path} habrá que poner la ruta hacia la carpeta "mariadb_data".
+
+ - Ejecutar "docker run -d --docker run --name tfg-phpmyadmin -d --link mariadb:db -p 8080:80 phpmyadmin".
+
+Paso 5: Descargar dependencias npm:
+
+ - Desde la consola de comandos, ubicarse en la carpeta raíz del proyecto.
+
+ - Ejecutar "cd BACKEND"
+
+ - Ejecutar "npm install cors@^2.8.5"
+   
+ - Ejecutar "npm install express@^4.19.2"
+   
+ - Ejecutar "npm install mariadb@^3.3.0"
+   
+ - Ejecutar "npm install multer@^1.4.5-lts.1"
+
+Paso 6: iniciar contenedores:
+
+ - Desde la aplicación Docker Desktop, iniciar el contenedor MariaDB. Se puede iniciar también PHPMyAdmin en caso de que se quiera acceder a la base de datos.
+
+Paso 7: iniciar servidor:
+
+ - Desde la consola de comandos, ubicarse en la carpeta raíz del proyecto.
+
+ - Ejecutar "cd BACKEND"
+
+ - Ejecutar "node server.js". Mientras se esté utilizando el servidor, no se puede cerrar esta consola.
+
+Paso 8: instalar Visual Studio Code:
+
+ - Instalar la última versión de VScode desde: https://code.visualstudio.com
+
+Paso 9: iniciar web:
+
+ - Abrir el proyecto en VSCode.
+
+ - Ubicarse en el archivo "index.html".
+
+ - Hacer click derecho y ejecutar "open with live server".
+
+## Instalación con scripts (probado en Windows):
+
+Paso 1: Instalar Docker Desktop:
+
+ - Descargar la última versión de Docker Desktop para desde: https://www.docker.com/products/docker-desktop/
+
+Paso 2: Instalar Node.js y npm:
+
+ - Descargar la última versión de Node.js, npm se instalará automáticamente junto a Node.js. Se descarga desde: https://nodejs.org/en/download
+
+Paso 3: Descargar el proyecto.
+
+Paso 4: script de instalación:
+
+ - Ejecutar el script de instalación ubicado en la carpeta raiz del proyecto llamado "instalacion.exe".
+
+Paso 5: iniciar servidor:
+
+ - Ejecutar "abrir_servidor.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la base de datos.
+
+Paso 6: Iniciar página web:
+
+ - Ejecutar "iniciar_web.exe" ubicado en la carpeta raíz del proyecto, dejar en ejecución mientras se esté utilizando la página web.
+
+Paso 7 (opcional): Acceder a la base de datos MariaDB:
+
+ - Ejecutar script "acceder_bd.exe" ubicado en la carpeta raíz del proyecto.
+ 
+   - Usuario: root
+ 
+   - Contraseña: root
+ 
+   - Al acceder se encontrará con distintas bases de datos, la usada para la web se llama web_mediacion.
+
+## Manual de uso
+
+Una vez completado los pasos de instalación e inicio de los servidores, se abrirá automáticamente la aplicación en el navegador web (el navegador web será el predeterminado del sistema).
+
+Inicio de sesión:
+
+Primero se abrirá la página de inicio de sesión, en donde el usuario deberá de introducir su nombre de usuario y contraseña para acceder a la web.
+
+Menú:
+
+Una vez iniciado sesión se mostrará un menú con las acciones que puede realizar el usuario. Este menú, si el usuario tiene el rol "usuario", sólo mostrará las opciones 
 
 # Aportaciones principales:
 deberanse destacar as aportacións importantes do traballo realizado, tendo en conta os obxectivos fixados
@@ -492,6 +594,8 @@ presentaranse posible ampliacións e traballos relacionados por facer.
 [8] https://nodejs.org/en/about#about-nodejs
 
 [9] https://mariadb.org/es/
+
+[10] https://docs.docker.com/desktop/install/windows-install/
 
 # Anexos (opcional): 
 incluiranse outros elementos de interese no TFG que se consideren necesarios para a mellor comprensión do mesmo.
