@@ -596,13 +596,36 @@ La opción Modificar Perfil, pèrmite a los administradores cambiar los perfiles
 Para cerrar sesión, se tiene que pulsar en el icono ubicado a la derecha del nombre de usuario. Este icono aparece tanto en el menú, como en todas las opciones habilitadas para el usuario.
 
 # Aportaciones principales:
-deberanse destacar as aportacións importantes do traballo realizado, tendo en conta os obxectivos fixados
+
+La principal contribución del proyecto es la creación de una plataforma que mejora la gestión de casos de mediación. Esta plataforma permite centralizar la información, juntando todos los datos relevantes de los casos en un mismo sistema, y facilitando el acceso y gestión de la información. También reduce el tiempo necesario para gestionar los casos, automatizando el proceso, lo que permite a los mediadores dedicar más tiempo a mediar casos, en vez de documentarlos. También se mantiene un registro de los casos mediados, podiendo aacceder al historial en cualquier momento, lo que facilita el seguimiento y la identificación de potenciales personas problemáticas.
 
 # Conclusiones:
- incluiranse todas as conclusións de tipo técnico e persoal.
 
+## Conclusiones técnicas
+
+El proyecto ha conseguido cumplir los objetivos propuestos, permitiendo crear una aplicación que mejora la eficacia y eficiencia de la gestión de casos de mediación. Principalmente se ha conseguido la centralización de los datos, facilitando el accieso a los usuarios; y la automatización del proceso, que permite reducir el tiempo y esfuerzo requeridos para gestionar los casos.
+
+## Conclusiones personales
+
+El proyecto me ha permitido aprender múltiples técnicas nuevas. Aprendí a implementar servidores web utilizando Node.js, cosa que no fué fácil al principio, así como la gestión de archivos en la base de datos. También se me ha permitido profundizar en diversas tecnologías ya conocidas como HTML, JavaScript o CSS, así como aprender nuevas como Express y Node.js. También me permitió resolver problemas nunca vistos, y difíciles de resolver, como la creación del servidor o la gestión de ficheros binarios; problemas que con mucho esfuerzo se consiguieron resolver para dar al final un producto finalizado.
+ 
 # Vías de trabajo futuro:
-presentaranse posible ampliacións e traballos relacionados por facer.
+
+El proyecto puede ampliarse en el futuro, poniendo nuevas funcionalidades que mejorarán su eficacia. Distintas funcionalidades para el trabajo futuro pueden ser:
+
+1. Envío de alertas por correo electrónico
+
+ - Cada vez que se haga una actualización o creación de un caso de mediación, se le puede notificar al mediador vía correo electrónico.
+
+2. Sistema de mensajería
+
+ - Dentro de la aplicación, se puede crear un sistema de mensajería instantáneo entre los mediadores, mejorando así la comuncación entre ellos.
+
+3. Ampliación de funcionalidades
+
+ - Se puede integrar un sistema de edición de documentos para el Formulario Oficial, que permita editar el formulario dentro de la aplicación.
+
+Con estos cambios, la aplicación se puede mejorar. También se pueden implementar encuestas de satisfacción para que los usuarios puedan dar su opinión sobre la plataforma. En estas encuestas también podrán dar ideas, que podrán ser implementadas en el proyecto, enriqueciendo así las funcionalidades del sistema según las necesidades de los usuarios.
 
 # Referencias:
 
