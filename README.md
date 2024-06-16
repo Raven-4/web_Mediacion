@@ -548,16 +548,29 @@ Una vez iniciado sesión se mostrará un menú con las acciones que puede realiz
 
 ### Casos de mediación
 
+En esta opción se muestran los casos de mediación. En caso de que el usuario tenga el rol Administrador, se mostrarán todos los casos de mediación registrados en el sistema. Si el usuario no tiene dicho rol, sólo se le mostrarán los casos que tenga asignados.
+
+Los casos de mediación se mostrarán en una tabla. Esta tabla mostrará todos los detalles del caso, y permitirá al usuario hacer ciertas modificaciones. El usuario, tanto si es administrador como si no lo es, podrá descargar el Fromulario Oficial y cambiarlo por uno nuevo, cambiar el Estado, y cambiar la Valoración Final. Para confirmar todos estos cambios, el usuario tiene que pulsar en la opción Guardar.
+
 ### Estadísticas
+
+En la opción Estadísticas, al administrador se le mostrará una lista de todos los usuarios junto a las estadísticas de cada uno; también le aparecerán las estadísticas globales. A los usuarios no administradores sólo se les mostrarán sus estadísticas propias.
 
 ### Crear Perfil
 
+Esta opción permite a los administradores crear nuevos usuarios. Para crear nuevos usuarios se requiere insertar un nombre de usuario único, el nombre y apellidos de la persona, su correo electrónico, su contraseña y su rol. El rol está predefinido como usuario, pero se puede cambiar a Administrador si se desea. Para confirmar la creación del nuevo perfil se clickará en el botón Crear Perfil.
+
 ### Crear Caso
+
+Los administradores podrán crear nuevos casos de mediación en la opción Crear Caso del menú. En esta opción deben rellenar el formulario que consta de: los alumnos involucrados en el conflicto, el curso, la fecha de apertura (que por defefcto será la fecha del sistema), los 2 mediadores que se encargarán de llevar el caso, el Formulario Oficial en formato PDF (este formulario será opcional), y el estado (que por defecto será En curso).
 
 ### Modificar Perfil
 
+La opción Modificar Perfil, pèrmite a los administradores cambiar los perfiles de usuario. Para realizar dicha operación, se le mostrará una lista con todos los perfiles de usuario al administrador, y este deberá escoger el perfil que desea modificar. Cuando lo escoja, se le mostrarán todos los datos del usuario, y los podrá modificar. También podrá borrar perfiles.
+
 ### Cerrar sesión
 
+Para cerrar sesión, se tiene que pulsar en el icono ubicado a la derecha del nombre de usuario. Este icono aparece tanto en el menú, como en todas las opciones habilitadas para el usuario.
 
 # Aportaciones principales:
 deberanse destacar as aportacións importantes do traballo realizado, tendo en conta os obxectivos fixados
