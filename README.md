@@ -415,7 +415,30 @@ Entidades:
    - IDCasoMediacion: identificador único, sacado de la tabla CasosMediacion, que representa el caso de mediación al que se le asigna el usuario.
 
 # Pruebas llevadas a cabo: 
-describiranse as probas realizadas aos distintos niveis para garantir o correcto funcionamento do software ou do hardware.
+
+Durante el desarrollo del sistema se realizaron diferentes pruebas para garantizar el correcto funcionamiento del mismo.
+
+## Pruebas de integración
+
+Se hicieron pruebas para comprobar la coorecta comunicación entre los distintos módulos.
+
+ - Comunicación entre Frontend y Backend: Se probaron las peticiones enviadas del Frontend al Backend para asegurar la correcta comunicación, comprobando el funcionamiento de las peticiones de recuperación, creación, actualización y eliminación de datos.
+
+ - Integración con la Base de Datos: Se  probó que las operaciones CRUD (Create, Read, Update, Delete), enviadas desde el servidor Backend, funcionaran correctamente con la base de datos MariaDB.
+
+ - Autenticación: se probó el proceso de autenticación de usuarios, así se puede asegurar que sólo los usuarios registrados puedan acceder a la aplicación.
+
+## Pruebas Funcionales
+
+ - Gestión de casos de mediación: se probó el correcto funcionamiento de todas las funcionalidades relacionadas con la creación, visualización y edición de los casos de mediación.
+
+ - Gestión de usuarios: se comprobó el funcionamiento del proceso de creación y modificiación de usuarios.
+
+ - Descarga de formularios: se comprobó el correcto funcionamiento de la descarga e ingesta de archivos pdf a la base de datos.
+
+## Pruebas de compatibilidad:
+
+ - Compatibilidad de navegadores: se comprobó que la aplicación funcionase correctamente en diferentes navegadores (Opera GX, Chrome y Firefox).
 
 # Manual de usuario: <a name="manual"></a>
 
