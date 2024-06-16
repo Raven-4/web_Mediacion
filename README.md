@@ -4,10 +4,6 @@
 
 # Portada segundo modelo oficial, cos datos de identificación do traballo
 
-# Dedicatoria (opcional).
-
-# Agradecementos (opcional).
-
 # Índice de contidos.
 
 # Índice de ilustracións (se procede).
