@@ -18,7 +18,7 @@ Este documento detalla el trabajo efectuado en el proyecto final de carrera en I
 
 Los conflictos han sido un problema continuo en todos los ámbitos de la vida, sobre todo en momentos de cambio e inseguridad como puede ser la adolescencia. A este problema se le ha dado una solución, la mediación de conflictos.  
 
-La mediación es una forma de lograr la paz negociada en un conflicto. Esta se basa en agregar una tercera persona que debe ser neutral al problema que ayudará a las partes en conflicto a llegar a un acuerdo común. [1] En las aulas, cuando existe un sistema de mediación, este suele ser un equipo conformado por un coordinador (un profesor) y mediadores (alumnos voluntarios a participar en el equipo de mediación). Cuando surge un conflicto, es el coordinador el que enviará a 2 mediadores a hablar con la parte perjudicada y si esta acepta la mediación, comenzará el proceso en donde los mediadores estudiarán el conflicto, y posteriormente se reunirán con las partes en conflicto para llegar a un acuerdo.[2]
+La mediación es una forma de lograr la paz negociada en un conflicto. Esta se basa en agregar una tercera persona que debe ser neutral al problema que ayudará a las partes en conflicto a llegar a un acuerdo común. [1] En las aulas, cuando existe un sistema de mediación, este suele ser un equipo conformado por un coordinador (un profesor) y mediadores (alumnos voluntarios a participar en el equipo de mediación). Cuando surge un conflicto, es el coordinador el que enviará a 2 mediadores a hablar con la parte perjudicada y si esta acepta la mediación, comenzará el proceso en donde los mediadores estudiarán el conflicto, y posteriormente se reunirán con las partes en disputa para llegar a un acuerdo.[2]
 
 Este proyecto propone realizar una aplicación web para ayudar al equipo de mediación a automatizar sus tareas y datos, y que así se puedan hacer las mediaciones de una forma más efectiva y eficaz.
 
@@ -30,7 +30,7 @@ Actualmente, la gestión de los casos de mediación en el entorno educativo se h
 
 ## Objetivo principal:
 
-Este proyecto tiene la intención de desarrollar una herramienta centralizada de gestión de casos de mediación que permita al equipo de mediación realizar su trabajo de forma más efectiva. Esta herramienta, accesible via web, asegurará el almacenamiento seguro y organizado de la información, así como proporcionar herramientas para facilitar el seguimiento de los casos.
+Este proyecto tiene la intención de desarrollar una herramienta centralizada de gestión de casos de mediación, la cual permitirá al equipo de mediación realizar su trabajo de forma más efectiva. Esta herramienta, accesible via web, asegurará el almacenamiento seguro y organizado de la información, así como proporcionar herramientas para facilitar el seguimiento de los casos.
 
 ## Objetivos específicos:
 
@@ -50,9 +50,9 @@ Este proyecto tiene la intención de desarrollar una herramienta centralizada de
 
 ## Solución aportada:
 
-La solución propuesta para el problema presentado anteriormente es la creación de un sistema de gestión de los casos de mediación centralizado y digitalizado. Esta aplicación se ha elegido hacer via web para ayudar al acceso por parte de los usuarios sin que estos mismos tengan la necesidad de descargar ningún tipo de programa. El sistema permite una gestión eficiente y organizada de los casos, proporcionando herramientas para el seguimiento y evaluación continua de estos.
+La solución propuesta, para el problema presentado anteriormente, es la creación de un sistema de gestión de los casos de mediación centralizado y digitalizado. Esta aplicación se ha elegido hacer via web para ayudar al acceso por parte de los usuarios sin que estos mismos tengan la necesidad de descargar ningún tipo de programa. El sistema permite una gestión eficiente y organizada de los casos, proporcionando herramientas para el seguimiento y evaluación continua de estos.
 
-El sistema tiene una base de datos centralizada que almacena al equipo de mediación y los casos de mediación, incluyendo los detalles de los alumnos involucrados, los mediadores asignados y la documentación y estado del caso. Además, contiene una interfaz de usuario intuitiva que permitirá al usuario interactuar con el sistema de manera eficiente, independientemente de su nivel técnico.
+El sistema tiene una base de datos centralizada que almacena al equipo de mediación y los casos de mediación, incluyendo los detalles de los alumnos involucrados, los mediadores asignados y la documentación y estado del caso. Además, contiene una interfaz de usuario intuitiva, que permitirá al usuario interactuar con el sistema de manera eficiente, independientemente de su nivel técnico.
 
 # Metodología:
 
@@ -60,13 +60,13 @@ Para el desarrollo del sistema se ha utilizado una metodología ágil, en concre
 
 ## Metodologías ágiles:
 
-Las metodologías ágiles son un un método alternativo de desarrollo de software. Esta metodología surge por la necesidad de cambiar los métodos convencionales, modelos de desarrollo líneal como puede ser el módelo en cascada, que resultaban poco efectivos para los equipos que desarrollaban software, pues este tipo de desarrollo está expuesto a constantes cambios y modificaciones porque las necesidades de los clientes también están en constante cambio.
+Las metodologías ágiles son un método alternativo de desarrollo de software. Esta metodología surge por la necesidad de cambiar los métodos convencionales, modelos de desarrollo líneal como puede ser el módelo en cascada, que resultaban poco efectivos para los equipos que desarrollaban software, pues este tipo de desarrollo está expuesto a constantes cambios y modificaciones, las necesidades de los clientes también están en constante cambio.
 
-Por la necesidad de este cambio, en febrero de 2001, se reunieron 17 personas para buscar un terreno común en el desarrollo de software. A esta reunión acudieron los representantes de varias metodologías ágiles ya existentes como "Extreme Programing" o Scrum. La reunión daría resultado a la redacción y firma del "Agile Manifesto" o Manifiesto por el desarrollo Ágil. El manifiesto enfatiza la organización basada en la colaboración y el respeto, promoviendo un entorno que considera a las personas como fundamentales para el éxito.
+Por la necesidad de este cambio, en febrero de 2001, se reunieron 17 personas para buscar un terreno común en el desarrollo de software. A esta reunión acudieron los representantes de varias metodologías ágiles ya existentes como "Extreme Programing" o Scrum. La reunión daría resultado a la redacción y firma del "Agile Manifesto" o Manifiesto por el desarrollo Ágil. Este documento enfatiza la organización basada en la colaboración y el respeto, promoviendo un entorno que considera a las personas como fundamentales para el éxito.
 
 El "Agile Manifesto" consta de 4 valores principales para la gestión ágil de proyectos y, a partir de estos valores, se desarrollaron 12 principios.
 
-Los valores del Manifiesto ágil:
+Los valores del Manifiesto Ágil:
 
 1. Individuos e interacciones sobre procesos y herramientas
 
@@ -76,7 +76,7 @@ Los valores del Manifiesto ágil:
 
 4. Respuesta ante el cambio sobre seguir un plan
 
-Los 12 principios del manifiesto ágil:
+Los 12 principios del Manifiesto Ágil:
 
 1. Nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor.
 
@@ -100,25 +100,25 @@ Los 12 principios del manifiesto ágil:
 
 11. Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.
 
-12. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.[3] 
+12. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.[3] ???
 
 ## Scrum
 
-Scrum fué desarrollado a principios de los años 90, y se redactó una guía, que se ha hido actualizando constantemente, en 2010, con el objetivo de ayudar a las personas a entender Scrum.
+Scrum fué desarrollado a principios de los años 90. Se redactó una guía en 2010, que se ha hido actualizando constantemente con el objetivo de ayudar a las personas a entender Scrum.
 
-Según la "Scrum guide" o guía de scrum: "Scrum es un marco ligero que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptables para problemas complejos." Es decir, requiere de un jefe de equipo denominado "Scrum Master", que facilitará un entorno en el que el propietario del producto, denominado "Product Owner", ornganizará el trabajo, y el equipo, o "Scrum Team", entregará el trabajo de forma incremental durante eventos de longitud fija, llamados "Sprints".
+Según la "Scrum Guide" o guía de scrum: "Scrum es un marco ligero que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptables para problemas complejos." Es decir, requiere de un jefe de equipo denominado "Scrum Master", que facilitará un entorno en el que el propietario del producto, denominado "Product Owner", organizará el trabajo, y el equipo, o "Scrum Team", entregará el trabajo de forma incremental durante eventos de longitud fija, llamados "Sprints".
 
-Scrum está basado en el empirismo (conocimiento a partir de la experiencia y toma de decisiones basada en la observación) y el pensamiento Lean (reducción de los desperdicios centrandose en lo esencial). Utiliza un enfoque iterativo e incremental y combina cuatro eventos formales que convergen en un evento principal, el Sprint. Esto es posible porque se aplican los pilares empíricos de Scrum: la transparencia, la inspección y la adaptación. Además, las personas que conformen el equipo deben seguir cinco valores: el compromiso, el enfoque, la apertura, el respeto y el coraje.
+Scrum está basado en el empirismo (conocimiento a partir de la experiencia y toma de decisiones basada en la observación) y el pensamiento Lean (reducción de los desperdicios centrándose en lo esencial). Utiliza un enfoque iterativo e incremental. Combina cuatro eventos formales que convergen en un evento principal, el Sprint. Esto es posible porque se aplican los pilares empíricos de Scrum que son: la transparencia, la inspección y la adaptación. Además, las personas que conformen el equipo deben seguir cinco valores a saber: el compromiso, el enfoque, la apertura, el respeto y el coraje.
 
-Scrum contiene un evento fundamental, el Sprint, el "latido del corazón de Scrum". Estos eventos son de longitud fija, durarán como máximo un mes y es donde se produce todo el trabajo del proyecto. Es importante mencionar que durante los sprints no se pueden hacer cambios de requisitos u objetivos porque pondría en peligro la continuidad del proyecto. Los sprints están divididos en 4 subeventos: La planificación o "Sprint Planning", se consituirá el trabajo a hacer durante el sprint; el Scrum diario o "Daily Scrum", son reuniones diarías en donde se insepcciona el progreso y, en caso de ser necesario, se ajustará el trabajo planeado; revisión del Sprint o "Sprint Review", al final del sprint se revisan los resultados proporcionados por el equipo;  y la retrospectiva del Sprint o "Sprint Retrospective", donde se junta el equipo para insepccionar los puntos fuertes y débiles del equipo, analizando tanto los problemas y soluciones que aparecieron durante el sprint, como las situaciones que fueron bien. [4]
+Scrum contiene un evento fundamental, el Sprint, el "latido del corazón de Scrum". Los sprints son de longitud fija, durarán como máximo un mes y es donde se produce todo el trabajo del proyecto. Es importante mencionar que durante los sprints no se pueden hacer cambios de requisitos u objetivos porque pondría en peligro la continuidad del proyecto. Los sprints están divididos en 4 subeventos: la planificación o "Sprint Planning", se constituirá el trabajo a hacer durante el sprint; el Scrum diario o "Daily Scrum", son reuniones diarías donde se insepcciona el progreso y, en caso de ser necesario, se ajustará el trabajo planeado; revisión del Sprint o "Sprint Review", al final del sprint se revisan los resultados proporcionados por el equipo;  y la retrospectiva del Sprint o "Sprint Retrospective", donde se junta el equipo para insepccionar los puntos fuertes y débiles del equipo, analizando tanto los problemas y soluciones que aparecieron durante el sprint, así como las situaciones que fueron bien. [4]
 
 ## Aplicando Scrum a un proyecto individual
 
-Al estar Scrum diseñado para equipos colaborativos, hay que hacer algunas modificaciones a sus principios y prácticas para poder aplicarlas a un proyecto individual. En cuanto a los roles (Product Owner, Scrum Master y Scrum Team) todos serán asumidos por la misma persona.
+Al estar Scrum diseñado para equipos colaborativos, hay que hacer algunas modificaciones a sus principios y prácticas para poder aplicarlas a un proyecto individual, ya que los roles (Product Owner, Scrum Master y Scrum Team) serán asumidos por la misma persona.
 
-A la hora de realizar un sprint, este no cambiará mucho. El sprint seguirá siendo de longitud fija y ya no se harán los cuatro subeventos, sino tres de ellos, y los que se realicen tendrán ciertas modificaciones. A la hora de la planificación, esta no cambiará. El "Daily Scrum" si recibirá algún cambio, pues ya no hay equipo al que comunicar el progreso realizado, pero sí se podrá realizar una planificación de las tareas que se realizarán diariamente. A la hora de hacer un "Sprint Review", no se realizarán cambios. La retrospectiva del sprint, al estar orientada al trabajo en equipo, no se realizará.
+A la hora de realizar un sprint, este no cambiará mucho. El sprint seguirá siendo de longitud fija y ya no se harán los cuatro subeventos, sino tres de ellos, la planificación, el "Daily Scrum" y la revisión del sprint; estos tendrán ciertas modificaciones. En cuanto a la planificación, esta no cambiará. El "Daily Scrum" si recibirá algún cambio, pues ya no hay equipo al que comunicar el progreso realizado, pero sí se podrá realizar una planificación de las tareas que se realizarán diariamente. El "Sprint Review", no se recibirá cambios. La retrospectiva del sprint, al estar orientada al trabajo en equipo, no se realizará.
 
-Aplicando estos pequeños cambios, es posible la adaptación de la metodología ágil Scrum a un proyecto individual. Es este Scrum modificado, el que se usará a la hora de desarrollar el proyecto de gestión de casos de mediación. 
+Aplicando estos pequeños cambios, es posible la adaptación de la metodología ágil Scrum a un proyecto individual. Es este Scrum modificado, el que se usará para de desarrollar el proyecto de gestión de casos de mediación. 
 
 # Planificación y seguimento:
 
@@ -142,7 +142,7 @@ Duración real: 1 semana
 
 Duración planificada: 1 semana
 
-En el segundo sprint, se diseñó la arquitectura del sistema creando el diagrama de arquitectura que incluye el Front-end, Back-end y la base de datos. También se hizo el modelo entidad-relación de la base de datos.
+En el segundo sprint, se diseñó la arquitectura del sistema creando el diagrama de arquitectura que incluye el Front-end, el Back-end y la base de datos. También se hizo el modelo entidad-relación de la base de datos.
 
 Duración real: 1 semana
 
@@ -152,7 +152,7 @@ Duración planificada: 2 semanas
 
 El objetivo propuesto para este sprint, fué realizar el desarrollo de la base de datos en SQLite y el backend en PHP.
 
-Durante este sprint surgieron distintos problemas. Empezando por la base de datos, se decidió cambiar SQLite por MySQL. Estos son distintos sistemas usados para la gestión de bases de datos. El motivo del cambio fué la dificultad encontrada a la hora de acceder desde el servidor backend, a la base de datos; pues SQLite es un sistema de gestión sin servidor, esto lo convierte en un sistema ineficiente para realizar una página web. Posteriormente se encontró otro problema al que no se le halló solución: al ejecutar el servidor MySQL, este no podía ser accedido de ninguna forma para acceder a sus datos, a pesar de que el servidor se ejecutaba correctamente; para solucionarlo se tomó la decisión de volver a cambiar el gestor de base de datos, utilizando finalmente MariaDB. También se decidió cambiar el lenguaje del backend, pasando de PHP a Node.js, que permite realizar el servidor de una forma más sencilla. Debido a estos problemas encontrados el sprint duró más de lo planificado.
+Durante este sprint surgieron distintos problemas. Empezando por la base de datos, se decidió cambiar SQLite por MySQL. Estos son distintos sistemas usados para la gestión de bases de datos. El motivo del cambio fue la dificultad encontrada a la hora de acceder desde el servidor backend a la base de datos; pues SQLite es un sistema de gestión sin servidor, esto lo convierte en un sistema ineficiente para realizar una página web. Posteriormente se encontró otro problema al que no se le halló solución: al ejecutar el servidor MySQL, este no podía ser accedido de ninguna forma para alcanzar sus datos, a pesar de que el servidor se ejecutaba correctamente; para solucionarlo se tomó la decisión de volver a cambiar el gestor de base de datos, utilizando finalmente MariaDB. También se decidió cambiar el lenguaje del backend, pasando de PHP a Node.js, que permite realizar el servidor de una forma más sencilla. Debido a estos problemas encontrados el sprint se extendió más de lo planificado.
 
 Duración real: 3 semanas
 
@@ -160,7 +160,7 @@ Duración real: 3 semanas
 
 Duración planificada: 2 semanas
 
-El cuarto sprint es el último del desarrollo de la aplicación. Durante este sprint se desarrolló todo el frontend de la aplicación, creando todas las páginas necesarias para su uso usando HTML. Se finalizó el sprint con la implementación de la interfaz de usuario. En ciertos momentos se necesitó cambiar ciertas partes del servidor backend, pero eso no demoró la duración del sprint.
+El cuarto sprint es el último del desarrollo de la aplicación. Durante este sprint se desarrolló todo el frontend de la aplicación, creando todas las páginas necesarias para su uso, empleando HTML. Se finalizó el sprint con la implementación de la interfaz de usuario. En ciertos momentos se necesitó cambiar ciertas partes del servidor backend, pero eso no demoró la duración del sprint.
 
 Duración real: 2 semanas
 
@@ -174,7 +174,7 @@ Duración real:
 
 # Arquitectura:
 
-La arquitectura del sistema está diseñada de forma modular, para que sea fácil de mantener. Está compuesta de varios componentes interconectados que se pueden actualizar de manera independiente, sin que estos cambios influyan a las otras capas. El sistema sigue una arquitectura de capas, dividida en tres capas principales: la capa de presentación, la capa de negocio, y la de datos.
+La arquitectura del sistema está diseñada de forma modular, para que sea fácil de mantener. Está compuesta de varios componentes interconectados que se pueden actualizar de manera independiente, sin que estos cambios influyan a las otras capas. El sistema sigue una arquitectura de capas, dividida en tres capas principales: la de presentación, la de lógica de la aplicación, y la de datos.
 
 ![Application architecture example](https://github.com/Raven-4/web_Mediacion/assets/121634522/cc126678-d3c4-4596-b2c1-07269160ed19) 
 Ilustración 1. Diagrama de arquitectura
@@ -185,11 +185,11 @@ La capa de presentación se encarga de la interacción con el usuario. Incluye t
 
 ## Capa de Lógica de la aplicación (Backend):
 
-La capa de lógica se encarga de interconectar a la capa de Presentación con la Base de datos. El Backend procesa las solicitudes HTTP provenientes del Frontend, aplica las reglas de negocio necesarias y se comunica con la base de datos. En esta capa es donde se realiza la autenticación de usuarios, la gestión de los casos de mediación, y la asignación de mediadores; así como las modificaciones de los usuarios o la eliminación de estos mismos. Para la realización de esta capa se ha utilizado Node.js y el framework Express.js.
+La capa de lógica se encarga de interconectar la capa de Presentación con la Base de datos. El Backend procesa las solicitudes HTTP provenientes del Frontend, aplica las reglas de negocio necesarias y se comunica con la base de datos. En esta capa es donde se realiza la autenticación de usuarios, la gestión de los casos de mediación, y la asignación de mediadores, así como las modificaciones de los usuarios o la eliminación de estos mismos. Para la realización de esta capa se ha utilizado Node.js y el framework Express.js.
 
 ## Capa de Datos:
 
-La capa de datos se encarga del almacenamiento y la gestión de los datos. Para el almacenamiento de los datos se ha usado el Sistema Gestor de Bases de Datos (SGBD) MariaDB; y para acceder e interactuar con la misma, de forma independiente al Backend, se ha usado phpMyAdmin. Se han utilizado consultas SQL para gestionar y recuperar datos de forma eficiente.
+La capa de datos se encarga del almacenamiento y la gestión de los datos. Para el almacenamiento de los datos se ha empleado el Sistema Gestor de Bases de Datos (SGBD) MariaDB; y para acceder e interactuar con la misma, de forma independiente al Backend, se ha usado phpMyAdmin. Se han utilizado consultas SQL para gestionar y recuperar datos de forma eficiente.
 
 # Tecnologías e integración de productos de terceros:
 
