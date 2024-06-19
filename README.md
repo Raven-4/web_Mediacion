@@ -16,11 +16,11 @@ Este documento detalla el trabajo efectuado en el proyecto final de carrera en I
 
 ## Motivación
 
-Los conflictos han sido un problema continuo en todos los ámbitos de la vida, sobre todo en momentos de cambio e inseguridad, como puede ser la adolescencia. A este problema se le ha dado una solución, la mediación de conflictos.  
+Los conflictos han sido un problema continuo en todos los ámbitos de la vida, sobre todo en momentos de cambio e inseguridad, como puede ser la adolescencia. A este problema se le ha dado una solución, la mediación de conflictos.
 
-La mediación es una forma de lograr la paz negociada en un conflicto. Se basa en agregar una tercera persona que debe ser neutral al problema que ayudará a las partes en conflicto a llegar a un acuerdo común. [1] En las aulas, cuando existe un sistema de mediación, este suele ser un equipo conformado por un coordinador (un profesor) y mediadores (alumnos voluntarios a participar en el equipo de mediación). Cuando surge un conflicto, es el coordinador el que enviará a 2 mediadores a hablar con la parte perjudicada y si esta acepta la mediación, comenzará el proceso en donde los mediadores estudiarán el conflicto, y posteriormente se reunirán con las partes en disputa para llegar a un acuerdo.[2]
+La mediación es una forma de lograr la paz negociada en un conflicto. Se basa en agregar una tercera persona, que debe ser neutral al problema y ayudará a las partes en conflicto a llegar a un acuerdo común. [1] En las aulas, cuando existe un sistema de mediación, este suele ser un equipo conformado por un coordinador (un profesor) y unos mediadores (alumnos voluntarios a participar en el equipo de mediación). Cuando surge un conflicto, es el coordinador el que enviará a 2 mediadores a hablar con la parte perjudicada y si esta acepta la mediación, comenzará el proceso donde los mediadores estudiarán el conflicto. Posteriormente se reunirán con las partes en disputa para llegar a un acuerdo.[2]
 
-Este proyecto propone realizar una aplicación web para ayudar al equipo de mediación a automatizar sus tareas y datos, y que así se puedan hacer las mediaciones de una forma más efectiva y eficaz.
+Este proyecto propone realizar una aplicación web, cuyo objetivo sea ayudar al equipo de mediación a automatizar sus tareas y datos, y que así se puedan hacer las mediaciones de una forma más efectiva y eficaz.
 
 # Objetivos: 
 
@@ -30,7 +30,7 @@ Actualmente, la gestión de los casos de mediación en el entorno educativo se h
 
 ## Objetivo principal:
 
-Este proyecto tiene la intención de desarrollar una herramienta centralizada de gestión de casos de mediación, la cual permitirá al equipo de mediación realizar su trabajo de forma más efectiva. Esta herramienta, accesible via web, asegurará el almacenamiento seguro y organizado de la información, así como proporcionar herramientas para facilitar el seguimiento de los casos.
+Este proyecto tiene la intención de desarrollar una herramienta centralizada de gestión de casos de mediación, la cual permitirá al equipo de mediación realizar su trabajo de forma más efectiva. Esta herramienta, accesible vía web, garantizará el almacenamiento seguro y organizado de la información, y proporcionará herramientas para facilitar el seguimiento de los casos.
 
 ## Objetivos específicos:
 
@@ -41,30 +41,30 @@ Este proyecto tiene la intención de desarrollar una herramienta centralizada de
    - Alcance: permitir que la página web pueda acceder a la base de datos para poder extraer e insertar información.
 
  - Implementación de funcionalidades de Seguimiento de Casos:
-   - Alcance: Desarrollar funcionalidades que permitan al equipo de mediadores registrar y actualizar los casos de mediación, así como realizar su valoración final y guardar informes del caso.
+   - Alcance: desarrollar funcionalidades que permitan al equipo de mediadores registrar y actualizar los casos de mediación, así como realizar su valoración final y guardar informes del caso.
 
  - Desarrollo de la Interfaz de Usuario:
-   - Alcance: Diseñar una interfaz de usuario que sea intuitiva y accesible para el equipo de mediación. 
+   - Alcance: diseñar una interfaz de usuario que sea intuitiva y accesible para el equipo de mediación. 
 
 # Resumen de la solución propuesta: 
 
 ## Solución aportada:
 
-La solución propuesta, para el problema presentado anteriormente, es la creación de un sistema de gestión de los casos de mediación centralizado y digitalizado. Esta aplicación se ha elegido hacer via web para ayudar al acceso por parte de los usuarios sin que estos mismos tengan la necesidad de descargar ningún tipo de programa. El sistema permite una gestión eficiente y organizada de los casos, proporcionando herramientas para el seguimiento y evaluación continua de estos.
+La solución propuesta, para el problema presentado anteriormente, es la creación de un sistema de gestión de los casos de mediación centralizado y digitalizado. Esta aplicación se ha elegido hacer vía web para ayudar al acceso por parte de los usuarios, sin que estos mismos tengan la necesidad de descargar ningún tipo de programa. El sistema permite una gestión eficiente y organizada de los casos, proporcionando herramientas para el seguimiento y evaluación continua de estos.
 
-El sistema tiene una base de datos centralizada que almacena al equipo de mediación y los casos de mediación, incluyendo los detalles de los alumnos involucrados, los mediadores asignados y la documentación y estado del caso. Además, contiene una interfaz de usuario intuitiva, que permitirá al usuario interactuar con el sistema de manera eficiente, independientemente de su nivel técnico.
+El sistema tiene una base de datos centralizada que almacena la información relativa al equipo de mediación y a los casos de mediación, incluyendo los detalles de los alumnos involucrados, los mediadores asignados, la documentación y estado del caso. Además, contiene una interfaz de usuario intuitiva que permitirá al usuario interactuar con el sistema de manera eficiente, independientemente de su nivel técnico.
 
 # Metodología:
 
-Para el desarrollo del sistema se ha utilizado una metodología ágil, en concreto se ha utilizado Scrum adaptado a las necesidades del proyecto.
+Para el desarrollo del sistema se ha utilizado una metodología ágil.  En concreto se ha utilizado Scrum adaptado a las necesidades del proyecto.
 
 ## Metodologías ágiles:
 
-Las metodologías ágiles son un método alternativo de desarrollo de software. Esta metodología surge por la necesidad de cambiar los métodos convencionales, modelos de desarrollo líneal como puede ser el módelo en cascada, que resultaban poco efectivos para los equipos que desarrollaban software, pues este tipo de desarrollo está expuesto a constantes cambios y modificaciones, las necesidades de los clientes también están en constante cambio.
+Las metodologías ágiles son un método alternativo de desarrollo de software. Esta metodología surge por la necesidad de cambiar los métodos convencionales, modelos de desarrollo lineal, como puede ser el modelo en cascada, que resultaban poco efectivos para los equipos que desarrollaban software, pues este tipo de desarrollo está expuesto a constantes cambios y modificaciones, porque las necesidades de los clientes también están en constante cambio.
 
-Por la necesidad de este cambio, en febrero de 2001, se reunieron 17 personas para buscar un terreno común en el desarrollo de software. A esta reunión acudieron los representantes de varias metodologías ágiles ya existentes como "Extreme Programing" o Scrum. La reunión daría resultado a la redacción y firma del "Agile Manifesto" o Manifiesto por el desarrollo Ágil. Este documento enfatiza la organización basada en la colaboración y el respeto, promoviendo un entorno que considera a las personas como fundamentales para el éxito.
+Por la necesidad de este cambio, en febrero de 2001, se reunieron 17 personas para buscar un terreno común en el desarrollo de software. A esta reunión acudieron los representantes de varias metodologías ágiles ya existentes como "Extreme Programing" o “Scrum”. La reunión daría resultado a la redacción y firma del "Agile Manifesto" o Manifiesto por el Desarrollo Ágil. Este documento enfatiza la organización basada en la colaboración y el respeto, promoviendo un entorno que considera a las personas como fundamentales para el éxito.
 
-El "Agile Manifesto" consta de 4 valores principales para la gestión ágil de proyectos y, a partir de estos valores, se desarrollaron 12 principios.
+El "Agile Manifesto" consta de 4 valores principales para la gestión ágil de proyectos y, a partir de estos valores, se desarrollaron 12 principios. [3]
 
 Los valores del Manifiesto Ágil:
 
@@ -100,23 +100,23 @@ Los 12 principios del Manifiesto Ágil:
 
 11. Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.
 
-12. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.[3] ???
+12. A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.
 
 ## Scrum
 
-Scrum fué desarrollado a principios de los años 90. Se redactó una guía en 2010, que se ha hido actualizando constantemente con el objetivo de ayudar a las personas a entender Scrum.
+Scrum fue desarrollado a principios de los años 90. Se redactó una guía en 2010, que se ha ido actualizando constantemente, con el objetivo de ayudar a las personas a entender Scrum.
 
-Según la "Scrum Guide" o guía de scrum: "Scrum es un marco ligero que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptables para problemas complejos." Es decir, requiere de un jefe de equipo denominado "Scrum Master", que facilitará un entorno en el que el propietario del producto, denominado "Product Owner", organizará el trabajo, y el equipo, o "Scrum Team", entregará el trabajo de forma incremental durante eventos de longitud fija, llamados "Sprints".
+Según la "Scrum Guide" o Guía de Scrum: "Scrum es un marco ligero que ayuda a las personas, equipos y organizaciones a generar valor a través de soluciones adaptables para problemas complejos." Es decir, requiere de un jefe de equipo denominado "Scrum Master", que facilitará un entorno en el que el propietario del producto, denominado "Product Owner" organizará el trabajo; y el equipo, o "Scrum Team", que entregará el trabajo de forma incremental durante eventos de longitud fija, llamados "Sprints".
 
 Scrum está basado en el empirismo (conocimiento a partir de la experiencia y toma de decisiones basada en la observación) y el pensamiento Lean (reducción de los desperdicios centrándose en lo esencial). Utiliza un enfoque iterativo e incremental. Combina cuatro eventos formales que convergen en un evento principal, el Sprint. Esto es posible porque se aplican los pilares empíricos de Scrum que son: la transparencia, la inspección y la adaptación. Además, las personas que conformen el equipo deben seguir cinco valores a saber: el compromiso, el enfoque, la apertura, el respeto y el coraje.
 
-Scrum contiene un evento fundamental, el Sprint, el "latido del corazón de Scrum". Los sprints son de longitud fija, durarán como máximo un mes y es donde se produce todo el trabajo del proyecto. Es importante mencionar que durante los sprints no se pueden hacer cambios de requisitos u objetivos porque pondría en peligro la continuidad del proyecto. Los sprints están divididos en 4 subeventos: la planificación o "Sprint Planning", se constituirá el trabajo a hacer durante el sprint; el Scrum diario o "Daily Scrum", son reuniones diarías donde se insepcciona el progreso y, en caso de ser necesario, se ajustará el trabajo planeado; revisión del Sprint o "Sprint Review", al final del sprint se revisan los resultados proporcionados por el equipo;  y la retrospectiva del Sprint o "Sprint Retrospective", donde se junta el equipo para insepccionar los puntos fuertes y débiles del equipo, analizando tanto los problemas y soluciones que aparecieron durante el sprint, así como las situaciones que fueron bien. [4]
+Scrum contiene un evento fundamental, el Sprint, el "latido del corazón de Scrum". Los sprints son de longitud fija, durarán como máximo un mes y es donde se produce todo el trabajo del proyecto. Es importante mencionar que durante los sprints no se pueden hacer cambios de requisitos u objetivos porque pondría en peligro la continuidad del proyecto. Los sprints están divididos en 4 subeventos: la planificación o "Sprint Planning", se constituirá el trabajo a hacer durante el sprint; el Scrum diario o "Daily Scrum", son reuniones diarias donde se inspecciona el progreso y, en caso de ser necesario, se ajustará el trabajo planeado; revisión del Sprint o "Sprint Review", al final del sprint se revisan los resultados proporcionados por el equipo; y la retrospectiva del Sprint o "Sprint Retrospective", donde se junta el equipo para inspeccionar los puntos fuertes y débiles del equipo, analizando tanto los problemas y soluciones que aparecieron durante el sprint, así como las situaciones que fueron bien. [4]
 
 ## Aplicando Scrum a un proyecto individual
 
-Al estar Scrum diseñado para equipos colaborativos, hay que hacer algunas modificaciones a sus principios y prácticas para poder aplicarlas a un proyecto individual, ya que los roles (Product Owner, Scrum Master y Scrum Team) serán asumidos por la misma persona.
+Al estar Scrum diseñado para equipos colaborativos, hay que hacer algunas modificaciones a sus principios y prácticas para poder aplicarlas a un proyecto individual, ya que todos los roles (Product Owner, Scrum Master y Scrum Team) serán asumidos por la misma persona.
 
-A la hora de realizar un sprint, este no cambiará mucho. El sprint seguirá siendo de longitud fija y ya no se harán los cuatro subeventos, sino tres de ellos, la planificación, el "Daily Scrum" y la revisión del sprint; estos tendrán ciertas modificaciones. En cuanto a la planificación, esta no cambiará. El "Daily Scrum" si recibirá algún cambio, pues ya no hay equipo al que comunicar el progreso realizado, pero sí se podrá realizar una planificación de las tareas que se realizarán diariamente. El "Sprint Review", no se recibirá cambios. La retrospectiva del sprint, al estar orientada al trabajo en equipo, no se realizará.
+A la hora de realizar un sprint, este no cambiará mucho. El sprint seguirá siendo de longitud fija y ya no se harán los cuatro subeventos, sino tres de ellos: la planificación, el "Daily Scrum" y la revisión del sprint; estos tendrán ciertas modificaciones. En cuanto a la planificación, esta no cambiará. El "Daily Scrum" si recibirá algún cambio, pues ya no hay equipo al que comunicar el progreso realizado, pero sí se podrá realizar una planificación de las tareas que se realizarán diariamente. El "Sprint Review", no recibirá cambios. La retrospectiva del sprint, al estar orientada al trabajo en equipo, no se realizará.
 
 Aplicando estos pequeños cambios, es posible la adaptación de la metodología ágil Scrum a un proyecto individual. Es este Scrum modificado, el que se usará para de desarrollar el proyecto de gestión de casos de mediación. 
 
@@ -126,7 +126,7 @@ Aplicando estos pequeños cambios, es posible la adaptación de la metodología 
 
 Duración planificada: 1 semana
 
-El objetivo del sprint 0 fué configurar el entorno de desarrollo. Realizar la instalación de las herramientas necesarias para la realización del proyecto y la recopilación inicial de las historias de usuario (funcionalidades de la aplicación).
+El objetivo del sprint 0 fue configurar el entorno de desarrollo. Realizar la instalación de las herramientas necesarias para la realización del proyecto y la recopilación inicial de las historias de usuario (funcionalidades de la aplicación).
 
 Duración real: 1 semana
 
@@ -142,25 +142,25 @@ Duración real: 1 semana
 
 Duración planificada: 1 semana
 
-En el segundo sprint, se diseñó la arquitectura del sistema creando el diagrama de arquitectura que incluye el Front-end, el Back-end y la base de datos. También se hizo el modelo entidad-relación de la base de datos.
+En el segundo sprint, se diseñó la arquitectura del sistema creando el diagrama de arquitectura que incluye el Frontend, el Backend y la base de datos. También se hizo el modelo entidad-relación de la base de datos.
 
 Duración real: 1 semana
 
-## Sprint 3 - Desarrollo del backend y la base de datos:
+## Sprint 3 - Desarrollo del Backend y la base de datos:
 
 Duración planificada: 2 semanas
 
-El objetivo propuesto para este sprint, fué realizar el desarrollo de la base de datos en SQLite y el backend en PHP.
+El objetivo propuesto para este sprint, fue realizar el desarrollo de la base de datos en SQLite y el backend en PHP.
 
 Durante este sprint surgieron distintos problemas. Empezando por la base de datos, se decidió cambiar SQLite por MySQL. Estos son distintos sistemas usados para la gestión de bases de datos. El motivo del cambio fue la dificultad encontrada a la hora de acceder desde el servidor backend a la base de datos; pues SQLite es un sistema de gestión sin servidor, esto lo convierte en un sistema ineficiente para realizar una página web. Posteriormente se encontró otro problema al que no se le halló solución: al ejecutar el servidor MySQL, este no podía ser accedido de ninguna forma para alcanzar sus datos, a pesar de que el servidor se ejecutaba correctamente; para solucionarlo se tomó la decisión de volver a cambiar el gestor de base de datos, utilizando finalmente MariaDB. También se decidió cambiar el lenguaje del backend, pasando de PHP a Node.js, que permite realizar el servidor de una forma más sencilla. Debido a estos problemas encontrados el sprint se extendió más de lo planificado.
 
 Duración real: 3 semanas
 
-## Sprint 4 - Desarrollo del frontend:
+## Sprint 4 - Desarrollo del Frontend:
 
 Duración planificada: 2 semanas
 
-El cuarto sprint es el último del desarrollo de la aplicación. Durante este sprint se desarrolló todo el frontend de la aplicación, creando todas las páginas necesarias para su uso, empleando HTML. Se finalizó el sprint con la implementación de la interfaz de usuario. En ciertos momentos se necesitó cambiar ciertas partes del servidor backend, pero eso no demoró la duración del sprint.
+El cuarto sprint es el último del desarrollo de la aplicación. Durante este sprint se desarrolló todo el frontend de la aplicación, creando todas las páginas necesarias para su uso, empleando HTML. Se finalizó el sprint con la implementación de la interfaz de usuario. En ciertos momentos se necesitó cambiar ciertas partes del servidor Backend, pero eso no demoró la duración del sprint.
 
 Duración real: 2 semanas
 
@@ -181,11 +181,11 @@ Ilustración 1. Diagrama de arquitectura
 
 ## Capa de Presentación (Frontend):
 
-La capa de presentación se encarga de la interacción con el usuario. Incluye todas las interfaces gráficas, como formularios y tablas, que permiten a los usuarios gestionar los casos de mediación. Esta capa está diseñada en HTML y Javascript, para la lógica de los formularios y tablas; y CSS, para asegurar una apariencia consistente y profesional a la aplicación. Esta capa se comunica con el Backend mediante solicitudes HTTP (GET, POST, PUT, DELETE), que se usan para extraer o insertar información del servidor.
+La capa de presentación se encarga de la interacción con el usuario. Incluye todas las interfaces gráficas, como formularios y tablas, que permiten a los usuarios gestionar los casos de mediación. Esta capa está diseñada en HTML y Javascript, para la lógica de los formularios y tablas; y CSS, para asegurar una apariencia consistente y profesional a la aplicación. Esta capa se comunica con el Backend mediante solicitudes HTTP (GET, POST, PUT, DELETE) que se usan para extraer o insertar información del servidor.
 
 ## Capa de Lógica de la aplicación (Backend):
 
-La capa de lógica se encarga de interconectar la capa de Presentación con la Base de datos. El Backend procesa las solicitudes HTTP provenientes del Frontend, aplica las reglas de negocio necesarias y se comunica con la base de datos. En esta capa es donde se realiza la autenticación de usuarios, la gestión de los casos de mediación, y la asignación de mediadores, así como las modificaciones de los usuarios o la eliminación de estos mismos. Para la realización de esta capa se ha utilizado Node.js y el framework Express.js.
+La capa de lógica se encarga de interconectar la capa de Presentación con la Base de datos. El Backend procesa las solicitudes HTTP provenientes del Frontend, aplica las reglas de negocio necesarias y se comunica con la base de datos. En esta capa es donde se realiza la autentificación de usuarios, la gestión de los casos de mediación, y la asignación de mediadores, así como las modificaciones de los usuarios o la eliminación de estos mismos. Para la realización de esta capa se ha utilizado Node.js y el framework Express.js.
 
 ## Capa de Datos:
 
@@ -197,7 +197,7 @@ La capa de datos se encarga del almacenamiento y la gestión de los datos. Para 
 
 ### HTML5
 
-HTML (HyperText Markup Language) es el lenguaje de programación estándar utilizado para crear y estructurar páginas web y aplicaciones en la web. Define el contenido de las páginas web mediante el uso de etiquetas para estructurar texto y otros elementos como imágenes, listas y vídeos. HTML es fácil de aprender, permitiendo a cualquier persona crear una página web básica. Aunque HTML define el contenido y algunos estilos básicos, el diseño profesional se logra con habilidades de diseño y lenguajes adicionales como CSS. [5]
+HTML (HyperText Markup Language) es el lenguaje de programación estándar utilizado para crear y estructurar páginas web. Define el contenido de las páginas web mediante el uso de etiquetas para estructurar texto y otros elementos como imágenes, listas y vídeos. HTML es fácil de aprender, permitiendo a cualquier persona crear una página web básica. Aunque HTML define el contenido y algunos estilos básicos, el diseño profesional se logra con habilidades de diseño y lenguajes adicionales como CSS. [5]
 
 ### CSS3
 
@@ -223,7 +223,7 @@ MariaDB es un Sistema Gestor de Bases de Datos (SGDB) relacionales de código ab
 
 ### SQL
 
-SQL (Structured Query Language) es un lenguaje de consulta que permite manipular y extraer datos de una base de datos. Es el principal lenguaje de programación utilizado a la hora de usar bases de datos relacionales.
+SQL (Structured Query Language) es un lenguaje de consulta que permite manipular y extraer datos de una base de datos. Es el principal lenguaje de programación utilizado para gestionar bases de datos relacionales.
 
 ### Python
 
@@ -233,7 +233,7 @@ Python es uno de los lenguajes de programación más populares del mundo, utiliz
 
 ### Visual Studio Code
 
-Visual Studio Code (o VSCode) es un editor de código disponible para Windows, MacOS y Linux, el cual tiene soporte para la mayoría de lenguajes de programación. Fué utilizado para como entorno de protgramación del proyecto
+Visual Studio Code (o VSCode) es un editor de código disponible para Windows, MacOS y Linux, el cual tiene soporte para la mayoría de lenguajes de programación. Fué utilizado como entorno de programación del proyecto
 
 ### Express
 
@@ -249,7 +249,7 @@ Font Awesome es una biblioteca de iconos usados para mejorar la interfaz de usua
 
 ### PHPMyAdmin
 
-PHPMyAdmin es una herramienta de administración de bases de datos que proporciona una interfaz gráfica para interactuar con las mismas. Fué usada para acceder a MariaDB de forma externa a la aplicación y así poder realizar las pruebas necesarias sin modificar la aplicación.
+PHPMyAdmin es una herramienta de administración de bases de datos que proporciona una interfaz gráfica para interactuar con las mismas. Fue usada para acceder a MariaDB de forma externa a la aplicación y así poder realizar las pruebas necesarias sin modificar la aplicación.
 
 # Especificación y analisis de requisitos:
 
@@ -261,9 +261,9 @@ Los requisitos funcionales son aquellos que definen las funciones específicas d
 
    - El administrador debe poder crear, modificar y eliminar nuevos usuarios.
 
-2. Autenticación
+2. Autentificación
 
-   - El sistema debe requerir autenticación para acceder a sus funcionalidades
+   - El sistema debe requerir autentificación para acceder a sus funcionalidades
 
 3. Autorización
 
@@ -275,9 +275,9 @@ Los requisitos funcionales son aquellos que definen las funciones específicas d
 
    - Los casos deben estar asignados a dos usuarios distintos
 
-   - El sistema debe permitir acutalizar los detalles de los casos
+   - El sistema debe permitir actualizar los detalles de los casos
 
-   - El sistema debe permitir descargar y adjuntar un archivo PDF que servirá como Formulario del caso
+   - El sistema debe permitir descargar y adjuntar un archivo PDF que servirá como Formulario del Caso
 
 4. Seguimiento de Casos
 
@@ -315,7 +315,7 @@ Los requisitos no funcionales definen los criterios que pueden usarse a la hora 
 
    - El sistema debe ser compatible con los principales navegadores web.
 
-# Diseño do software:
+# Diseño del software:
 
 ## Diseño estático
 
@@ -355,11 +355,11 @@ El diseño dinámico muestra el comportamiento del sistema a través del tiempo.
 ![Diagrama de pantallas](https://github.com/Raven-4/web_Mediacion/assets/121634522/a6807a03-bc99-4142-99d6-d4503e578dbb)
 Diagrama de Flujo de Pantallas
 
-El diagrama de flujo de pantallas muestra la navegación que puede hacer el cliente. En este caso se distinguen usuarios Administradores y No administradores. Las cajas rectangulares representan las distintas pantallas accesibles, y los rombos representan las acciones que pueden realizar los usuarios. Las acciones podrán ser positivas (marcadas con "Si"), o negativas (marcadas con "No"). En caso de que no se marque la respuesta, significará que la acción siempre se realiza.
+El diagrama de flujo de pantallas muestra la navegación que puede hacer el cliente. En este caso se distinguen usuarios Administradores y No Administradores. Las cajas rectangulares representan las distintas pantallas accesibles, y los rombos representan las acciones que pueden realizar los usuarios. Las acciones podrán ser positivas (marcadas con "Si"), o negativas (marcadas con "No"). En caso de que no se marque la respuesta, significará que la acción siempre se realiza.
 
 # Gestión de datos e información:
 
-Para el almacenamiento de datos, se ha utilizado MariaDB, una base de datos relacional basada en MySQL. La base de datos se despliega en un contenedor Docker, así como PHPMyAdmin, que permite modificar la base de datos.
+Para el almacenamiento de datos se ha utilizado MariaDB, una base de datos relacional basada en MySQL. La base de datos se despliega en un contenedor Docker, como PHPMyAdmin, que permite modificar la base de datos.
 
 ![Untitled](https://github.com/Raven-4/web_Mediacion/assets/121634522/ee935990-1aa6-481e-9de4-9049f8306481)
 Modelo Entidad-relacion
@@ -398,9 +398,9 @@ Entidades:
   
    - FormularioOficial: formulario cubierto por los mediadores. Contendrá la información necesaria para realizar el proceso de mediación del caso.
   
-   - Estado: estado en el que se encuentra el caso de mediación. Puede ser: en curso, en seguimiento, o finalizado.
+   - Estado: estado en el que se encuentra el caso de mediación. Puede ser: en curso, en seguimiento o finalizado.
   
-   - ValoraciónFinal: valoración hecha una vez acabado el proceso de mediación. Puede ser: acuerdo, sin acuerdo, o derivado a jefatura de estudios.
+   - ValoraciónFinal: valoración hecha una vez acabado el proceso de mediación. Puede ser: acuerdo, sin acuerdo o derivado a jefatura de estudios.
 
  - AsignacionCasos: Tabla para gestionar la relación entre los usuarios y los casos de mediación. Gracias a esta tabla se permite saber qué usuarios están relacionados a los distintos casos.
 
@@ -416,19 +416,19 @@ Durante el desarrollo del sistema se realizaron diferentes pruebas para garantiz
 
 ## Pruebas de integración
 
-Se hicieron pruebas para comprobar la coorecta comunicación entre los distintos módulos.
+Se hicieron pruebas para comprobar la correcta comunicación entre los distintos módulos.
 
  - Comunicación entre Frontend y Backend: Se probaron las peticiones enviadas del Frontend al Backend para asegurar la correcta comunicación, comprobando el funcionamiento de las peticiones de recuperación, creación, actualización y eliminación de datos.
 
  - Integración con la Base de Datos: Se  probó que las operaciones CRUD (Create, Read, Update, Delete), enviadas desde el servidor Backend, funcionaran correctamente con la base de datos MariaDB.
 
- - Autenticación: se probó el proceso de autenticación de usuarios, así se puede asegurar que sólo los usuarios registrados puedan acceder a la aplicación.
+ - Autentificación: se probó el proceso de autentificación de usuarios, así se puede asegurar que sólo los usuarios registrados puedan acceder a la aplicación.
 
 ## Pruebas Funcionales
 
  - Gestión de casos de mediación: se probó el correcto funcionamiento de todas las funcionalidades relacionadas con la creación, visualización y edición de los casos de mediación.
 
- - Gestión de usuarios: se comprobó el funcionamiento del proceso de creación y modificiación de usuarios.
+ - Gestión de usuarios: se comprobó el funcionamiento del proceso de creación y modificación de usuarios.
 
  - Descarga de formularios: se comprobó el correcto funcionamiento de la descarga e ingesta de archivos pdf a la base de datos.
 
@@ -454,13 +454,13 @@ Para hayar las especificaciones mínimas necesarias para ejecutar el proyecto, s
 
 ## Manual de instalación
 
-Para instalar el proyecto se han realizado scripts para que la instalación sea más sencilla, aunque también se puede instalar de forma manual.
+Para instalar el proyecto se han realizado scripts, para que la instalación sea más sencilla, aunque también se puede instalar de forma manual.
 
 ### Instalación Manual.
 
 Paso 1: Instalar Docker Desktop:
 
- - Descargar la última versión de Docker Desktop para desde: https://www.docker.com/products/docker-desktop/
+ - Descargar la última versión de Docker Desktop desde: https://www.docker.com/products/docker-desktop/
 
 Paso 2: Instalar Node.js y npm:
 
@@ -522,7 +522,7 @@ Paso 9: iniciar web:
 
 Paso 1: Instalar Docker Desktop:
 
- - Descargar la última versión de Docker Desktop para desde: https://www.docker.com/products/docker-desktop/
+ - Descargar la última versión de Docker Desktop desde: https://www.docker.com/products/docker-desktop/
 
 Paso 2: Instalar Node.js y npm:
 
@@ -532,7 +532,7 @@ Paso 3: Descargar el proyecto.
 
 Paso 4: script de instalación:
 
- - Ejecutar el script de instalación ubicado en la carpeta raiz del proyecto llamado "instalacion.exe".
+ - Ejecutar el script de instalación ubicado en la carpeta raíz del proyecto llamado "instalacion.exe".
 
 Paso 5: iniciar servidor:
 
@@ -558,22 +558,21 @@ Una vez completado los pasos de instalación e inicio de los servidores, se abri
 
 ### Inicio de sesión:
 
-Primero se abrirá la página de inicio de sesión, en donde el usuario deberá de introducir su nombre de usuario y contraseña para acceder a la web.
+Primero se abrirá la página de inicio de sesión, donde el usuario deberá de introducir su nombre de usuario y contraseña para acceder a la web.
 
 ### Menú:
 
-Una vez iniciado sesión se mostrará un menú con las acciones que puede realizar el usuario. Este menú, si el usuario tiene el rol "usuario", sólo mostrará las opciones Casos de mediación y Estadísticas. Si el usuario tiene el rol Administrados, a parte de las opciones que se le muestran a los demás usuarios, se le mostrarán las opciones Crear Perfil, Crear Caso y Modificar Perfil.
-
+Una vez iniciada  la sesión se mostrará un menú con las acciones que puede realizar el usuario. Este menú, si el usuario tiene el rol "usuario", sólo mostrará las opciones Casos de mediación y Estadísticas. Si el usuario tiene el rol Administrador, además de las opciones que se le muestran a los demás usuarios, se le mostrarán las opciones: Crear Perfil, Crear Caso y Modificar Perfil.
 
 ### Casos de mediación
 
 En esta opción se muestran los casos de mediación. En caso de que el usuario tenga el rol Administrador, se mostrarán todos los casos de mediación registrados en el sistema. Si el usuario no tiene dicho rol, sólo se le mostrarán los casos que tenga asignados.
 
-Los casos de mediación se mostrarán en una tabla. Esta tabla mostrará todos los detalles del caso, y permitirá al usuario hacer ciertas modificaciones. El usuario, tanto si es administrador como si no lo es, podrá descargar el Fromulario Oficial y cambiarlo por uno nuevo, cambiar el Estado, y cambiar la Valoración Final. Para confirmar todos estos cambios, el usuario tiene que pulsar en la opción Guardar.
+Los casos de mediación se mostrarán en una tabla. Esta tabla mostrará todos los detalles del caso, y permitirá al usuario hacer ciertas modificaciones. El usuario, tanto si es administrador como si no lo es, podrá descargar el Formulario Oficial y cambiarlo por uno nuevo si el caso lo requiere, cambiar el Estado y cambiar la Valoración Final. Para confirmar todos estos cambios el usuario tiene que pulsar en la opción Guardar.
 
 ### Estadísticas
 
-En la opción Estadísticas, al administrador se le mostrará una lista de todos los usuarios junto a las estadísticas de cada uno; también le aparecerán las estadísticas globales. A los usuarios no administradores sólo se les mostrarán sus estadísticas propias.
+En la opción Estadísticas, al administrador se le mostrará una lista de todos los usuarios junto a los datos estadísticos de cada uno; también le aparecerán las estadísticas globales. A los usuarios no administradores sólo se les mostrarán sus estadísticas propias.
 
 ### Crear Perfil
 
@@ -581,11 +580,11 @@ Esta opción permite a los administradores crear nuevos usuarios. Para crear nue
 
 ### Crear Caso
 
-Los administradores podrán crear nuevos casos de mediación en la opción Crear Caso del menú. En esta opción deben rellenar el formulario que consta de: los alumnos involucrados en el conflicto, el curso, la fecha de apertura (que por defefcto será la fecha del sistema), los 2 mediadores que se encargarán de llevar el caso, el Formulario Oficial en formato PDF (este formulario será opcional), y el estado (que por defecto será En curso).
+Los administradores podrán crear nuevos casos de mediación en la opción Crear Caso del menú. En esta opción deben rellenar el formulario que consta de: los alumnos involucrados en el conflicto, el curso, la fecha de apertura (que por defecto será la fecha del sistema), los dos mediadores que se encargarán de llevar el caso, el Formulario Oficial en formato PDF (este formulario será opcional), y el estado (que por defecto será En Curso).
 
 ### Modificar Perfil
 
-La opción Modificar Perfil, pèrmite a los administradores cambiar los perfiles de usuario. Para realizar dicha operación, se le mostrará una lista con todos los perfiles de usuario al administrador, y este deberá escoger el perfil que desea modificar. Cuando lo escoja, se le mostrarán todos los datos del usuario, y los podrá modificar. También podrá borrar perfiles.
+La opción Modificar Perfil, permite a los administradores cambiar los perfiles de usuario. Para realizar dicha operación, se le mostrará una lista con todos los perfiles de usuario al administrador, y este deberá escoger el perfil que desea modificar. Cuando lo elija, se le mostrarán todos los datos del usuario, y los podrá modificar. También podrá borrar perfiles.
 
 ### Cerrar sesión
 
@@ -593,21 +592,21 @@ Para cerrar sesión, se tiene que pulsar en el icono ubicado a la derecha del no
 
 # Aportaciones principales:
 
-La principal contribución del proyecto es la creación de una plataforma que mejora la gestión de casos de mediación. Esta plataforma permite centralizar la información, juntando todos los datos relevantes de los casos en un mismo sistema, y facilitando el acceso y gestión de la información. También reduce el tiempo necesario para gestionar los casos, automatizando el proceso, lo que permite a los mediadores dedicar más tiempo a mediar casos, en vez de documentarlos. También se mantiene un registro de los casos mediados, podiendo aacceder al historial en cualquier momento, lo que facilita el seguimiento y la identificación de potenciales personas problemáticas.
+La principal contribución del proyecto es la creación de una plataforma que mejora la gestión de casos de mediación. Esta plataforma permite centralizar la información, juntando todos los datos relevantes de los casos en un mismo sistema, facilitando el acceso y gestión de la información. También reduce el tiempo necesario para gestionar los casos, automatizando el proceso, lo que permite a los mediadores dedicar más tiempo a mediar casos, en vez de documentarlos. Así mismo se mantiene un registro de los casos mediados, pudiendo acceder al historial en cualquier momento, lo que facilita el seguimiento y la identificación de potenciales personas problemáticas.
 
 # Conclusiones:
 
 ## Conclusiones técnicas
 
-El proyecto ha conseguido cumplir los objetivos propuestos, permitiendo crear una aplicación que mejora la eficacia y eficiencia de la gestión de casos de mediación. Principalmente se ha conseguido la centralización de los datos, facilitando el accieso a los usuarios; y la automatización del proceso, que permite reducir el tiempo y esfuerzo requeridos para gestionar los casos.
+El proyecto ha conseguido cumplir los objetivos propuestos, permitiendo crear una aplicación que mejora la eficacia y eficiencia de la gestión de casos de mediación. Principalmente se ha conseguido la centralización de los datos, facilitando el acceso a los usuarios; y la automatización del proceso, que permite reducir el tiempo y esfuerzo requeridos para gestionar los casos.
 
 ## Conclusiones personales
 
-El proyecto me ha permitido aprender múltiples técnicas nuevas. Aprendí a implementar servidores web utilizando Node.js, cosa que no fué fácil al principio, así como la gestión de archivos en la base de datos. También se me ha permitido profundizar en diversas tecnologías ya conocidas como HTML, JavaScript o CSS, así como aprender nuevas como Express y Node.js. También me permitió resolver problemas nunca vistos, y difíciles de resolver, como la creación del servidor o la gestión de ficheros binarios; problemas que con mucho esfuerzo se consiguieron resolver para dar al final un producto finalizado.
+El proyecto me ha permitido aprender múltiples técnicas nuevas. Aprendí a implementar servidores web utilizando Node.js, cosa que no fue fácil al principio, así como la gestión de archivos en la base de datos. También se me ha permitido profundizar en diversas tecnologías ya conocidas como HTML, JavaScript o CSS, así como aprender nuevas como Express y Node.js. También me permitió resolver problemas nunca vistos, y difíciles de resolver, como la creación del servidor o la gestión de ficheros binarios; problemas que con mucho esfuerzo se consiguieron resolver para dar al final un producto finalizado.
  
 # Vías de trabajo futuro:
 
-El proyecto puede ampliarse en el futuro, poniendo nuevas funcionalidades que mejorarán su eficacia. Distintas funcionalidades para el trabajo futuro pueden ser:
+El proyecto puede ampliarse en el futuro, poniendo nuevas funcionalidades que pueden mejorar su eficacia. Distintas funcionalidades para el trabajo futuro pueden ser:
 
 1. Envío de alertas por correo electrónico
 
@@ -615,13 +614,13 @@ El proyecto puede ampliarse en el futuro, poniendo nuevas funcionalidades que me
 
 2. Sistema de mensajería
 
- - Dentro de la aplicación, se puede crear un sistema de mensajería instantáneo entre los mediadores, mejorando así la comuncación entre ellos.
+ - Dentro de la aplicación, se puede crear un sistema de mensajería instantáneo entre los mediadores, mejorando así la comunicación entre ellos.
 
 3. Ampliación de funcionalidades
 
  - Se puede integrar un sistema de edición de documentos para el Formulario Oficial, que permita editar el formulario dentro de la aplicación.
 
-Con estos cambios, la aplicación se puede mejorar. También se pueden implementar encuestas de satisfacción para que los usuarios puedan dar su opinión sobre la plataforma. En estas encuestas también podrán dar ideas, que podrán ser implementadas en el proyecto, enriqueciendo así las funcionalidades del sistema según las necesidades de los usuarios.
+Con estos cambios, la aplicación se puede mejorar. También se pueden implementar encuestas de satisfacción para que los usuarios puedan dar su opinión sobre la plataforma. En estas encuestas se podrán aportar ideas, que deberían ser implementadas en el proyecto, si son factibles, enriqueciendo así las funcionalidades del sistema según las necesidades de los usuarios.
 
 # Referencias:
 
