@@ -376,6 +376,34 @@ app.delete('/estadisticas/:id', async (req, res) => {
     }
 });
 
+app.put('/cambiar-contrasena', async (req, res) => {
+    try {
+        const { usuario, contraseñaActual, nuevaContraseña } = req.body;
+
+        const conn = await pool.getConnection();
+        const result = await conn.query('SELECT * FROM Usuarios WHERE UserName = ?', [usuario]);
+
+        if (result.length === 0) {
+            res.status(404).send('Usuario no encontrado');
+            return;
+        }
+
+        const user = result[0];
+
+        if (user.Contraseña !== contraseñaActual) {
+            res.status(401).send('Contraseña actual incorrecta');
+            return;
+        }
+
+        await conn.query('UPDATE Usuarios SET Contraseña = ? WHERE UserName = ?', [nuevaContraseña, usuario]);
+        conn.release();
+        res.status(200).send('Contraseña actualizada correctamente');
+    } catch (error) {
+        console.error('Error al cambiar contraseña:', error);
+        res.status(500).send('Error al cambiar contraseña');
+    }
+});
+
 app.listen(port, () => {
     console.log(`Servidor en ejecución en http://localhost:${port}`);
 })

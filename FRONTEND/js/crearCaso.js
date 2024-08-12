@@ -19,6 +19,9 @@ async function cargarUsuarios() {
             });
             listaUsuarios.appendChild(li);
         });
+
+        buscarUsuario();
+
     } catch (error) {
         console.error('Error al cargar usuarios:', error);
     }
@@ -120,5 +123,21 @@ async function solicitudCrearCaso() {
         }
     } catch (error) {
         console.error('Error al enviar la solicitud:', error);
+    }
+}
+
+function buscarUsuario() {
+    const input = document.getElementById('busquedaUsuario');
+    const filter = input.value.toLowerCase();
+    const listaUsuarios = document.getElementById('listaUsuarios');
+    const items = listaUsuarios.getElementsByTagName('li');
+
+    for (let i = 0; i < items.length; i++) {
+        const text = items[i].textContent || items[i].innerText;
+        if (text.toLowerCase().indexOf(filter) > -1) {
+            items[i].style.display = '';
+        } else {
+            items[i].style.display = 'none';
+        }
     }
 }

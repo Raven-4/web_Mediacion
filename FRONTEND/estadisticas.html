@@ -36,6 +36,29 @@
         </div>
     </div>
 
+    <!-- Modal de Cambio de Contraseña -->
+    <div id="modalCambiarContraseña" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModalCambiarContraseña()">&times;</span>
+            <h2>Cambiar Contraseña</h2>
+            <form id="formCambiarContraseña" onsubmit="guardarContraseña(event)">
+                <label for="contraseñaActual">Contraseña Actual:</label>
+                <input type="password" id="contraseñaActual" name="contraseñaActual" required>
+                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('contraseñaActual')"></i>
+
+                <label for="nuevaContraseña">Nueva Contraseña:</label>
+                <input type="password" id="nuevaContraseña" name="nuevaContraseña" required>
+                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('nuevaContraseña')"></i>
+
+                <label for="confirmarContraseña">Confirmar Nueva Contraseña:</label>
+                <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
+                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('confirmarContraseña')"></i>
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 
 </html>

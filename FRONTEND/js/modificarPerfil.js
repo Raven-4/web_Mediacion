@@ -105,3 +105,29 @@ async function eliminarPerfil(userID) {
         console.error('Error al enviar la petición:', error);
     }
 }
+
+function buscarConEnter(event) {
+    if (event.key === "Enter") {
+        filtrarPerfiles();
+    }
+}
+
+function filtrarPerfiles() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const tabla = document.getElementById('userTableBody');
+    const filas = tabla.getElementsByTagName('tr');
+
+    for (let i = 0; i < filas.length; i++) {
+        const columnas = filas[i].getElementsByTagName('td');
+        let mostrarFila = false;
+
+        for (let j = 0; j < columnas.length - 1; j++) {
+            if (columnas[j].innerText.toLowerCase().includes(input)) {
+                mostrarFila = true;
+                break;
+            }
+        }
+
+        filas[i].style.display = mostrarFila ? '' : 'none';
+    }
+}

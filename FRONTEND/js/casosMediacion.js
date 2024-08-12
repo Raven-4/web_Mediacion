@@ -147,3 +147,38 @@ async function descargarPDF(nombreArchivo) {
         console.error('Error al descargar el PDF:', error);
     }
 }
+
+function filtrarCasos() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const filterEstado = document.getElementById('filterEstado').value;
+    const filterValoracion = document.getElementById('filterValoracion').value;
+
+
+    const tableBody = document.getElementById('casos-mediacion-body');
+    const rows = tableBody.getElementsByTagName('tr');
+
+    Array.from(rows).forEach(row => {
+        const alumnosInvolucrados = row.cells[0].textContent.toLowerCase();
+        const curso = row.cells[1].textContent.toLowerCase();
+        const mediador1 = row.cells[3].textContent.toLowerCase();
+        const mediador2 = row.cells[4].textContent.toLowerCase();
+        const estado = row.cells[6].querySelector('select').value;
+        const valoracionFinal = row.cells[7].querySelector('select').value;
+
+        const matchesSearch = alumnosInvolucrados.includes(searchInput) || curso.includes(searchInput) || mediador1.includes(searchInput) || mediador2.includes(searchInput);
+        const matchesEstado = filterEstado === "" || estado === filterEstado;
+        const matchesValoracion = filterValoracion === "" ||  valoracionFinal === filterValoracion;
+
+        if (matchesSearch && matchesEstado && matchesValoracion) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+    });
+}
+
+function buscarConEnter(event) {
+    if (event.key === "Enter") {
+        filtrarCasos();
+    }
+}

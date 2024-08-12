@@ -27,7 +27,27 @@
     <!-- <h1>Casos de Mediación</h1> -->
     <div class="content">
         <div class="casosMediacion-container">
+            <div class="search-filter-container">
+                <input type="text" id="searchInput" placeholder="Buscar caso" onkeypress="buscarConEnter(event)">
+                <label for="filterEstado">Filtrar por Estado:</label>
+                <select id="filterEstado" onchange="filtrarCasos()">
+                    <option value="">Todos</option>
+                    <option value="En curso">En curso</option>
+                    <option value="En seguimiento">En seguimiento</option>
+                    <option value="Finalizado">Finalizado</option>
+                </select>
 
+                <label for="filterValoracion">Filtrar por Valoración Final:</label>
+                <select id="filterValoracion" onchange="filtrarCasos()">
+                    <option value="">Todas</option>
+                    <option value="Acuerdo">Acuerdo</option>
+                    <option value="Sin Acuerdo">Sin Acuerdo</option>
+                    <option value="Derivado a Jefatura de Estudios">Derivado a Jefatura de Estudios</option>
+                </select>
+
+                <button onclick="filtrarCasos()">Filtrar</button>
+
+            </div>
             <table border="1">
                 <thead>
                     <tr>
@@ -48,6 +68,29 @@
             <a href='menu.html'>
                 <p>Volver</p>
             </a>
+        </div>
+    </div>
+
+    <!-- Modal de Cambio de Contraseña -->
+    <div id="modalCambiarContraseña" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModalCambiarContraseña()">&times;</span>
+            <h2>Cambiar Contraseña</h2>
+            <form id="formCambiarContraseña" onsubmit="guardarContraseña(event)">
+                <label for="contraseñaActual">Contraseña Actual:</label>
+                <input type="password" id="contraseñaActual" name="contraseñaActual" required>
+                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('contraseñaActual')"></i>
+
+                <label for="nuevaContraseña">Nueva Contraseña:</label>
+                <input type="password" id="nuevaContraseña" name="nuevaContraseña" required>
+                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('nuevaContraseña')"></i>
+
+                <label for="confirmarContraseña">Confirmar Nueva Contraseña:</label>
+                <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
+                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('confirmarContraseña')"></i>
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
         </div>
     </div>
 
