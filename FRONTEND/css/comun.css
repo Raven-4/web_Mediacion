@@ -61,8 +61,8 @@
     margin: 20px 0;
 }
 
-.search-filter-container input, 
-.search-filter-container select, 
+.search-filter-container input,
+.search-filter-container select,
 .search-filter-container button {
     margin: 0 10px;
     padding: 8px;
@@ -146,10 +146,21 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
-form input[type="password"],
-form select {
+form input[type="password"] {
     width: 90%;
     padding: 8px;
+    padding-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form select {
+    width: 100%;
+    padding: 8px;
+    padding-right: 30px;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -161,16 +172,23 @@ form select {
 
 .password-container {
     position: relative;
-    display: flex;
-    align-items: center;
+    width: 100%;
 }
 
-.password-container input[type="password"] {
-    padding-right: 30px; 
+.password-container input[type="password"],
+input[type="text"] {
+    padding-right: 30px;
 }
 
 .password-container .toggle-password {
     position: absolute;
-    right: 10px;
+    right: 20px;
     cursor: pointer;
+    top: 25%;
+    color: #888;
+
+}
+
+.password-container .toggle-password:hover {
+    color: #000;
 }

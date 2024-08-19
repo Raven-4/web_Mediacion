@@ -25,7 +25,9 @@ function mostrarCasosMediacion() {
                 row.appendChild(cursoCell);
 
                 const fechaCell = document.createElement('td');
-                fechaCell.textContent = FechaApertura;
+                const fechaAperturaDate = new Date(FechaApertura);
+                const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+                fechaCell.textContent = fechaAperturaDate.toLocaleDateString('es-ES', options);
                 row.appendChild(fechaCell);
 
                 const mediador1Cell = document.createElement('td');
@@ -167,7 +169,7 @@ function filtrarCasos() {
 
         const matchesSearch = alumnosInvolucrados.includes(searchInput) || curso.includes(searchInput) || mediador1.includes(searchInput) || mediador2.includes(searchInput);
         const matchesEstado = filterEstado === "" || estado === filterEstado;
-        const matchesValoracion = filterValoracion === "" ||  valoracionFinal === filterValoracion;
+        const matchesValoracion = filterValoracion === "" || valoracionFinal === filterValoracion;
 
         if (matchesSearch && matchesEstado && matchesValoracion) {
             row.style.display = "";

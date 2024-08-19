@@ -2,10 +2,13 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/comun.css">
+    <script type="text/javascript" src="js/funcionesComunes.js"></script>
     <script type="text/javascript" src="./js/login.js"></script>
     <script type="text/javascript" src="./js/cookies.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
@@ -26,8 +29,10 @@
                 <input type="text" id="id_usuario" name="usuario" required></input><br>
 
                 <label for="contrasena">Contraseña:</label><br>
-                <input type="password" id="id_contrasena" name="contrasena" required></input><br>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('id_contrasena')"></i>
+                <div class="password-container">
+                    <input type="password" id="id_contrasena" name="contrasena" required></input><br>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('id_contrasena')"></i>
+                </div>
 
                 <button type="submit">Iniciar Sesión</button>
             </form>

@@ -7,16 +7,26 @@ async function cargarUsuarios() {
         const listaUsuarios = document.getElementById('listaUsuarios');
         listaUsuarios.innerHTML = '';
 
+        const mediador1 = document.getElementById('mediador1').getAttribute('data-id');
+        const mediador2 = document.getElementById('mediador2').getAttribute('data-id');
+
         usuarios.forEach(usuario => {
             const li = document.createElement('li');
             li.textContent = `${usuario.UserName} - ${usuario.Nombre} ${usuario.Apellidos}`;
             li.setAttribute('data-id', usuario.ID);
-            li.addEventListener('click', () => {
-                // Cuando se hace clic en un usuario, se guarda su ID y se resalta
-                const selected = document.querySelector('.selected');
-                if (selected) selected.classList.remove('selected');
-                li.classList.add('selected');
-            });
+
+            if (usuario.ID == mediador1 || usuario.ID == mediador2) {
+                li.classList.add('disabled');
+                li.style.color = '#ccc'; 
+                li.style.pointerEvents = 'none'; 
+            } else {
+                li.addEventListener('click', () => {
+                    const selected = document.querySelector('.selected');
+                    if (selected) selected.classList.remove('selected');
+                    li.classList.add('selected');
+                });
+            }
+
             listaUsuarios.appendChild(li);
         });
 
@@ -139,5 +149,50 @@ function buscarUsuario() {
         } else {
             items[i].style.display = 'none';
         }
+    }
+}
+
+async function descargarFormularioBlanco() {
+    console.log('Descargando formulario en blanco...');
+    try {
+        const response = await fetch('http://localhost:3000/formulario-blanco');
+        if (response.ok) {
+            const blob = await response.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'formulario_blanco.docx';
+            a.click();
+            URL.revokeObjectURL(url);
+        } else {
+            console.error('Error al descargar el formulario en blanco:', response.statusText);
+        }
+    } catch (error) {
+        console.error('Error al descargar el formulario en blanco:', error);
+    }
+}
+
+function actualizarCursos() {
+    const nivelSelect = document.getElementById("nivel");
+    const cursoSelect = document.getElementById("curso");
+
+    cursoSelect.innerHTML = "";
+
+    if (nivelSelect.value === "ESO") {
+        const opcionesESO = ["1º ESO", "2º ESO", "3º ESO", "4º ESO"];
+        opcionesESO.forEach(opcion => {
+            const nuevaOpcion = document.createElement("option");
+            nuevaOpcion.value = opcion;
+            nuevaOpcion.text = opcion;
+            cursoSelect.add(nuevaOpcion);
+        });
+    } else if (nivelSelect.value === "Bachiller") {
+        const opcionesBachiller = ["1º Bachiller", "2º Bachiller"];
+        opcionesBachiller.forEach(opcion => {
+            const nuevaOpcion = document.createElement("option");
+            nuevaOpcion.value = opcion;
+            nuevaOpcion.text = opcion;
+            cursoSelect.add(nuevaOpcion);
+        });
     }
 }

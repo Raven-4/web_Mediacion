@@ -31,8 +31,17 @@
                 <label for="alumnosInvolucrados">Alumnos Involucrados:</label><br>
                 <input type="text" id="alumnosInvolucrados" name="alumnosInvolucrados" required><br>
 
+                <label for="nivel">Nivel:</label><br>
+                <select id="nivel" name="nivel" onchange="actualizarCursos()" required>
+                    <option value="" disabled selected>Seleccionar nivel</option>
+                    <option value="ESO">ESO</option>
+                    <option value="Bachiller">Bachiller</option>
+                </select><br>
+
                 <label for="curso">Curso:</label><br>
-                <input type="text" id="curso" name="curso" required><br>
+                <select id="curso" name="curso" required>
+                    <option value="" disabled selected>Seleccionar curso</option>
+                </select><br>
 
                 <label for="fechaApertura">Fecha de Apertura:</label><br>
                 <input type="date" id="fechaApertura" name="fechaApertura" required><br>
@@ -48,7 +57,8 @@
                     Mediador</button><br>
 
                 <label for="formularioOficial">Formulario Oficial:</label><br>
-                <input type="file" id="formularioOficial" name="formularioOficial" accept=".pdf"><br>
+                <button type="button" onclick="descargarFormularioBlanco()">Descargar Formulario en Blanco</button><br>
+                <input type="file" id="formularioOficial" name="formularioOficial"><br>
 
                 <label for="estado">Estado:</label><br>
                 <select id="estado" name="estado" required>
@@ -85,18 +95,25 @@
             <span class="close" onclick="cerrarModalCambiarContraseña()">&times;</span>
             <h2>Cambiar Contraseña</h2>
             <form id="formCambiarContraseña" onsubmit="guardarContraseña(event)">
+                
                 <label for="contraseñaActual">Contraseña Actual:</label>
-                <input type="password" id="contraseñaActual" name="contraseñaActual" required>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('contraseñaActual')"></i>
+                <div class="password-container">
+                    <input type="password" id="contraseñaActual" name="contraseñaActual" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('contraseñaActual')"></i>
+                </div>
 
                 <label for="nuevaContraseña">Nueva Contraseña:</label>
-                <input type="password" id="nuevaContraseña" name="nuevaContraseña" required>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('nuevaContraseña')"></i>
+                <div class="password-container">
+                    <input type="password" id="nuevaContraseña" name="nuevaContraseña" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('nuevaContraseña')"></i>
+                </div>
 
                 <label for="confirmarContraseña">Confirmar Nueva Contraseña:</label>
-                <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('confirmarContraseña')"></i>
-
+                <div class="password-container">
+                    <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('confirmarContraseña')"></i>
+                </div>
+            
                 <button type="submit">Guardar Cambios</button>
             </form>
         </div>

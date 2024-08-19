@@ -74,8 +74,10 @@
                         <input type="email" id="edit_correoElectronico" name="correoElectronico" required><br>
 
                         <label for="contraseña">Contraseña:</label><br>
-                        <input type="password" id="edit_contrasena" name="contraseña" required><br>
-                        <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('edit_contrasena')"></i>
+                        <div class="password-container">
+                            <input type="password" id="edit_contrasena" name="contraseña" required>
+                            <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('edit_contrasena')"></i>
+                        </div>
 
                         <label for="rol">Rol:</label><br>
                         <select id="edit_rol" name="rol" required>
@@ -96,17 +98,24 @@
             <span class="close" onclick="cerrarModalCambiarContraseña()">&times;</span>
             <h2>Cambiar Contraseña</h2>
             <form id="formCambiarContraseña" onsubmit="guardarContraseña(event)">
+
                 <label for="contraseñaActual">Contraseña Actual:</label>
-                <input type="password" id="contraseñaActual" name="contraseñaActual" required>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('contraseñaActual')"></i>
+                <div class="password-container">
+                    <input type="password" id="contraseñaActual" name="contraseñaActual" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('contraseñaActual')"></i>
+                </div>
 
                 <label for="nuevaContraseña">Nueva Contraseña:</label>
-                <input type="password" id="nuevaContraseña" name="nuevaContraseña" required>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('nuevaContraseña')"></i>
+                <div class="password-container">
+                    <input type="password" id="nuevaContraseña" name="nuevaContraseña" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('nuevaContraseña')"></i>
+                </div>
 
                 <label for="confirmarContraseña">Confirmar Nueva Contraseña:</label>
-                <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('confirmarContraseña')"></i>
+                <div class="password-container">
+                    <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('confirmarContraseña')"></i>
+                </div>
 
                 <button type="submit">Guardar Cambios</button>
             </form>

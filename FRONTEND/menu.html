@@ -38,18 +38,25 @@
             <span class="close" onclick="cerrarModalCambiarContraseña()">&times;</span>
             <h2>Cambiar Contraseña</h2>
             <form id="formCambiarContraseña" onsubmit="guardarContraseña(event)">
+                
                 <label for="contraseñaActual">Contraseña Actual:</label>
-                <input type="password" id="contraseñaActual" name="contraseñaActual" required><br>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('contraseñaActual')"></i>
+                <div class="password-container">
+                    <input type="password" id="contraseñaActual" name="contraseñaActual" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('contraseñaActual')"></i>
+                </div>
 
                 <label for="nuevaContraseña">Nueva Contraseña:</label>
-                <input type="password" id="nuevaContraseña" name="nuevaContraseña" required><br>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('nuevaContraseña')"></i>
+                <div class="password-container">
+                    <input type="password" id="nuevaContraseña" name="nuevaContraseña" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('nuevaContraseña')"></i>
+                </div>
 
                 <label for="confirmarContraseña">Confirmar Nueva Contraseña:</label>
-                <input type="password" id="confirmarContraseña" name="confirmarContraseña" required><br>
-                <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('confirmarContraseña')"></i>
-
+                <div class="password-container">
+                    <input type="password" id="confirmarContraseña" name="confirmarContraseña" required>
+                    <i class="fa fa-eye toggle-password" onclick="togglePasswordVisibility('confirmarContraseña')"></i>
+                </div>
+            
                 <button type="submit">Guardar Cambios</button>
             </form>
         </div>

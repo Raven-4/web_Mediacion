@@ -155,7 +155,7 @@ app.delete('/usuarios/:id', async (req, res) => {
 app.get('/casos-mediacion', async (req, res) => {
     try {
         const conn = await pool.getConnection();
-        const casosMediacion = await conn.query('SELECT * FROM CasosMediacion');
+        const casosMediacion = await conn.query('SELECT * FROM CasosMediacion ORDER BY FechaApertura DESC');
         conn.release();
 
         casosMediacion.forEach(caso => {
@@ -219,6 +219,7 @@ app.get('/casos-mediacion/pdf/:nombreArchivo', async (req, res) => {
         const path = require('path');
         const fs = require('fs');
         const archivoPDF = path.join('C:/Users/guija/Desktop/web_Mediacion/DB/archivos', nombreArchivo);
+        console.log(nombreArchivo);
         console.log('Obteniendo PDF:', archivoPDF);
         // Verificar si el archivo existe
         if (fs.existsSync(archivoPDF)) {
@@ -232,6 +233,29 @@ app.get('/casos-mediacion/pdf/:nombreArchivo', async (req, res) => {
         console.error('Error al obtener PDF:', error);
         res.status(500).send('Error al obtener PDF');
     }
+});
+
+app.get('/formulario-blanco', async (req, res) => {
+    try {
+        const path = require('path');
+        const fs = require('fs');
+        const nombreArchivo = 'Formulario_blanco.docx';
+        const archivoFormulario = path.join('C:/Users/guija/Desktop/web_Mediacion/DB/archivos', nombreArchivo);
+        console.log('Obteniendo Formulario:', archivoFormulario);
+
+        // Verificar si el archivo existe
+        if (fs.existsSync(archivoFormulario)) {
+            // Si el archivo existe, enviar el archivo como respuesta
+            res.status(200).download(archivoFormulario);
+        } else {
+            // Si el archivo no existe, enviar una respuesta de error
+            res.status(404).send('Archivo no encontrado');
+        }
+    } catch (error) {
+        console.error('Error al obtener el Formulario:', error);
+        res.status(500).send('Error al obtener el Formulario');
+    }
+
 });
 
 // Método PUT para modificar el estado y la valoración final de un caso de mediación

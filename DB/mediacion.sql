@@ -31,19 +31,6 @@ CREATE TABLE AsignacionCasos (
     FOREIGN KEY (IDCasoMediacion) REFERENCES CasosMediacion(ID)
 );
 
--- Tabla de Estadísticas
-CREATE TABLE Estadisticas (
-    ID INT PRIMARY KEY AUTO_INCREMENT,
-    IDUsuario INT,
-    NumeroTotalCasosMediados INT,
-    CasosConAcuerdo INT,
-    -- PorcentajeCasosConAcuerdo DECIMAL(5,2),
-    CasosSinAcuerdo INT,
-    -- PorcentajeCasosSinAcuerdo DECIMAL(5,2),
-    CasosDerivadosJefatura INT,
-    -- PorcentajeCasosDerivadosJefatura DECIMAL(5,2),
-    FOREIGN KEY (IDUsuario) REFERENCES Usuarios(ID)
-);
 
 -- Insertar datos de prueba
 INSERT INTO Usuarios (UserName, Nombre, Apellidos, CorreoElectronico, Contraseña, Rol) VALUES
@@ -52,7 +39,7 @@ INSERT INTO Usuarios (UserName, Nombre, Apellidos, CorreoElectronico, Contraseñ
 ('user2', 'María', 'García', 'maria@example.com', 'password', 'usuario'),
 ('user3', 'Luis', 'Martínez', 'luis@example.com', 'secreto', 'usuario'),
 ('user4', 'Ana', 'Rodríguez', 'ana@example.com', 'contraseña', 'usuario'),
-('user5', 'Pedro', 'Sánchez', 'pedro@example.com', 'clave', 'usuario');
+('user5', 'Pedro', 'López', 'pedro@example.com', 'clave', 'usuario');
 
 -- Insertar casos de mediación
 INSERT INTO CasosMediacion (AlumnosInvolucrados, Curso, FechaApertura, Mediador1, Mediador2, FormularioOficial, Estado, ValoracionFinal)
